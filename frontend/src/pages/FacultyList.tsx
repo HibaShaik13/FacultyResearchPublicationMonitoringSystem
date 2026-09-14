@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import api from '../services/api'
 
 interface Faculty {
   id: string
@@ -23,9 +24,8 @@ export default function FacultyList() {
     if (search) params.set('search', search)
     if (department) params.set('department', department)
 
-    fetch(`/api/v1/faculty/?${params}`)
-      .then((r) => r.json())
-      .then((data) => setFaculty(data.data || []))
+    api.get(`/api/v1/faculty/?${params}`)
+      .then((res) => setFaculty(res.data?.data || []))
       .catch(() => setFaculty([]))
       .finally(() => setLoading(false))
   }, [search, department])

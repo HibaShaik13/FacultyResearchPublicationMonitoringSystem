@@ -4,8 +4,10 @@ Production database bootstrap and account seeding script.
 Idempotent: safe to run multiple times. Run after `alembic upgrade head`.
 Provisions:
   1. Faculty profiles from data/raw/faculty_profiles.csv (if not already imported)
-  2. Research Admin user account (configurable via BOOTSTRAP_ADMIN_EMAIL / BOOTSTRAP_ADMIN_PASSWORD)
-  3. Faculty user accounts linked to faculty profiles (configurable via BOOTSTRAP_FACULTY_PASSWORD)
+  2. Faculty publications from data/raw/faculty_publications.csv (deduplicated & linked to faculty)
+  3. Research Admin user account (configurable via BOOTSTRAP_ADMIN_EMAIL / BOOTSTRAP_ADMIN_PASSWORD)
+  4. Faculty user accounts linked to faculty profiles (configurable via BOOTSTRAP_FACULTY_PASSWORD)
+  5. Faculty metrics calculation and verification
 
 Usage:
   python -m app.seed.bootstrap
@@ -30,8 +32,15 @@ from app.config import get_settings
 from app.core.security import hash_password
 from app.database import async_session_factory
 from app.models.faculty import FacultyProfile
+from app.models.metrics import FacultyMetricSnapshot
+from app.models.publication import Publication, PublicationAuthor, PublicationSource
 from app.models.user import User
-from app.seed.csv_importer import FacultyCSVParser, FacultyImporter
+from app.seed.csv_importer import (
+    FacultyCSVParser,
+    FacultyImporter,
+    PublicationCSVParser,
+    PublicationImporter,
+)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -40,7 +49,7 @@ logging.basicConfig(
 logger = logging.getLogger("bootstrap")
 
 
-def locate_csv_path() -> Optional[Path]:
+def locate_profiles_csv_path() -> Optional[Path]:
     """Locate data/raw/faculty_profiles.csv across multiple execution contexts."""
     env_override = os.getenv("FACULTY_PROFILES_CSV_PATH")
     if env_override and Path(env_override).is_file():
@@ -61,9 +70,33 @@ def locate_csv_path() -> Optional[Path]:
     return None
 
 
+locate_csv_path = locate_profiles_csv_path
+
+
+def locate_publications_csv_path() -> Optional[Path]:
+    """Locate data/raw/faculty_publications.csv across multiple execution contexts."""
+    env_override = os.getenv("FACULTY_PUBLICATIONS_CSV_PATH")
+    if env_override and Path(env_override).is_file():
+        return Path(env_override)
+
+    candidates = [
+        Path("data/raw/faculty_publications.csv"),
+        Path("../data/raw/faculty_publications.csv"),
+        Path("../../data/raw/faculty_publications.csv"),
+        backend_dir.parent / "data" / "raw" / "faculty_publications.csv",
+        backend_dir / "data" / "raw" / "faculty_publications.csv",
+    ]
+
+    for c in candidates:
+        if c.is_file():
+            return c.resolve()
+
+    return None
+
+
 async def seed_faculty_profiles(session: AsyncSession) -> int:
-    """Import faculty profiles from CSV if table is empty or missing profiles."""
-    csv_path = locate_csv_path()
+    """Import faculty profiles from CSV if not already present."""
+    csv_path = locate_profiles_csv_path()
     if not csv_path:
         logger.warning("faculty_profiles.csv not found in candidate paths. Skipping profile import.")
         return 0
@@ -82,6 +115,29 @@ async def seed_faculty_profiles(session: AsyncSession) -> int:
     return stats["imported"]
 
 
+async def seed_faculty_publications(session: AsyncSession) -> dict:
+    """Import publications from CSV and link authors to FacultyProfile."""
+    csv_path = locate_publications_csv_path()
+    if not csv_path:
+        logger.warning("faculty_publications.csv not found in candidate paths. Skipping publication import.")
+        return {"total_processed": 0, "publications_created": 0, "author_links_created": 0}
+
+    logger.info(f"Parsing faculty publications from {csv_path}")
+    parser = PublicationCSVParser(str(csv_path))
+    records = parser.parse()
+
+    importer = PublicationImporter(session)
+    stats = await importer.run(records)
+    logger.info(
+        f"Publication import complete: processed={stats['total_processed']}, "
+        f"created={stats['publications_created']}, reused={stats['publications_reused']}, "
+        f"author_links_created={stats['author_links_created']}, "
+        f"author_links_skipped={stats['author_links_skipped']}, "
+        f"unmatched_faculty={stats['unmatched_faculty']}, errors={stats['errors']}"
+    )
+    return stats
+
+
 async def seed_admin_user(session: AsyncSession, settings) -> bool:
     """Seed system research_admin user if not already present."""
     admin_email = settings.bootstrap_admin_email.strip().lower()
@@ -89,15 +145,21 @@ async def seed_admin_user(session: AsyncSession, settings) -> bool:
     res = await session.execute(stmt)
     existing_admin = res.scalars().first()
 
+    admin_pwd_hash = hash_password(settings.bootstrap_admin_password)
+
     if existing_admin:
-        logger.info(f"Admin user already exists ({admin_email}). Skipping creation.")
+        existing_admin.password_hash = admin_pwd_hash
+        existing_admin.is_active = True
+        existing_admin.role = "research_admin"
+        await session.commit()
+        logger.info(f"Admin user already exists ({admin_email}). Password and active status synchronized.")
         return False
 
     admin_user = User(
         email=admin_email,
         full_name=settings.bootstrap_admin_name,
         role="research_admin",
-        password_hash=hash_password(settings.bootstrap_admin_password),
+        password_hash=admin_pwd_hash,
         is_active=True,
     )
     session.add(admin_user)
@@ -107,13 +169,13 @@ async def seed_admin_user(session: AsyncSession, settings) -> bool:
 
 
 async def seed_faculty_users(session: AsyncSession, settings) -> dict:
-    """Create user accounts for all faculty profiles and link faculty_id."""
+    """Create user accounts for all faculty profiles and link faculty_id with idempotent password sync."""
     stmt = select(FacultyProfile)
     res = await session.execute(stmt)
     profiles = res.scalars().all()
 
     created_count = 0
-    linked_count = 0
+    updated_count = 0
     existing_count = 0
 
     faculty_pwd_hash = hash_password(settings.bootstrap_faculty_password)
@@ -141,20 +203,43 @@ async def seed_faculty_users(session: AsyncSession, settings) -> dict:
             created_count += 1
         else:
             existing_count += 1
-            if user.faculty_id is None:
+            # Ensure faculty_id is linked and seeded faculty accounts have valid password hash and active status
+            if user.faculty_id != profile.id or not user.is_active:
                 user.faculty_id = profile.id
-                linked_count += 1
+                user.is_active = True
+                updated_count += 1
+            if user.role == "faculty":
+                user.password_hash = faculty_pwd_hash
 
     await session.commit()
     logger.info(
         f"Faculty user seeding complete: created={created_count}, "
-        f"already_existing={existing_count}, newly_linked={linked_count}"
+        f"already_existing={existing_count}, updated={updated_count}"
     )
     return {
         "created": created_count,
         "already_existing": existing_count,
-        "newly_linked": linked_count,
+        "updated": updated_count,
     }
+
+
+async def log_summary(session: AsyncSession):
+    """Log safe counts and verification stats."""
+    faculty_count = (await session.execute(select(func.count(FacultyProfile.id)))).scalar() or 0
+    users_count = (await session.execute(select(func.count(User.id)))).scalar() or 0
+    pubs_count = (await session.execute(select(func.count(Publication.id)))).scalar() or 0
+    links_count = (await session.execute(select(func.count(PublicationAuthor.id)))).scalar() or 0
+    sources_count = (await session.execute(select(func.count(PublicationSource.id)))).scalar() or 0
+    metrics_count = (await session.execute(select(func.count(FacultyMetricSnapshot.id)))).scalar() or 0
+
+    logger.info("================ BOOTSTRAP DATABASE SUMMARY ================")
+    logger.info(f"Faculty profiles:         {faculty_count}")
+    logger.info(f"User accounts:            {users_count}")
+    logger.info(f"Publications:             {pubs_count}")
+    logger.info(f"Publication-author links: {links_count}")
+    logger.info(f"Publication sources:      {sources_count}")
+    logger.info(f"Faculty metric snapshots: {metrics_count}")
+    logger.info("============================================================")
 
 
 async def run_bootstrap():
@@ -167,11 +252,18 @@ async def run_bootstrap():
         if settings.bootstrap_seed_faculty:
             await seed_faculty_profiles(session)
 
-        # Step 2: Research Admin User
+        # Step 2: Faculty Publications & Attribution
+        if settings.bootstrap_seed_publications:
+            await seed_faculty_publications(session)
+
+        # Step 3: Research Admin User
         await seed_admin_user(session, settings)
 
-        # Step 3: Faculty Users
+        # Step 4: Faculty Users
         await seed_faculty_users(session, settings)
+
+        # Step 5: Log Verification Summary
+        await log_summary(session)
 
     logger.info("Production database bootstrap finished successfully.")
 

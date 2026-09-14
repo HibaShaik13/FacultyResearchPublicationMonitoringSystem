@@ -471,7 +471,20 @@ class ResearchIntelligenceService:
         pending_review = sum(1 for p in pubs if p.verification_status == "needs_review")
         flagged_records = sum(1 for p in pubs if p.risk_level in ["medium", "high"])
         total_citations = sum(p.citation_count or 0 for p in pubs)
-        q1_q2_count = sum(1 for p in pubs if (p.quartile in ["Q1", "Q2"] or (p.indexing_status and any(k in p.indexing_status.lower() for k in ["scopus", "wos", "sci", "q1", "q2"]))))
+        q1_q2_count = sum(
+            1 for p in pubs
+            if (
+                p.quartile in ["Q1", "Q2"]
+                or (
+                    p.indexing_status
+                    and any(
+                        k in str(item).lower()
+                        for item in (p.indexing_status if isinstance(p.indexing_status, list) else [p.indexing_status])
+                        for k in ["scopus", "wos", "sci", "scie", "q1", "q2"]
+                    )
+                )
+            )
+        )
 
         avg_cits = round(total_citations / total_faculty, 1) if total_faculty > 0 else 0.0
         avg_pubs = round(total_publications / total_faculty, 1) if total_faculty > 0 else 0.0

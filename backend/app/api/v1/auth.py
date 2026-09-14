@@ -42,14 +42,17 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: AsyncSessi
     result = await db.execute(select(User).where(func.lower(User.email) == clean_username))
     user = result.scalars().first()
     
-    if not user or not (
-        verify_password(form_data.password, user.password_hash)
-        or form_data.password == "faculty123"
-        or form_data.password == "admin"
-    ):
+    if not user or not verify_password(form_data.password, user.password_hash):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect email or password",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
+    if not user.is_active:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="User account is inactive",
             headers={"WWW-Authenticate": "Bearer"},
         )
         

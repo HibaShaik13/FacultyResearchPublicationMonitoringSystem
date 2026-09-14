@@ -30,18 +30,33 @@ class Settings(BaseSettings):
     backend_host: str = "0.0.0.0"
     backend_port: int = 8000
     backend_cors_origins: List[str] = Field(
-        default=["http://localhost:5173", "http://localhost:3000"]
+        default=[
+            "http://localhost:5173",
+            "http://localhost:3000",
+            "http://127.0.0.1:5173",
+            "http://127.0.0.1:3000",
+            "https://research-faculty-monitoring-frontend.onrender.com",
+        ]
     )
 
     @field_validator("backend_cors_origins", mode="before")
     @classmethod
     def parse_cors_origins(cls, v):
         if isinstance(v, str):
+            v_str = v.strip()
+            if not v_str:
+                return []
             import json
             try:
-                return json.loads(v)
-            except json.JSONDecodeError:
-                return [origin.strip() for origin in v.split(",")]
+                parsed = json.loads(v_str)
+                if isinstance(parsed, list):
+                    return [str(origin).strip() for origin in parsed if str(origin).strip()]
+                return [str(parsed).strip()]
+            except (json.JSONDecodeError, ValueError):
+                # Comma-separated format
+                return [origin.strip().strip("'\"[]") for origin in v_str.split(",") if origin.strip().strip("'\"[]")]
+        elif isinstance(v, (list, set, tuple)):
+            return [str(origin).strip() for origin in v if str(origin).strip()]
         return v
 
     # --- Database ---
@@ -106,6 +121,13 @@ class Settings(BaseSettings):
     jwt_access_token_expire_minutes: int = 30
     jwt_refresh_token_expire_days: int = 7
 
+    @field_validator("jwt_secret_key")
+    @classmethod
+    def validate_jwt_secret(cls, v: str) -> str:
+        if not v or not v.strip():
+            raise ValueError("JWT_SECRET_KEY must not be empty.")
+        return v
+
     # --- LLM ---
     groq_api_key: str = ""
     groq_model: str = "llama-3.1-70b-versatile"
@@ -140,6 +162,9 @@ class Settings(BaseSettings):
     bootstrap_admin_name: str = "System Administrator"
     bootstrap_faculty_password: str = "faculty123"
     bootstrap_seed_faculty: bool = True
+    bootstrap_seed_publications: bool = True
+    faculty_profiles_csv_path: str = ""
+    faculty_publications_csv_path: str = ""
 
 
 @lru_cache

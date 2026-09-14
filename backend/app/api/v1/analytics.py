@@ -66,10 +66,44 @@ async def dashboard_stats(
         metrics_query = select(FacultyMetricSnapshot).where(FacultyMetricSnapshot.faculty_id == fac_uuid).order_by(FacultyMetricSnapshot.snapshot_date.desc()).limit(1)
         metrics = (await db.execute(metrics_query)).scalars().first()
         
-        total_pubs = metrics.total_publications if metrics else 0
-        total_citations = metrics.total_citations if metrics else 0
-        h_index = metrics.h_index if metrics else 0
-        i10_index = metrics.i10_index if metrics else 0
+        if metrics and metrics.total_publications > 0:
+            total_pubs = metrics.total_publications
+            total_citations = metrics.total_citations
+            h_index = metrics.h_index
+            i10_index = metrics.i10_index
+        else:
+            # Resilient direct calculation from publication-author links
+            direct_pubs_count = (await db.execute(
+                select(func.count(Publication.id))
+                .join(Publication.authors)
+                .where(PublicationAuthor.faculty_id == fac_uuid)
+            )).scalar() or 0
+            
+            direct_cits_count = (await db.execute(
+                select(func.coalesce(func.sum(Publication.citation_count), 0))
+                .join(Publication.authors)
+                .where(PublicationAuthor.faculty_id == fac_uuid)
+            )).scalar() or 0
+
+            cits_res = await db.execute(
+                select(Publication.citation_count)
+                .join(Publication.authors)
+                .where(PublicationAuthor.faculty_id == fac_uuid)
+                .order_by(Publication.citation_count.desc())
+            )
+            citations = [c or 0 for c in cits_res.scalars().all()]
+            h_idx = 0
+            for i, c in enumerate(citations):
+                if c >= i + 1:
+                    h_idx = i + 1
+                else:
+                    break
+            i10_idx = sum(1 for c in citations if c >= 10)
+
+            total_pubs = direct_pubs_count
+            total_citations = direct_cits_count
+            h_index = h_idx
+            i10_index = i10_idx
         
         pending_review = (await db.execute(
             select(func.count(ReviewTask.id)).where(ReviewTask.entity_id == fac_uuid)

@@ -52,7 +52,11 @@ async def test_discovery_agent_new_publications(mock_openalex, mock_crossref, te
     
     mock_session = AsyncMock(spec=AsyncSession)
     
-    # Mock returning profile for first select
+    # Mock returning variants for initial query
+    mock_variants_result = MagicMock()
+    mock_variants_result.all.return_value = [("Vignan University",)]
+
+    # Mock returning profile for select profiles
     mock_profile_result = MagicMock()
     mock_profile_result.scalars.return_value.all.return_value = [test_profile]
     
@@ -60,7 +64,7 @@ async def test_discovery_agent_new_publications(mock_openalex, mock_crossref, te
     mock_empty_result = MagicMock()
     mock_empty_result.scalars.return_value.first.return_value = None
     
-    mock_session.execute.side_effect = [mock_profile_result, mock_empty_result, mock_empty_result]
+    mock_session.execute.side_effect = [mock_variants_result, mock_profile_result, mock_empty_result, mock_empty_result]
     
     agent = PublicationDiscoveryAgent(mock_session)
     stats = await agent.run()
@@ -88,13 +92,16 @@ async def test_discovery_agent_idempotency(mock_openalex, mock_crossref, test_pr
     
     mock_session = AsyncMock(spec=AsyncSession)
     
+    mock_variants_result = MagicMock()
+    mock_variants_result.all.return_value = [("Vignan University",)]
+
     mock_profile_result = MagicMock()
     mock_profile_result.scalars.return_value.all.return_value = [test_profile]
     
     mock_existing_result = MagicMock()
     mock_existing_result.scalars.return_value.first.return_value = PublicationSource()
     
-    mock_session.execute.side_effect = [mock_profile_result, mock_existing_result]
+    mock_session.execute.side_effect = [mock_variants_result, mock_profile_result, mock_existing_result]
     
     agent = PublicationDiscoveryAgent(mock_session)
     stats = await agent.run()

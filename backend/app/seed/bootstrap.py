@@ -245,7 +245,7 @@ async def log_summary(session: AsyncSession):
 async def ensure_baseline_accounts(session: AsyncSession) -> dict:
     """
     Idempotent, transaction-safe startup assurance:
-    1. Ensures FacultyProfile records exist (if 0 exist, seeds from CSV).
+    1. Ensures all FacultyProfile records exist from CSV (skips existing, adds missing).
     2. Ensures Research Admin user exists (creates or activates).
     3. Ensures every FacultyProfile has an active User account with valid password_hash.
     4. Ensures Publication records exist if table is empty.
@@ -254,10 +254,8 @@ async def ensure_baseline_accounts(session: AsyncSession) -> dict:
     """
     settings = get_settings()
     
-    # 1. Profiles
-    fac_count = (await session.execute(select(func.count(FacultyProfile.id)))).scalar() or 0
-    if fac_count == 0 and settings.bootstrap_seed_faculty:
-        logger.info("Startup: No faculty profiles found. Seeding from CSV...")
+    # 1. Profiles (FacultyImporter skips duplicates and only inserts missing profiles)
+    if settings.bootstrap_seed_faculty:
         await seed_faculty_profiles(session)
         
     # 2. Admin User
@@ -307,7 +305,7 @@ async def ensure_baseline_accounts(session: AsyncSession) -> dict:
     await session.commit()
     if users_created > 0:
         logger.info(f"Startup: Provisioned {users_created} missing faculty user accounts.")
-        
+
     # 4. Publications (only if table completely empty)
     pub_count = (await session.execute(select(func.count(Publication.id)))).scalar() or 0
     if pub_count == 0 and settings.bootstrap_seed_publications:

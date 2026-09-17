@@ -61,10 +61,10 @@ async def review_stats(
             stmt = stmt.where(ReviewTask.decision == decision_filter)
             
         if user_faculty_id is not None:
-            # Restrict to user's entities
+            # Restrict strictly to tasks where this faculty is the target/candidate author or entity
             stmt = stmt.where(
                 or_(
-                    ReviewTask.entity_id.in_(faculty_pub_ids) if faculty_pub_ids else False,
+                    ReviewTask.related_entity_id == user_faculty_id,
                     ReviewTask.entity_id == user_faculty_id,
                 )
             )
@@ -103,16 +103,9 @@ async def review_queue(
 ):
     """
     Get review tasks with rich publication metadata, faculty authors, and evidence.
-    Respects RBAC: research admins see all records, faculty see only their own.
+    Respects RBAC: research admins see all records, faculty see only their own actionable tasks.
     """
     user_faculty_id = current_user.faculty_id if current_user.role == "faculty" else None
-    faculty_pub_ids = []
-    if user_faculty_id:
-        auth_stmt = select(PublicationAuthor.publication_id).where(
-            PublicationAuthor.faculty_id == user_faculty_id
-        )
-        auth_res = await db.execute(auth_stmt)
-        faculty_pub_ids = auth_res.scalars().all()
 
     stmt = select(ReviewTask)
 
@@ -128,17 +121,14 @@ async def review_queue(
     if task_type:
         stmt = stmt.where(ReviewTask.task_type == task_type)
 
-    # Faculty data isolation
+    # Faculty data isolation: strictly own actionable tasks
     if user_faculty_id is not None:
-        if faculty_pub_ids:
-            stmt = stmt.where(
-                or_(
-                    ReviewTask.entity_id.in_(faculty_pub_ids),
-                    ReviewTask.entity_id == user_faculty_id,
-                )
+        stmt = stmt.where(
+            or_(
+                ReviewTask.related_entity_id == user_faculty_id,
+                ReviewTask.entity_id == user_faculty_id,
             )
-        else:
-            stmt = stmt.where(ReviewTask.entity_id == user_faculty_id)
+        )
 
     stmt = stmt.order_by(
         desc(ReviewTask.priority == "critical"),
@@ -159,15 +149,12 @@ async def review_queue(
     if task_type:
         count_stmt = count_stmt.where(ReviewTask.task_type == task_type)
     if user_faculty_id is not None:
-        if faculty_pub_ids:
-            count_stmt = count_stmt.where(
-                or_(
-                    ReviewTask.entity_id.in_(faculty_pub_ids),
-                    ReviewTask.entity_id == user_faculty_id,
-                )
+        count_stmt = count_stmt.where(
+            or_(
+                ReviewTask.related_entity_id == user_faculty_id,
+                ReviewTask.entity_id == user_faculty_id,
             )
-        else:
-            count_stmt = count_stmt.where(ReviewTask.entity_id == user_faculty_id)
+        )
     total_count = (await db.execute(count_stmt)).scalar() or 0
 
     # Enrich each task with Publication and Faculty details
@@ -191,7 +178,15 @@ async def review_queue(
             "created_at": task.created_at.isoformat() if task.created_at else None,
             "publication": None,
             "faculty": None,
-            "review_actions_allowed": current_user.role in ["research_admin", "super_admin", "dept_admin"],
+            "review_actions_allowed": (
+                current_user.role in ["research_admin", "super_admin", "dept_admin"] or
+                (
+                    user_faculty_id is not None and (
+                        task.related_entity_id == user_faculty_id or
+                        task.entity_id == user_faculty_id
+                    )
+                )
+            ),
         }
 
         # Check entity
@@ -304,12 +299,17 @@ async def submit_decision(
     if not task:
         raise HTTPException(status_code=404, detail="Review task not found")
 
-    # RBAC check: only admins or assigned staff can decide
+    # RBAC check: only admins or assigned staff or the linked faculty can decide
     is_admin = current_user.role in ["research_admin", "super_admin", "dept_admin"]
-    if not is_admin:
+    is_authorized_faculty = False
+    if current_user.role == "faculty" and current_user.faculty_id:
+        if task.related_entity_id == current_user.faculty_id or task.entity_id == current_user.faculty_id:
+            is_authorized_faculty = True
+
+    if not is_admin and not is_authorized_faculty:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
-            detail="Only authorized research administrators can submit review decisions",
+            detail="Only authorized research administrators or the linked faculty member can submit review decisions for this task",
         )
 
     # Delegate resolution to Agent 11 (HumanReviewAgent)
@@ -336,26 +336,16 @@ async def review_history(
     Get audit history of resolved review decisions with reviewer details.
     """
     user_faculty_id = current_user.faculty_id if current_user.role == "faculty" else None
-    faculty_pub_ids = []
-    if user_faculty_id:
-        auth_stmt = select(PublicationAuthor.publication_id).where(
-            PublicationAuthor.faculty_id == user_faculty_id
-        )
-        auth_res = await db.execute(auth_stmt)
-        faculty_pub_ids = auth_res.scalars().all()
 
     stmt = select(ReviewTask).where(ReviewTask.status == "resolved")
 
     if user_faculty_id is not None:
-        if faculty_pub_ids:
-            stmt = stmt.where(
-                or_(
-                    ReviewTask.entity_id.in_(faculty_pub_ids),
-                    ReviewTask.entity_id == user_faculty_id,
-                )
+        stmt = stmt.where(
+            or_(
+                ReviewTask.entity_id == user_faculty_id,
+                ReviewTask.related_entity_id == user_faculty_id,
             )
-        else:
-            stmt = stmt.where(ReviewTask.entity_id == user_faculty_id)
+        )
 
     stmt = stmt.order_by(desc(ReviewTask.decided_at)).offset(offset).limit(limit)
     result = await db.execute(stmt)

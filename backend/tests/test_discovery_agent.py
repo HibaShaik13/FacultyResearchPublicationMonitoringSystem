@@ -60,11 +60,20 @@ async def test_discovery_agent_new_publications(mock_openalex, mock_crossref, te
     mock_profile_result = MagicMock()
     mock_profile_result.scalars.return_value.all.return_value = [test_profile]
     
-    # Mock returning nothing for existing source checks (2 calls)
+    # Mock returning nothing for existing source/doi/title checks (2 pubs * 3 checks = 6 checks)
     mock_empty_result = MagicMock()
     mock_empty_result.scalars.return_value.first.return_value = None
     
-    mock_session.execute.side_effect = [mock_variants_result, mock_profile_result, mock_empty_result, mock_empty_result]
+    mock_session.execute.side_effect = [
+        mock_variants_result,
+        mock_profile_result,
+        mock_empty_result,
+        mock_empty_result,
+        mock_empty_result,
+        mock_empty_result,
+        mock_empty_result,
+        mock_empty_result
+    ]
     
     agent = PublicationDiscoveryAgent(mock_session)
     stats = await agent.run()

@@ -140,10 +140,12 @@ class Settings(BaseSettings):
     orcid_client_secret: str = ""
 
     # --- Optional Enterprise APIs ---
+    ieee_api_key: str = ""
     scopus_api_key: str = ""
     scopus_inst_token: str = ""
     wos_api_key: str = ""
     google_scholar_serpapi_key: str = ""
+    vidwan_api_key: str = ""
 
     # --- Sync Schedule ---
     sync_full_discovery: str = "0 2 * * 0"

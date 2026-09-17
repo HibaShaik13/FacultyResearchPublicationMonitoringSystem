@@ -1,0 +1,340 @@
+{
+  "3b04b44a-1add-48d5-a7bf-93c85164bb78": {
+    "profile": {
+      "id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+      "raw_name": "Dr Prashant Upadhyay",
+      "normalized_name": "prashant upadhyay",
+      "title_prefix": "Dr",
+      "first_name": "Prashant",
+      "last_name": "Upadhyay",
+      "department": "CSE",
+      "designation": "Associate Professor",
+      "institutional_email": "drpu_cse@vignan.ac.in",
+      "phone": "9805406546",
+      "research_interests": [
+        "Digital Image Processing",
+        "VLSI and Embedded Systems"
+      ],
+      "education": {
+        "raw": "PhD, NIT Durgapur | ME, NITTTR Chandigarh | BE, Dr B.R. Ambedkar University"
+      },
+      "academic_experience": "Assistant Professor at Maharishi Markandeshwar University, Solan Himachal Pradesh | 2010 June to 2015 March | Assistant Professor at IEC University, Solan Himachal Pradesh | 2015 March to 2017 July | Sr. Assistant Professor at Madanpalle Institute of Technology and Science, Madanapalle, Andhra Pradesh | 2018 October to 2023 May | Assistant Professor (Selection Grade) at Vignan's Foundation for Science, Technology & Research, Guntur, Andhra Pradesh | 2023 May to To date not selected",
+      "awards": "",
+      "memberships": "",
+      "teaching_engagements": "IOT | Programming in C | Digital Image Processing",
+      "declared_publication_count": 43,
+      "status": "active",
+      "identifiers": [
+        {
+          "id": "da779b15-5c9d-4d3f-8c7f-d5143c5209b4",
+          "type": "openalex",
+          "value": "https://openalex.org/A5077652724",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)"
+        }
+      ],
+      "name_variants": [
+        {
+          "variant": "upadhyay p",
+          "source": "csv_parse",
+          "confirmed": true
+        },
+        {
+          "variant": "upadhyay prashant",
+          "source": "csv_parse",
+          "confirmed": true
+        },
+        {
+          "variant": "prashant upadhyay",
+          "source": "csv_parse",
+          "confirmed": true
+        },
+        {
+          "variant": "p upadhyay",
+          "source": "csv_parse",
+          "confirmed": true
+        }
+      ],
+      "metric_snapshots": [
+        {
+          "h_index": 0,
+          "i10_index": 0,
+          "total_citations": 0,
+          "total_publications": 43,
+          "snapshot_date": "2026-09-14"
+        },
+        {
+          "h_index": 27,
+          "i10_index": 43,
+          "total_citations": 19531,
+          "total_publications": 127,
+          "snapshot_date": "2026-09-17"
+        }
+      ]
+    },
+    "dashboard": {
+      "total_faculty": 1,
+      "total_publications": 127,
+      "verified_publications": 84,
+      "pending_review": 2,
+      "flagged_records": 0,
+      "total_citations": 19531,
+      "h_index": 27,
+      "i10_index": 43
+    },
+    "publications_total": 127,
+    "sample_publications": [
+      {
+        "id": "d5ea25f6-bdd9-46d6-86a9-5421b88d1388",
+        "title": "A Hybrid Attention-Based Meta-Feature Learning DL-ML Framework for Robust Spatiotemporal Traffic Flow Forecasting",
+        "doi": "10.1109/icici68773.2026.11580883",
+        "year": 2026,
+        "journal_name": "2026 4th International Conference on Inventive Computing and Informatics (ICICI)",
+        "conference_name": null,
+        "publisher": "IEEE",
+        "publication_type": "journal-article",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          }
+        ],
+        "source_count": 2
+      },
+      {
+        "id": "0f832df3-2584-4f61-833f-d79be4e5d7e7",
+        "title": "A novel characteristic postural sign in alcoholic minor head injury patients \u2013 perspective from a peripheral tertiary trauma center",
+        "doi": "10.54646/bijnn.2026.32",
+        "year": 2026,
+        "journal_name": null,
+        "conference_name": null,
+        "publisher": null,
+        "publication_type": "other",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          }
+        ],
+        "source_count": 1
+      },
+      {
+        "id": "6022b064-d6cc-4ce9-b345-0dd968c6cfcf",
+        "title": "Assessment and mitigation of carbon footprint at the UPES, Dehradun, India",
+        "doi": "10.1007/s10751-026-02466-1",
+        "year": 2026,
+        "journal_name": null,
+        "conference_name": null,
+        "publisher": null,
+        "publication_type": "other",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          },
+          {
+            "name": "D. Dey",
+            "faculty_id": "bceec20d-dfad-46c3-94db-f1747ed4ac19",
+            "confidence": 0.8
+          }
+        ],
+        "source_count": 1
+      },
+      {
+        "id": "91f955e8-ecf8-46b3-aa4a-d8b4dc888953",
+        "title": "Computed tomography-based analysis of dose distribution to pelvic lymph nodal stations by intracavitary brachytherapy in radical treatment of cervical carcinoma - an institutional prospective observational study",
+        "doi": "10.25259/sajc_55_2025",
+        "year": 2026,
+        "journal_name": null,
+        "conference_name": null,
+        "publisher": null,
+        "publication_type": "other",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          }
+        ],
+        "source_count": 1
+      },
+      {
+        "id": "00ea9da4-336a-4b88-94f7-deef9175da27",
+        "title": "Development of Cefuroxime axetil-loaded lipid nanoparticles for superior antimicrobial and antibiofilm Efficacy",
+        "doi": "10.69580/ijppr.17.1.2026.99-122",
+        "year": 2026,
+        "journal_name": null,
+        "conference_name": null,
+        "publisher": null,
+        "publication_type": "other",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          }
+        ],
+        "source_count": 1
+      },
+      {
+        "id": "c4fd6da6-a58f-47ee-9e1f-9cf8632d0ea1",
+        "title": "Development of Clarithromycin loaded lipid nanoparticles for effective biofilm infection management",
+        "doi": "10.25258/ijddt.16.45s.43",
+        "year": 2026,
+        "journal_name": null,
+        "conference_name": null,
+        "publisher": null,
+        "publication_type": "other",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          }
+        ],
+        "source_count": 1
+      },
+      {
+        "id": "2f4b18f6-9ba1-4fc0-8705-a5983671bc80",
+        "title": "Development of Lactuca sativa Extract Transdermal Patches Using Carboxymethylated Locust Bean Gum",
+        "doi": "10.2174/0115734072440795260417065728",
+        "year": 2026,
+        "journal_name": null,
+        "conference_name": null,
+        "publisher": null,
+        "publication_type": "other",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          }
+        ],
+        "source_count": 1
+      },
+      {
+        "id": "aa3857d2-cbe4-4ea4-8aed-2d7b1eb59d5d",
+        "title": "Formulation and Characterization of Rapidly Disintegrating Linezolid Tablets for Enhanced Oral Delivery",
+        "doi": "10.1007/s12247-026-10721-9",
+        "year": 2026,
+        "journal_name": null,
+        "conference_name": null,
+        "publisher": null,
+        "publication_type": "other",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          },
+          {
+            "name": "K. Anjali",
+            "faculty_id": "e1ef7798-8612-4c8f-9152-706ff4a3b3a0",
+            "confidence": 0.8
+          }
+        ],
+        "source_count": 1
+      },
+      {
+        "id": "a13375e9-04ca-4f41-ae79-7912d3fd309d",
+        "title": "Formulation And In Vitro And In Vivo Evaluation Of LigandFunctionalized Liposomes For Targeted Cancer Therapy",
+        "doi": "10.25258/ijddt.16.11s.35",
+        "year": 2026,
+        "journal_name": null,
+        "conference_name": null,
+        "publisher": null,
+        "publication_type": "other",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          }
+        ],
+        "source_count": 1
+      },
+      {
+        "id": "b1734e9b-0a66-4677-9b0a-a7e753b2e462",
+        "title": "Hybrid ML and DL Approach for Plant Leaf Disease Detection",
+        "doi": "10.1109/iccmc69250.2026.11625077",
+        "year": 2026,
+        "journal_name": null,
+        "conference_name": null,
+        "publisher": null,
+        "publication_type": "other",
+        "verification_status": "verified",
+        "risk_level": "none",
+        "citation_count": 0,
+        "quartile": null,
+        "indexing_status": null,
+        "attribution_confidence": 1.0,
+        "authors": [
+          {
+            "name": "Dr Prashant Upadhyay",
+            "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+            "confidence": 0.95
+          }
+        ],
+        "source_count": 1
+      }
+    ]
+  }
+}

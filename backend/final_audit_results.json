@@ -1,0 +1,198 @@
+{
+  "database_environment": {
+    "url_masked": "",
+    "is_asyncpg": false,
+    "environment": "development",
+    "is_production": false
+  },
+  "attribution_integrity": {
+    "total_publication_authors": 2138,
+    "valid_foreign_keys": 2138,
+    "foreign_key_validity_percent": 100.0
+  },
+  "faculty_profiles": {
+    "Dr Prashant Upadhyay": {
+      "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+      "raw_name": "Dr Prashant Upadhyay",
+      "department": "CSE",
+      "declared_publication_count": 43,
+      "unique_attributed_publication_count": 127,
+      "publication_author_link_count": 127,
+      "total_citations": 19531,
+      "h_index": 27,
+      "i10_index": 43,
+      "citation_sources_used": [
+        "semantic_scholar",
+        "crossref",
+        "openalex"
+      ],
+      "sorted_citations_sample": [
+        4084,
+        3352,
+        3284,
+        2095,
+        1242,
+        1203,
+        892,
+        426,
+        340,
+        334,
+        257,
+        224,
+        172,
+        154,
+        136,
+        131,
+        126,
+        120,
+        120,
+        107
+      ],
+      "latest_snapshot": {
+        "snapshot_date": "2026-09-17",
+        "total_publications": 127,
+        "total_citations": 19531,
+        "h_index": 27,
+        "i10_index": 43
+      }
+    },
+    "Dr M Umadevi": {
+      "faculty_id": "b836df5d-0fbe-4fa0-b977-7b185969f2b8",
+      "raw_name": "Dr M Umadevi",
+      "department": "CSE",
+      "declared_publication_count": 17,
+      "unique_attributed_publication_count": 110,
+      "publication_author_link_count": 110,
+      "total_citations": 36222,
+      "h_index": 35,
+      "i10_index": 49,
+      "citation_sources_used": [
+        "semantic_scholar",
+        "crossref",
+        "openalex"
+      ],
+      "sorted_citations_sample": [
+        5946,
+        4314,
+        4046,
+        3352,
+        3288,
+        3099,
+        2002,
+        1623,
+        1064,
+        872,
+        787,
+        615,
+        561,
+        404,
+        356,
+        345,
+        340,
+        338,
+        303,
+        272
+      ],
+      "latest_snapshot": {
+        "snapshot_date": "2026-09-17",
+        "total_publications": 110,
+        "total_citations": 36222,
+        "h_index": 35,
+        "i10_index": 49
+      }
+    },
+    "s n tirumala rao": {
+      "found": false
+    }
+  },
+  "api_publications_stats": {
+    "status_code": 200,
+    "data": {
+      "total_publications": 1422,
+      "verified": 1220,
+      "pending_review": 200,
+      "pending": 2,
+      "with_doi": 1222
+    }
+  },
+  "api_discovery_status": {
+    "status_code": 401,
+    "system_health": null
+  },
+  "api_discovery_runs": {
+    "status_code": 401,
+    "total_runs": 0
+  },
+  "api_faculty_profile": {
+    "status_code": 200,
+    "name": "Dr Prashant Upadhyay",
+    "snapshots_count": 2
+  },
+  "api_analytics_dashboard": {
+    "status_code": 200,
+    "metrics": {
+      "total_faculty": 1,
+      "total_publications": 127,
+      "verified_publications": 84,
+      "pending_review": 2,
+      "flagged_records": 0,
+      "total_citations": 19531,
+      "h_index": 27,
+      "i10_index": 43
+    }
+  },
+  "api_faculty_publications": {
+    "status_code": 200,
+    "total": 127
+  },
+  "api_discovery_trigger": {
+    "status_code": 401,
+    "data": {
+      "detail": "Not authenticated"
+    }
+  },
+  "scheduler_configuration": {
+    "status": {
+      "running": true,
+      "jobs": [
+        {
+          "id": "alert_generation",
+          "name": "_run_alert_generation",
+          "next_run_time": "2026-09-18T05:00:00+05:30",
+          "trigger": "cron[month='*', day='*', day_of_week='*', hour='5', minute='0']"
+        },
+        {
+          "id": "full_discovery_sync",
+          "name": "_run_full_discovery",
+          "next_run_time": "2026-09-21T02:00:00+05:30",
+          "trigger": "cron[month='*', day='*', day_of_week='0', hour='2', minute='0']"
+        },
+        {
+          "id": "citation_refresh",
+          "name": "_run_citation_refresh",
+          "next_run_time": "2026-09-24T03:00:00+05:30",
+          "trigger": "cron[month='*', day='*', day_of_week='3', hour='3', minute='0']"
+        },
+        {
+          "id": "metrics_compute",
+          "name": "_run_metrics_compute",
+          "next_run_time": "2026-09-24T04:00:00+05:30",
+          "trigger": "cron[month='*', day='*', day_of_week='3', hour='4', minute='0']"
+        },
+        {
+          "id": "report_generation",
+          "name": "_run_report_generation",
+          "next_run_time": "2026-10-01T06:00:00+05:30",
+          "trigger": "cron[month='*', day='1', day_of_week='*', hour='6', minute='0']"
+        }
+      ]
+    },
+    "cron_settings": {
+      "sync_full_discovery": "0 2 * * 0",
+      "sync_citation_refresh": "0 3 * * 3",
+      "sync_metrics_compute": "0 4 * * 3",
+      "sync_alert_generation": "0 5 * * *",
+      "sync_report_generation": "0 6 1 * *"
+    }
+  }
+}

@@ -1,0 +1,407 @@
+[
+  {
+    "faculty_id": "30a62a71-57f0-4a9d-be69-2e10af13981d",
+    "name": "Dr Bhimavarapu Krishna Reddy",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5137388384"
+      ]
+    ],
+    "current_attributed": 149,
+    "high_conf": 101,
+    "med_conf": 1,
+    "likely_wrong": 47,
+    "current_citations": 17452,
+    "high_confidence_citations": 13466
+  },
+  {
+    "faculty_id": "bceec20d-dfad-46c3-94db-f1747ed4ac19",
+    "name": "Dr D. Yakobu",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5085591164"
+      ]
+    ],
+    "current_attributed": 36,
+    "high_conf": 25,
+    "med_conf": 1,
+    "likely_wrong": 10,
+    "current_citations": 2709,
+    "high_confidence_citations": 574
+  },
+  {
+    "faculty_id": "8933ad1b-66ce-4976-a882-c519a367ca00",
+    "name": "Dr G Veerabhadra Chary",
+    "dept": "CSE",
+    "identifiers": [],
+    "current_attributed": 68,
+    "high_conf": 63,
+    "med_conf": 0,
+    "likely_wrong": 5,
+    "current_citations": 8795,
+    "high_confidence_citations": 8752
+  },
+  {
+    "faculty_id": "e1ef7798-8612-4c8f-9152-706ff4a3b3a0",
+    "name": "Dr K Rachananjali",
+    "dept": "EEE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5010433677"
+      ]
+    ],
+    "current_attributed": 66,
+    "high_conf": 52,
+    "med_conf": 0,
+    "likely_wrong": 14,
+    "current_citations": 217,
+    "high_confidence_citations": 59
+  },
+  {
+    "faculty_id": "2476f63f-69ff-4ba9-b1d4-7cb3436d6ba2",
+    "name": "Dr K.V. KRISHNA KISHORE",
+    "dept": "Unknown",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5146718279"
+      ]
+    ],
+    "current_attributed": 170,
+    "high_conf": 119,
+    "med_conf": 25,
+    "likely_wrong": 26,
+    "current_citations": 5924,
+    "high_confidence_citations": 5485
+  },
+  {
+    "faculty_id": "ce6367ac-c0e7-43f0-8115-e011c7511b08",
+    "name": "Dr Keerthi G",
+    "dept": "Unknown",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5113871666"
+      ]
+    ],
+    "current_attributed": 454,
+    "high_conf": 93,
+    "med_conf": 354,
+    "likely_wrong": 7,
+    "current_citations": 67268,
+    "high_confidence_citations": 19116
+  },
+  {
+    "faculty_id": "b836df5d-0fbe-4fa0-b977-7b185969f2b8",
+    "name": "Dr M Umadevi",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5003901187"
+      ]
+    ],
+    "current_attributed": 110,
+    "high_conf": 98,
+    "med_conf": 0,
+    "likely_wrong": 12,
+    "current_citations": 36222,
+    "high_confidence_citations": 35977
+  },
+  {
+    "faculty_id": "311f2b4f-f0ef-46c2-8839-048fa4f8f205",
+    "name": "Dr MD OQAIL AHMAD",
+    "dept": "Unknown",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5011106823"
+      ]
+    ],
+    "current_attributed": 73,
+    "high_conf": 71,
+    "med_conf": 0,
+    "likely_wrong": 2,
+    "current_citations": 3597,
+    "high_confidence_citations": 1500
+  },
+  {
+    "faculty_id": "e7399ee0-758c-453b-8a96-329e3dc2cc96",
+    "name": "Dr P. Siva Prasad",
+    "dept": "CSE",
+    "identifiers": [],
+    "current_attributed": 90,
+    "high_conf": 82,
+    "med_conf": 0,
+    "likely_wrong": 8,
+    "current_citations": 913,
+    "high_confidence_citations": 369
+  },
+  {
+    "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+    "name": "Dr Prashant Upadhyay",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5077652724"
+      ]
+    ],
+    "current_attributed": 128,
+    "high_conf": 117,
+    "med_conf": 6,
+    "likely_wrong": 5,
+    "current_citations": 19532,
+    "high_confidence_citations": 10641
+  },
+  {
+    "faculty_id": "c8fa8f15-e91e-4afb-b81a-03eb247f08ad",
+    "name": "Dr SATISH KUMAR SATTI",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5014580670"
+      ]
+    ],
+    "current_attributed": 80,
+    "high_conf": 43,
+    "med_conf": 0,
+    "likely_wrong": 37,
+    "current_citations": 781,
+    "high_confidence_citations": 667
+  },
+  {
+    "faculty_id": "754179a9-ceef-4a60-8a9c-94e31d2fe1b8",
+    "name": "Dr Venkatrama Phani Kumar S",
+    "dept": "Unknown",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5114220386"
+      ]
+    ],
+    "current_attributed": 150,
+    "high_conf": 106,
+    "med_conf": 0,
+    "likely_wrong": 44,
+    "current_citations": 6945,
+    "high_confidence_citations": 324
+  },
+  {
+    "faculty_id": "96780b82-9c5f-4dd5-8a82-94977f40913b",
+    "name": "Dr VIJAI MEYYAPPAN MOORTHY",
+    "dept": "ACSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5021381742"
+      ]
+    ],
+    "current_attributed": 28,
+    "high_conf": 28,
+    "med_conf": 0,
+    "likely_wrong": 0,
+    "current_citations": 114,
+    "high_confidence_citations": 114
+  },
+  {
+    "faculty_id": "b62be645-7f68-4417-99ea-13a7dbbb4a08",
+    "name": "Dr Vijitha Ananthi J.",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5097976090"
+      ]
+    ],
+    "current_attributed": 71,
+    "high_conf": 64,
+    "med_conf": 0,
+    "likely_wrong": 7,
+    "current_citations": 722,
+    "high_confidence_citations": 669
+  },
+  {
+    "faculty_id": "ce4ae9c7-5472-4cb5-81f9-e379fadee464",
+    "name": "Dr Vinoj Jothipandian",
+    "dept": "CSE",
+    "identifiers": [],
+    "current_attributed": 53,
+    "high_conf": 52,
+    "med_conf": 0,
+    "likely_wrong": 1,
+    "current_citations": 1492,
+    "high_confidence_citations": 783
+  },
+  {
+    "faculty_id": "38da9bfc-3352-4450-9383-6bab2866003a",
+    "name": "Mr .Kiran Kumar Kaveti",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5029871706"
+      ]
+    ],
+    "current_attributed": 58,
+    "high_conf": 33,
+    "med_conf": 0,
+    "likely_wrong": 25,
+    "current_citations": 4224,
+    "high_confidence_citations": 61
+  },
+  {
+    "faculty_id": "3da9f460-f47a-4fe0-a6e7-ee5361cb9fd0",
+    "name": "Mr AKHIL BABU EDARA",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5119514358"
+      ]
+    ],
+    "current_attributed": 99,
+    "high_conf": 88,
+    "med_conf": 0,
+    "likely_wrong": 11,
+    "current_citations": 570,
+    "high_confidence_citations": 560
+  },
+  {
+    "faculty_id": "917ea8af-0f1c-4e60-818e-9606639ca2f0",
+    "name": "Mr Dega Bala Kotaiah",
+    "dept": "CSE",
+    "identifiers": [],
+    "current_attributed": 45,
+    "high_conf": 40,
+    "med_conf": 0,
+    "likely_wrong": 5,
+    "current_citations": 104,
+    "high_confidence_citations": 104
+  },
+  {
+    "faculty_id": "e25a7264-6bb1-4f39-ba8f-b4a6c490ec72",
+    "name": "Mr Dehtaj Shaik",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5117364053"
+      ]
+    ],
+    "current_attributed": 125,
+    "high_conf": 88,
+    "med_conf": 31,
+    "likely_wrong": 6,
+    "current_citations": 8106,
+    "high_confidence_citations": 8028
+  },
+  {
+    "faculty_id": "b59c7d20-ac31-438b-bd7d-c1fefeba8b4c",
+    "name": "Mr Kiran Kumar Raja Pagidipalli",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5123502120"
+      ]
+    ],
+    "current_attributed": 13,
+    "high_conf": 9,
+    "med_conf": 0,
+    "likely_wrong": 4,
+    "current_citations": 86,
+    "high_confidence_citations": 13
+  },
+  {
+    "faculty_id": "b921b279-b967-4270-a59f-468e5f8fc456",
+    "name": "Mr Mihir Barman",
+    "dept": "MECH",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5101516457"
+      ]
+    ],
+    "current_attributed": 83,
+    "high_conf": 73,
+    "med_conf": 3,
+    "likely_wrong": 7,
+    "current_citations": 5466,
+    "high_confidence_citations": 5080
+  },
+  {
+    "faculty_id": "c3eedd47-0d14-44e0-a35f-c8406cc4859a",
+    "name": "Mr MIHIR BHATT",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5074684306"
+      ]
+    ],
+    "current_attributed": 35,
+    "high_conf": 28,
+    "med_conf": 7,
+    "likely_wrong": 0,
+    "current_citations": 4441,
+    "high_confidence_citations": 1073
+  },
+  {
+    "faculty_id": "6a3e4004-cebb-4b44-82ff-3601213bfd10",
+    "name": "Mr VENKATA RAJULU PILLI",
+    "dept": "Unknown",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5116836693"
+      ]
+    ],
+    "current_attributed": 91,
+    "high_conf": 81,
+    "med_conf": 0,
+    "likely_wrong": 10,
+    "current_citations": 1186,
+    "high_confidence_citations": 684
+  },
+  {
+    "faculty_id": "8ea42715-dc59-4f95-ab2b-71b10d122d56",
+    "name": "Mr Vishal Jaiswal",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5039879207"
+      ]
+    ],
+    "current_attributed": 33,
+    "high_conf": 26,
+    "med_conf": 0,
+    "likely_wrong": 7,
+    "current_citations": 2582,
+    "high_confidence_citations": 2394
+  },
+  {
+    "faculty_id": "59a40f76-3567-4ce1-9766-ea1648ca0dbb",
+    "name": "Ms Bhimavarapu. Jyothika",
+    "dept": "CSE",
+    "identifiers": [
+      [
+        "openalex",
+        "https://openalex.org/A5092713951"
+      ]
+    ],
+    "current_attributed": 7,
+    "high_conf": 4,
+    "med_conf": 0,
+    "likely_wrong": 3,
+    "current_citations": 6,
+    "high_confidence_citations": 0
+  }
+]

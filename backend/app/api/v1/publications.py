@@ -70,6 +70,7 @@ async def list_publications(
                 "id": str(p.id),
                 "title": p.title,
                 "doi": p.doi,
+                "source_url": next((s.source_url for s in p.sources if s.source_url), None),
                 "year": p.year,
                 "journal_name": p.journal_name,
                 "conference_name": p.conference_name,
@@ -89,6 +90,14 @@ async def list_publications(
                     }
                     for a in p.authors
                 ],
+                "sources": [
+                    {
+                        "source_system": s.source_system,
+                        "source_url": s.source_url,
+                        "source_id": s.source_id,
+                    }
+                    for s in p.sources
+                ],
                 "source_count": len(p.sources),
             }
             for p in publications
@@ -99,32 +108,32 @@ async def list_publications(
 @router.get("/stats")
 async def publication_stats(db: AsyncSession = Depends(get_db)):
     """Get summary statistics for publications."""
-    total = (await db.execute(select(func.count(Publication.id)))).scalar()
+    total = (await db.execute(select(func.count(Publication.id)))).scalar() or 0
     verified = (
         await db.execute(
             select(func.count(Publication.id)).where(
-                Publication.verification_status.in_(["auto_verified", "human_verified"])
+                Publication.verification_status.in_(["verified", "auto_verified", "human_verified", "partially_verified"])
             )
         )
-    ).scalar()
+    ).scalar() or 0
     pending_review = (
         await db.execute(
             select(func.count(Publication.id)).where(
-                Publication.verification_status == "review_required"
+                Publication.verification_status.in_(["review_required", "needs_review"])
             )
         )
-    ).scalar()
+    ).scalar() or 0
     with_doi = (
         await db.execute(
             select(func.count(Publication.id)).where(Publication.doi.isnot(None))
         )
-    ).scalar()
+    ).scalar() or 0
 
     return {
         "total_publications": total,
         "verified": verified,
         "pending_review": pending_review,
-        "pending": total - (verified or 0) - (pending_review or 0),
+        "pending": max(0, total - verified - pending_review),
         "with_doi": with_doi,
     }
 

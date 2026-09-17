@@ -174,7 +174,7 @@ class PipelineOrchestrator:
             logger.error(f"Error in Reporting Agent: {e}")
 
         # Finalize SyncRun
-        sync_run.status = "completed" if total_errors == 0 else "completed_with_errors"
+        sync_run.status = "completed" if total_errors == 0 else "partial"
         sync_run.completed_at = datetime.now(timezone.utc)
         sync_run.publications_discovered = total_discovered
         sync_run.publications_merged = total_merged

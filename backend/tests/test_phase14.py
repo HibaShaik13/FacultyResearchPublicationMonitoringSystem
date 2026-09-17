@@ -56,6 +56,12 @@ async def test_pipeline_orchestrator_status():
 async def test_pipeline_orchestrator_execution_flow():
     """Test running full pipeline synchronization cycle."""
     mock_session = AsyncMock(spec=AsyncSession)
+    mock_session.add = MagicMock()
+    mock_exec_res = MagicMock()
+    mock_exec_res.scalars.return_value.first.return_value = None
+    mock_exec_res.scalars.return_value.all.return_value = []
+    mock_exec_res.scalar.return_value = 0
+    mock_session.execute.return_value = mock_exec_res
     user_id = uuid.uuid4()
 
     orchestrator = PipelineOrchestrator(mock_session)

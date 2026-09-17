@@ -1,16 +1,56 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+import api from '../services/api';
 import { dashboardService } from '../services/dashboard';
 import type { DashboardStats, AgentStatus } from '../services/dashboard';
-import { ShieldCheck, AlertTriangle, BookOpen, BarChart3, Clock, CheckCircle2, TrendingUp, Activity } from 'lucide-react';
+import { 
+  ShieldCheck, 
+  AlertTriangle, 
+  BookOpen, 
+  BarChart3, 
+  Clock, 
+  CheckCircle2, 
+  TrendingUp, 
+  Activity, 
+  ShieldAlert, 
+  LogIn, 
+  RefreshCw, 
+  ArrowRight 
+} from 'lucide-react';
 import { cleanServiceName } from '../utils/formatters';
 
 export default function Dashboard() {
+  const navigate = useNavigate();
   const { user } = useAuth();
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [agents, setAgents] = useState<AgentStatus[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+
+  // Queue specific state for robust error handling and sync with /verification
+  const [queueLoading, setQueueLoading] = useState(true);
+  const [queueStats, setQueueStats] = useState<{ pending: number } | null>(null);
+  const [queueError, setQueueError] = useState<'auth' | 'forbidden' | 'error' | null>(null);
+
+  const fetchQueueStats = async () => {
+    setQueueLoading(true);
+    setQueueError(null);
+    try {
+      const res = await api.get('/api/v1/review/stats');
+      setQueueStats({ pending: res.data?.pending ?? 0 });
+    } catch (err: any) {
+      if (err?.response?.status === 401) {
+        setQueueError('auth');
+      } else if (err?.response?.status === 403) {
+        setQueueError('forbidden');
+      } else {
+        setQueueError('error');
+      }
+    } finally {
+      setQueueLoading(false);
+    }
+  };
 
   useEffect(() => {
     let isMounted = true;
@@ -28,17 +68,7 @@ export default function Dashboard() {
         if (statsResult.status === 'fulfilled' && statsResult.value) {
           setStats(statsResult.value);
         } else {
-          // Provide sensible default stats if server call had transient issue
-          setStats({
-            total_faculty: 1,
-            total_publications: 0,
-            verified_publications: 0,
-            pending_review: 0,
-            flagged_records: 0,
-            total_citations: 0,
-            h_index: 0,
-            i10_index: 0
-          });
+          setError('Unable to load research metrics from server.');
         }
 
         if (agentsResult.status === 'fulfilled' && agentsResult.value?.agents) {
@@ -58,12 +88,15 @@ export default function Dashboard() {
     };
     
     fetchDashboard();
+    fetchQueueStats();
     return () => { isMounted = false; };
   }, [user]);
 
   const currentDate = new Date().toLocaleDateString('en-US', {
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
   });
+
+  const pendingCount = queueStats?.pending ?? stats?.pending_review ?? 0;
 
   if (loading) {
     return (
@@ -145,7 +178,7 @@ export default function Dashboard() {
             />
             <KpiCard 
               title="Verification Queue" 
-              value={stats?.pending_review ?? 'Data unavailable'} 
+              value={pendingCount} 
               icon={<Clock className="w-6 h-6 text-amber-400" />} 
             />
           </>
@@ -180,20 +213,78 @@ export default function Dashboard() {
         {/* Verification Queue & System Status */}
         <div className="space-y-8">
           <div className="stat-card rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-gray-900 mb-4">Verification Queue</h3>
-            {stats?.pending_review ? (
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-bold text-gray-900">
+                {user?.role === 'faculty' ? 'Faculty Attribution Queue' : 'Verification Queue'}
+              </h3>
+              {pendingCount > 0 && !queueError && (
+                <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200">
+                  {user?.role === 'faculty' ? `${pendingCount} Attribution Pending` : `${pendingCount} Pending`}
+                </span>
+              )}
+            </div>
+
+            {queueLoading ? (
+              <div className="p-6 rounded-xl bg-gray-50 border border-gray-100 animate-pulse text-center">
+                <Clock className="w-8 h-8 text-gray-300 mx-auto mb-2 animate-spin" />
+                <p className="text-xs text-gray-400">Checking verification queue...</p>
+              </div>
+            ) : queueError === 'auth' ? (
               <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-center">
+                <ShieldAlert className="w-8 h-8 text-amber-600 mx-auto mb-2" />
+                <p className="text-sm font-semibold text-amber-900 mb-1">Session Expired</p>
+                <p className="text-xs text-amber-700 mb-3">Your session has expired. Please log in again.</p>
+                <button 
+                  onClick={() => navigate('/login')}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-amber-600 hover:bg-amber-700 text-white rounded-lg text-xs font-semibold transition-colors shadow-xs"
+                >
+                  <LogIn className="w-3.5 h-3.5" />
+                  Sign In Again
+                </button>
+              </div>
+            ) : queueError === 'forbidden' ? (
+              <div className="p-4 rounded-xl bg-red-50 border border-red-200 text-center">
+                <ShieldAlert className="w-8 h-8 text-red-600 mx-auto mb-2" />
+                <p className="text-sm font-semibold text-red-900 mb-1">Access Restricted</p>
+                <p className="text-xs text-red-700">You are not authorized to view the verification queue.</p>
+              </div>
+            ) : queueError === 'error' ? (
+              <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center">
+                <AlertTriangle className="w-8 h-8 text-gray-500 mx-auto mb-2" />
+                <p className="text-sm font-semibold text-gray-800 mb-1">Queue Unavailable</p>
+                <p className="text-xs text-gray-600 mb-3">Unable to load verification queue.</p>
+                <button 
+                  onClick={fetchQueueStats}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray-700 hover:bg-gray-800 text-white rounded-lg text-xs font-semibold transition-colors shadow-xs"
+                >
+                  <RefreshCw className="w-3.5 h-3.5" />
+                  Retry
+                </button>
+              </div>
+            ) : pendingCount > 0 ? (
+              <div className="p-5 rounded-xl bg-amber-50/80 border border-amber-200/80 text-center">
                 <AlertTriangle className="w-8 h-8 text-amber-500 mx-auto mb-2" />
-                <p className="text-2xl font-bold text-amber-900 mb-1">{stats.pending_review}</p>
-                <p className="text-sm text-amber-700 mb-4 font-medium">Items pending manual review</p>
-                <button className="w-full py-2 bg-amber-100 hover:bg-amber-200 text-amber-800 rounded-lg text-sm font-semibold transition-colors border border-amber-200">
-                  View Queue
+                <p className="text-2xl font-extrabold text-amber-950 mb-1">
+                  {user?.role === 'faculty' ? `${pendingCount} Attribution Reviews Pending` : `${pendingCount} Pending Reviews`}
+                </p>
+                <p className="text-xs text-amber-800/80 mb-4 font-medium">
+                  {user?.role === 'faculty' 
+                    ? 'These publications have verified bibliographic metadata but require faculty confirmation of authorship.'
+                    : 'Institutional review tasks pending administrator action.'}
+                </p>
+                <button 
+                  onClick={() => navigate('/verification')}
+                  className="w-full py-2.5 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-sm font-bold transition-all shadow-sm shadow-amber-600/20 flex items-center justify-center gap-2 group cursor-pointer"
+                >
+                  <span>Review Queue</span>
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                 </button>
               </div>
             ) : (
               <div className="p-8 text-center text-gray-400">
-                <CheckCircle2 className="w-12 h-12 mx-auto mb-2 opacity-50" />
-                <p>No items in verification queue</p>
+                <CheckCircle2 className="w-12 h-12 mx-auto mb-2 text-emerald-500/80" />
+                <p className="text-gray-700 font-medium text-sm">No items in verification queue</p>
+                <p className="text-xs text-gray-400 mt-1">All research records are verified</p>
               </div>
             )}
           </div>

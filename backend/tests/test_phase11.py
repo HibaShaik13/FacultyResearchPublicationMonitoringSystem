@@ -20,6 +20,7 @@ from app.database import get_db
 @pytest.mark.asyncio
 async def test_human_review_agent_task_creation():
     mock_session = AsyncMock()
+    mock_session.add = MagicMock()
     
     # Check idempotency - first call creates, second call returns existing
     mock_res = MagicMock()
@@ -49,6 +50,7 @@ async def test_human_review_agent_task_creation():
 @pytest.mark.asyncio
 async def test_human_review_agent_task_resolution():
     mock_session = AsyncMock()
+    mock_session.add = MagicMock()
     reviewer = User(
         id=uuid.uuid4(),
         email="admin@vignan.ac.in",
@@ -143,6 +145,7 @@ async def test_review_api_endpoints_and_rbac():
     )
 
     mock_db = AsyncMock()
+    mock_db.add = MagicMock()
     
     async def mock_execute(stmt):
         stmt_str = str(stmt).lower()

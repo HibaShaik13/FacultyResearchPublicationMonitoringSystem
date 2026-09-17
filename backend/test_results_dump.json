@@ -1,0 +1,562 @@
+{
+  "stats": {
+    "total_publications": 1421,
+    "verified": 1219,
+    "pending_review": 200,
+    "pending": 2,
+    "with_doi": 1221
+  },
+  "target_faculty": {
+    "profile": {
+      "detail": "Faculty not found"
+    },
+    "dashboard": {
+      "total_faculty": 1,
+      "total_publications": 0,
+      "verified_publications": 0,
+      "pending_review": 0,
+      "flagged_records": 0,
+      "total_citations": 0,
+      "h_index": 0,
+      "i10_index": 0
+    },
+    "publications_total": 0,
+    "sample_publications": []
+  },
+  "other_faculty": [
+    {
+      "name": "Dr Bhimavarapu Krishna Reddy",
+      "id": "30a62a71-57f0-4a9d-be69-2e10af13981d",
+      "profile": {
+        "id": "30a62a71-57f0-4a9d-be69-2e10af13981d",
+        "raw_name": "Dr Bhimavarapu Krishna Reddy",
+        "normalized_name": "bhimavarapu krishna reddy",
+        "title_prefix": "Dr",
+        "first_name": "Bhimavarapu",
+        "last_name": "Krishna Reddy",
+        "department": "CSE",
+        "designation": "Assistant Professor",
+        "institutional_email": "bkr_cse@vignan.ac.in",
+        "phone": "Not Available",
+        "research_interests": [
+          "Next-Generation Communication Networks and Systems"
+        ],
+        "education": {
+          "raw": "National Institute of Technology Silchar | PhD | Manipal University Jaipur | M.Tech | JNTU Kakinada | B.Tech"
+        },
+        "academic_experience": "Vignan's Foundation for Science, Technology & Research, Guntur | 2025 April to 2023 January | National Institute of Technology Silchar, Silchar | 2015 July to 2017 July",
+        "awards": "",
+        "memberships": "",
+        "teaching_engagements": "Computer Networks",
+        "declared_publication_count": 2,
+        "status": "active",
+        "identifiers": [
+          {
+            "id": "704db275-0409-4e35-848e-4c0e535971d5",
+            "type": "openalex",
+            "value": "https://openalex.org/A5137388384",
+            "verified": false,
+            "confidence": 0.7,
+            "verification_source": "Agent 1 (IdentityAgent)"
+          }
+        ],
+        "name_variants": [
+          {
+            "variant": "krishna reddy bhimavarapu",
+            "source": "csv_parse",
+            "confirmed": true
+          },
+          {
+            "variant": "b krishna reddy",
+            "source": "csv_parse",
+            "confirmed": true
+          },
+          {
+            "variant": "krishna reddy b",
+            "source": "csv_parse",
+            "confirmed": true
+          },
+          {
+            "variant": "bhimavarapu krishna reddy",
+            "source": "csv_parse",
+            "confirmed": true
+          }
+        ],
+        "metric_snapshots": [
+          {
+            "h_index": 0,
+            "i10_index": 0,
+            "total_citations": 0,
+            "total_publications": 2,
+            "snapshot_date": "2026-09-14"
+          },
+          {
+            "h_index": 31,
+            "i10_index": 51,
+            "total_citations": 16442,
+            "total_publications": 148,
+            "snapshot_date": "2026-09-17"
+          }
+        ]
+      },
+      "dashboard": {
+        "total_faculty": 1,
+        "total_publications": 148,
+        "verified_publications": 137,
+        "pending_review": 2,
+        "flagged_records": 1,
+        "total_citations": 16442,
+        "h_index": 31,
+        "i10_index": 51
+      },
+      "publications_total": 148,
+      "sample_publications": [
+        {
+          "id": "9bb83f9d-49b8-45f2-badd-790f277ddefa",
+          "title": "AI-based Enterprise Security Monitoring System using Machine Learning",
+          "doi": "10.1109/iccbi68589.2026.11619604",
+          "year": 2026,
+          "journal_name": "2026 5th International Conference on Computer Networks, Big Data and IoT (ICCBI)",
+          "conference_name": null,
+          "publisher": "IEEE",
+          "publication_type": "journal-article",
+          "verification_status": "verified",
+          "risk_level": "none",
+          "citation_count": 0,
+          "quartile": null,
+          "indexing_status": null,
+          "attribution_confidence": 1.0,
+          "authors": [
+            {
+              "name": "Dr Venkatrama Phani Kumar S",
+              "faculty_id": "754179a9-ceef-4a60-8a9c-94e31d2fe1b8",
+              "confidence": 0.95
+            },
+            {
+              "name": "Nagi Reddy.A",
+              "faculty_id": "30a62a71-57f0-4a9d-be69-2e10af13981d",
+              "confidence": 0.9500000000000001
+            },
+            {
+              "name": "Kumar Devapogu",
+              "faculty_id": "ce6367ac-c0e7-43f0-8115-e011c7511b08",
+              "confidence": 1.0
+            }
+          ],
+          "source_count": 1
+        },
+        {
+          "id": "a20f35c4-041b-40ca-8abe-a27a0945bac6",
+          "title": "Automated Resume Evaluation and Optimization Using NLP and Machine Learning",
+          "doi": "10.1109/iciscn67954.2026.11566309",
+          "year": 2026,
+          "journal_name": "2026 2nd International Conference on Intelligent Systems and Computational Networks (ICISCN)",
+          "conference_name": null,
+          "publisher": "IEEE",
+          "publication_type": "journal-article",
+          "verification_status": "verified",
+          "risk_level": "none",
+          "citation_count": 0,
+          "quartile": null,
+          "indexing_status": null,
+          "attribution_confidence": 1.0,
+          "authors": [
+            {
+              "name": "Mr VENKATA RAJULU PILLI",
+              "faculty_id": "6a3e4004-cebb-4b44-82ff-3601213bfd10",
+              "confidence": 0.95
+            },
+            {
+              "name": "Are Vijay Krishna",
+              "faculty_id": "30a62a71-57f0-4a9d-be69-2e10af13981d",
+              "confidence": 0.8375
+            },
+            {
+              "name": "Shaik Sikindar",
+              "faculty_id": "e25a7264-6bb1-4f39-ba8f-b4a6c490ec72",
+              "confidence": 1.0
+            }
+          ],
+          "source_count": 2
+        },
+        {
+          "id": "8eee9a10-688e-4d86-a6e8-0b1ac5c3ffb1",
+          "title": "Design and Implementation of Secure Student Portal Using Cryptographic Security Services",
+          "doi": "10.1109/icict68280.2026.11510853",
+          "year": 2026,
+          "journal_name": "2026 9th International Conference on Inventive Computation Technologies (ICICT)",
+          "conference_name": null,
+          "publisher": "IEEE",
+          "publication_type": "journal-article",
+          "verification_status": "verified",
+          "risk_level": "none",
+          "citation_count": 0,
+          "quartile": null,
+          "indexing_status": null,
+          "attribution_confidence": 1.0,
+          "authors": [
+            {
+              "name": "Dr Bhimavarapu Krishna Reddy",
+              "faculty_id": "30a62a71-57f0-4a9d-be69-2e10af13981d",
+              "confidence": 0.95
+            },
+            {
+              "name": "Dr Vijitha Ananthi J.",
+              "faculty_id": "b62be645-7f68-4417-99ea-13a7dbbb4a08",
+              "confidence": 0.95
+            }
+          ],
+          "source_count": 2
+        }
+      ]
+    },
+    {
+      "name": "Dr D. Yakobu",
+      "id": "bceec20d-dfad-46c3-94db-f1747ed4ac19",
+      "profile": {
+        "id": "bceec20d-dfad-46c3-94db-f1747ed4ac19",
+        "raw_name": "Dr D. Yakobu",
+        "normalized_name": "d. yakobu",
+        "title_prefix": "Dr",
+        "first_name": "D.",
+        "last_name": "Yakobu",
+        "department": "CSE",
+        "designation": "Associate Professor",
+        "institutional_email": "dy_cse@vignan.ac.in",
+        "phone": "9912012626",
+        "research_interests": [
+          "Cloud Computing",
+          "Network Security",
+          "Software Engineering"
+        ],
+        "education": {
+          "raw": "Ph D | VFSTR (Deemed to be University) | M.Tech | Pondicherry Central University"
+        },
+        "academic_experience": "Vignan's Foundation for Science Technology & Research, Guntur | 2011 June to 2023 January",
+        "awards": "Received IBM TGMC-2012 Best Mentor Award by IBM International, Banglore, 2012 | Received Best Teacher Award for the Academic Years 2011-2012 and 2012-2013. | Received Certificate of Appreciation for the best performance in academics for the Year 2019-2020.",
+        "memberships": "",
+        "teaching_engagements": "Design & Analysis of Algorithms | Software Engineering | Cloud Computing | Artificial Intelligence | Software Testing Methodologies | Software Project Management",
+        "declared_publication_count": 16,
+        "status": "active",
+        "identifiers": [
+          {
+            "id": "49d5e059-ada0-47c7-90dc-776e176d8a41",
+            "type": "openalex",
+            "value": "https://openalex.org/A5085591164",
+            "verified": false,
+            "confidence": 0.7,
+            "verification_source": "Agent 1 (IdentityAgent)"
+          }
+        ],
+        "name_variants": [
+          {
+            "variant": "d yakobu",
+            "source": "csv_parse",
+            "confirmed": true
+          },
+          {
+            "variant": "yakobu d",
+            "source": "csv_parse",
+            "confirmed": true
+          },
+          {
+            "variant": "yakobu d.",
+            "source": "csv_parse",
+            "confirmed": true
+          },
+          {
+            "variant": "d. yakobu",
+            "source": "csv_parse",
+            "confirmed": true
+          }
+        ],
+        "metric_snapshots": [
+          {
+            "h_index": 0,
+            "i10_index": 0,
+            "total_citations": 0,
+            "total_publications": 15,
+            "snapshot_date": "2026-09-14"
+          },
+          {
+            "h_index": 10,
+            "i10_index": 10,
+            "total_citations": 2709,
+            "total_publications": 35,
+            "snapshot_date": "2026-09-17"
+          }
+        ]
+      },
+      "dashboard": {
+        "total_faculty": 1,
+        "total_publications": 35,
+        "verified_publications": 28,
+        "pending_review": 2,
+        "flagged_records": 0,
+        "total_citations": 2709,
+        "h_index": 10,
+        "i10_index": 10
+      },
+      "publications_total": 35,
+      "sample_publications": [
+        {
+          "id": "6022b064-d6cc-4ce9-b345-0dd968c6cfcf",
+          "title": "Assessment and mitigation of carbon footprint at the UPES, Dehradun, India",
+          "doi": "10.1007/s10751-026-02466-1",
+          "year": 2026,
+          "journal_name": null,
+          "conference_name": null,
+          "publisher": null,
+          "publication_type": "other",
+          "verification_status": "verified",
+          "risk_level": "none",
+          "citation_count": 0,
+          "quartile": null,
+          "indexing_status": null,
+          "attribution_confidence": 1.0,
+          "authors": [
+            {
+              "name": "Dr Prashant Upadhyay",
+              "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+              "confidence": 0.95
+            },
+            {
+              "name": "D. Dey",
+              "faculty_id": "bceec20d-dfad-46c3-94db-f1747ed4ac19",
+              "confidence": 0.8
+            }
+          ],
+          "source_count": 1
+        },
+        {
+          "id": "a7065e27-d1fd-4912-8929-28ec426f4f37",
+          "title": "Retrosternal Multinodular Goiter With Extensive Mediastinal Extension Requiring Combined Cervical Thyroidectomy and Median Sternotomy: A Case Report",
+          "doi": "10.7759/cureus.108106",
+          "year": 2026,
+          "journal_name": null,
+          "conference_name": null,
+          "publisher": null,
+          "publication_type": "other",
+          "verification_status": "verified",
+          "risk_level": "none",
+          "citation_count": 0,
+          "quartile": null,
+          "indexing_status": null,
+          "attribution_confidence": 1.0,
+          "authors": [
+            {
+              "name": "Dr Vinoj Jothipandian",
+              "faculty_id": "ce4ae9c7-5472-4cb5-81f9-e379fadee464",
+              "confidence": 0.95
+            },
+            {
+              "name": "Akash Rahangan",
+              "faculty_id": "ce6367ac-c0e7-43f0-8115-e011c7511b08",
+              "confidence": 0.88
+            },
+            {
+              "name": "D. S",
+              "faculty_id": "bceec20d-dfad-46c3-94db-f1747ed4ac19",
+              "confidence": 0.8571428571428572
+            }
+          ],
+          "source_count": 1
+        },
+        {
+          "id": "c5be66b7-a98a-47ee-8641-b4bfd132811b",
+          "title": "A Smart Water Leakage Detection System using Internet of Things",
+          "doi": "10.1109/ciacon65473.2025.11189462",
+          "year": 2025,
+          "journal_name": "2025 International Conference on Computing, Intelligence, and Application (CIACON)",
+          "conference_name": null,
+          "publisher": "IEEE",
+          "publication_type": "journal-article",
+          "verification_status": "verified",
+          "risk_level": "none",
+          "citation_count": 0,
+          "quartile": null,
+          "indexing_status": null,
+          "attribution_confidence": 1.0,
+          "authors": [
+            {
+              "name": "Mr Dega Bala Kotaiah",
+              "faculty_id": "917ea8af-0f1c-4e60-818e-9606639ca2f0",
+              "confidence": 0.95
+            },
+            {
+              "name": "G. Santhi",
+              "faculty_id": "c8fa8f15-e91e-4afb-b81a-03eb247f08ad",
+              "confidence": 0.8166666666666668
+            },
+            {
+              "name": "K. Akhila",
+              "faculty_id": "3da9f460-f47a-4fe0-a6e7-ee5361cb9fd0",
+              "confidence": 0.8642857142857143
+            },
+            {
+              "name": "D. Yasaswini",
+              "faculty_id": "bceec20d-dfad-46c3-94db-f1747ed4ac19",
+              "confidence": 0.8642857142857143
+            }
+          ],
+          "source_count": 1
+        }
+      ]
+    },
+    {
+      "name": "Dr G Veerabhadra Chary",
+      "id": "8933ad1b-66ce-4976-a882-c519a367ca00",
+      "profile": {
+        "id": "8933ad1b-66ce-4976-a882-c519a367ca00",
+        "raw_name": "Dr G Veerabhadra Chary",
+        "normalized_name": "g veerabhadra chary",
+        "title_prefix": "Dr",
+        "first_name": "G",
+        "last_name": "Veerabhadra Chary",
+        "department": "CSE",
+        "designation": "Assistant Professor",
+        "institutional_email": "gvb_cse@vignan.ac.in",
+        "phone": "Not Available",
+        "research_interests": [
+          "My research interests focus on enhancing the efficiency and reliability of power systems through various optimization techniques and innovative applications of artificial intelligence and machine learning. The key areas of exploration include:",
+          "1. Optimization of Microgrids",
+          "2. AI/ML Techniques in Power System Optimization",
+          "3.Improving Power System Stability and Security"
+        ],
+        "education": {
+          "raw": "VIGNAN\u2019S FOUNDATIONFORSCIENCE,TECHNOLOGY&RESEARCHVADLAMUDI,GUNTUR,A.P,INDIA-52213 | (PH.D.)INPOWERSYSTEMS"
+        },
+        "academic_experience": "VIGNAN\u2019S FOUNDATION FOR SCIENCE, TECHNOLOGY & RESEARCH., Vadlamudi | 2024 July to 2023 January",
+        "awards": "",
+        "memberships": "",
+        "teaching_engagements": "Conduct quality research in power systems and publish findings in reputed journals | books | or electronic media. | A result oriented teaching proficient in developing course materials | including syllabus | lesson plans and exams. | Keep abreast of developments in the field by reading current literature | talking with colleagues | and participating in professional conferences for improving career.",
+        "declared_publication_count": 5,
+        "status": "active",
+        "identifiers": [],
+        "name_variants": [
+          {
+            "variant": "veerabhadra chary g",
+            "source": "csv_parse",
+            "confirmed": true
+          },
+          {
+            "variant": "g veerabhadra chary",
+            "source": "csv_parse",
+            "confirmed": true
+          }
+        ],
+        "metric_snapshots": [
+          {
+            "h_index": 0,
+            "i10_index": 0,
+            "total_citations": 0,
+            "total_publications": 5,
+            "snapshot_date": "2026-09-14"
+          },
+          {
+            "h_index": 12,
+            "i10_index": 12,
+            "total_citations": 8795,
+            "total_publications": 68,
+            "snapshot_date": "2026-09-17"
+          }
+        ]
+      },
+      "dashboard": {
+        "total_faculty": 1,
+        "total_publications": 68,
+        "verified_publications": 58,
+        "pending_review": 0,
+        "flagged_records": 0,
+        "total_citations": 8795,
+        "h_index": 12,
+        "i10_index": 12
+      },
+      "publications_total": 68,
+      "sample_publications": [
+        {
+          "id": "d8fada7a-7aa5-4536-b310-68cdc57bc4fa",
+          "title": "A Transformer-Oriented Deep Learning Approach for Intelligent Plant Disease Diagnosis",
+          "doi": "10.58482/ijersem.v2i3.44",
+          "year": 2026,
+          "journal_name": null,
+          "conference_name": null,
+          "publisher": null,
+          "publication_type": "other",
+          "verification_status": "verified",
+          "risk_level": "none",
+          "citation_count": 0,
+          "quartile": null,
+          "indexing_status": null,
+          "attribution_confidence": 1.0,
+          "authors": [
+            {
+              "name": "Dr G Veerabhadra Chary",
+              "faculty_id": "8933ad1b-66ce-4976-a882-c519a367ca00",
+              "confidence": 0.95
+            },
+            {
+              "name": "G. Kumar",
+              "faculty_id": "ce6367ac-c0e7-43f0-8115-e011c7511b08",
+              "confidence": 0.88
+            }
+          ],
+          "source_count": 1
+        },
+        {
+          "id": "81279979-a42d-46b4-9490-91107a24f8c8",
+          "title": "AGNN-Driven Modelling of Fraud Propagation Dynamics for Strengthening Cyber-Resilient Financial Networks",
+          "doi": "10.1109/evst69093.2026.11660503",
+          "year": 2026,
+          "journal_name": null,
+          "conference_name": null,
+          "publisher": null,
+          "publication_type": "other",
+          "verification_status": "verified",
+          "risk_level": "none",
+          "citation_count": 0,
+          "quartile": null,
+          "indexing_status": null,
+          "attribution_confidence": 1.0,
+          "authors": [
+            {
+              "name": "Dr G Veerabhadra Chary",
+              "faculty_id": "8933ad1b-66ce-4976-a882-c519a367ca00",
+              "confidence": 0.95
+            },
+            {
+              "name": "G. Akkenapally",
+              "faculty_id": "ce6367ac-c0e7-43f0-8115-e011c7511b08",
+              "confidence": 0.88
+            }
+          ],
+          "source_count": 1
+        },
+        {
+          "id": "9415141d-8fef-406d-8424-f8fea29423c7",
+          "title": "Artificial Intelligence in Optometry and Ophthalmology: Current Applications, Challenges, and Future Perspectives",
+          "doi": "10.25258/ijddt.16.55s.111",
+          "year": 2026,
+          "journal_name": null,
+          "conference_name": null,
+          "publisher": null,
+          "publication_type": "other",
+          "verification_status": "verified",
+          "risk_level": "none",
+          "citation_count": 0,
+          "quartile": null,
+          "indexing_status": null,
+          "attribution_confidence": 1.0,
+          "authors": [
+            {
+              "name": "Dr G Veerabhadra Chary",
+              "faculty_id": "8933ad1b-66ce-4976-a882-c519a367ca00",
+              "confidence": 0.95
+            }
+          ],
+          "source_count": 1
+        }
+      ]
+    }
+  ]
+}

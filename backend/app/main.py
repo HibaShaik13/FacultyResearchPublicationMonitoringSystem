@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import get_settings
 from app.database import close_db
+from app.scheduler import start_scheduler, stop_scheduler
 from app.api.router import api_router
 from app.api.v1 import health
 
@@ -26,9 +27,21 @@ async def lifespan(app: FastAPI):
     )
     logger.info("Application starting: %s (%s)", settings.app_name, settings.app_env)
 
+    # Start background scheduler
+    try:
+        start_scheduler()
+        logger.info("Background research monitoring scheduler started")
+    except Exception as exc:
+        logger.warning("Could not start background scheduler: %s", exc)
+
     yield
 
     # Shutdown
+    try:
+        stop_scheduler()
+    except Exception as exc:
+        logger.warning("Error during scheduler shutdown: %s", exc)
+
     try:
         await close_db()
     except Exception as exc:

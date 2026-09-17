@@ -38,6 +38,7 @@ interface AuthorInfo {
 interface PublicationSourceInfo {
   source_system: string;
   source_id?: string;
+  source_url?: string;
   discovered_at?: string;
 }
 
@@ -45,6 +46,7 @@ interface PublicationDetails {
   id: string;
   title: string;
   doi?: string;
+  source_url?: string;
   year?: number;
   journal_name?: string;
   conference_name?: string;
@@ -59,6 +61,33 @@ interface PublicationDetails {
   authors?: AuthorInfo[];
   sources?: PublicationSourceInfo[];
 }
+
+const getPublicationUrl = (pub?: PublicationDetails, taskEvidence?: any): string | null => {
+  if (!pub) return null;
+  // 1. Existing verified source_url if available
+  if (pub.source_url && typeof pub.source_url === 'string' && pub.source_url.startsWith('http')) {
+    return pub.source_url;
+  }
+  if (pub.sources && Array.isArray(pub.sources)) {
+    const srcWithUrl = pub.sources.find((s: any) => s?.source_url && String(s.source_url).startsWith('http'));
+    if (srcWithUrl?.source_url) return srcWithUrl.source_url;
+  }
+  if (taskEvidence?.source_url && typeof taskEvidence.source_url === 'string' && taskEvidence.source_url.startsWith('http')) {
+    return taskEvidence.source_url;
+  }
+  // 2. Otherwise, if the publication has a DOI, open: https://doi.org/<exact DOI>
+  const rawDoi = pub.doi || taskEvidence?.doi;
+  if (rawDoi && typeof rawDoi === 'string' && rawDoi.trim()) {
+    const cleanDoi = rawDoi.trim();
+    if (cleanDoi.startsWith('http://') || cleanDoi.startsWith('https://')) {
+      return cleanDoi;
+    }
+    const strippedDoi = cleanDoi.replace(/^doi:\s*/i, '').replace(/^https?:\/\/doi\.org\//i, '');
+    return `https://doi.org/${strippedDoi}`;
+  }
+  // 3. If neither source_url nor DOI exists, leave the title without a link
+  return null;
+};
 
 interface ReviewTaskItem {
   id: string;
@@ -139,6 +168,7 @@ export default function VerificationQueue() {
     user_role: 'faculty',
   });
   const [loading, setLoading] = useState(true);
+  const [errorState, setErrorState] = useState<'auth' | 'forbidden' | 'error' | null>(null);
   const [historyLoading, setHistoryLoading] = useState(false);
   const [actionLoading, setActionLoading] = useState(false);
   const [notification, setNotification] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
@@ -158,6 +188,7 @@ export default function VerificationQueue() {
   // Load Queue & Stats
   const loadQueue = async () => {
     setLoading(true);
+    setErrorState(null);
     try {
       const [statsRes, queueRes] = await Promise.all([
         api.get('/api/v1/review/stats'),
@@ -173,8 +204,16 @@ export default function VerificationQueue() {
       setStats(statsRes.data);
       const queueData = Array.isArray(queueRes.data) ? queueRes.data : queueRes.data?.data || [];
       setTasks(queueData);
-    } catch (err) {
+      setErrorState(null);
+    } catch (err: any) {
       console.error('Failed to load review queue', err);
+      if (err.response?.status === 401) {
+        setErrorState('auth');
+      } else if (err.response?.status === 403) {
+        setErrorState('forbidden');
+      } else {
+        setErrorState('error');
+      }
       setTasks([]);
     } finally {
       setLoading(false);
@@ -334,7 +373,7 @@ export default function VerificationQueue() {
           <p className="text-sm text-gray-600 mt-1">
             {isAdmin
               ? 'Manage verification flags, audit unresolved evidence contradictions, and confirm publication attributions.'
-              : 'Review verification status, detected metadata flags, and institutional provenance for your publications.'}
+              : 'These publications have verified bibliographic metadata but require faculty confirmation of authorship.'}
           </p>
         </div>
 
@@ -351,14 +390,26 @@ export default function VerificationQueue() {
         </div>
       </div>
 
+      {/* Information Banner on Metadata vs Attribution */}
+      {!isAdmin && (
+        <div className="p-4 rounded-xl bg-blue-50/80 border border-blue-200/80 text-xs text-blue-900 flex items-start gap-2.5 shadow-xs">
+          <Sparkles className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+          <div className="leading-relaxed">
+            <span className="font-bold">METADATA VERIFIED ≠ FACULTY ATTRIBUTION VERIFIED:</span> The bibliographic metadata (title, DOI, citations, publication venue) for these publications has already been verified by institutional data pipelines. Your confirmation is required specifically to verify faculty authorship and self-attribution.
+          </div>
+        </div>
+      )}
+
       {/* Stats Summary Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="stat-card p-5 bg-white border border-gray-200 rounded-2xl shadow-sm flex items-center justify-between">
           <div>
-            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Pending Review</p>
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              {isAdmin ? 'Pending Review' : 'Faculty Attribution Review'}
+            </p>
             <h3 className="text-2xl font-black text-gray-900 mt-1">{stats.pending}</h3>
             <p className="text-xs text-amber-600 font-medium mt-0.5 flex items-center gap-1">
-              <Clock size={12} /> Awaiting audit
+              <Clock size={12} /> {isAdmin ? 'Awaiting audit' : 'Attribution reviews pending'}
             </p>
           </div>
           <div className="p-3 bg-amber-50 rounded-2xl text-amber-600 border border-amber-100">
@@ -416,7 +467,7 @@ export default function VerificationQueue() {
               : 'border-transparent text-gray-500 hover:text-gray-900'
           }`}
         >
-          <Clock size={16} /> Pending Queue
+          <Clock size={16} /> {isAdmin ? 'Pending Queue' : 'Faculty Attribution Queue'}
           <span className="px-2 py-0.5 text-xs rounded-full bg-blue-100 text-blue-800 font-bold">
             {stats.pending}
           </span>
@@ -486,14 +537,63 @@ export default function VerificationQueue() {
             </div>
           </div>
 
-          {/* Review Tasks List */}
+          {/* Review Tasks List / UI States */}
           {loading ? (
-            <div className="bg-white p-12 rounded-2xl border border-gray-200 text-center space-y-3">
+            <div className="bg-white p-12 rounded-2xl border border-gray-200 text-center space-y-3 shadow-sm">
               <RefreshCw className="animate-spin text-blue-600 mx-auto" size={32} />
-              <p className="text-sm font-medium text-gray-600">Loading pending verification items from database...</p>
+              <p className="text-sm font-semibold text-gray-700">Loading verification queue...</p>
+              <p className="text-xs text-gray-400">Fetching pending review tasks and assessed evidence.</p>
+            </div>
+          ) : errorState === 'auth' ? (
+            <div className="bg-white p-12 rounded-2xl border border-amber-200 text-center space-y-4 shadow-sm">
+              <div className="w-16 h-16 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center mx-auto border border-amber-200">
+                <AlertTriangle size={32} />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-lg font-bold text-gray-900">Your session has expired</h3>
+                <p className="text-sm text-gray-500 max-w-md mx-auto">
+                  Please log in again to access the verification queue and review your publication attributions.
+                </p>
+              </div>
+              <button
+                onClick={() => { window.location.href = '/login'; }}
+                className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-sm transition-colors inline-flex items-center gap-2"
+              >
+                <UserCheck size={15} /> Sign In Again
+              </button>
+            </div>
+          ) : errorState === 'forbidden' ? (
+            <div className="bg-white p-12 rounded-2xl border border-red-200 text-center space-y-4 shadow-sm">
+              <div className="w-16 h-16 bg-red-50 text-red-600 rounded-full flex items-center justify-center mx-auto border border-red-200">
+                <ShieldAlert size={32} />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-lg font-bold text-gray-900">Access Restricted</h3>
+                <p className="text-sm text-gray-500 max-w-md mx-auto">
+                  You are not authorized to view this verification queue.
+                </p>
+              </div>
+            </div>
+          ) : errorState === 'error' ? (
+            <div className="bg-white p-12 rounded-2xl border border-gray-200 text-center space-y-4 shadow-sm">
+              <div className="w-16 h-16 bg-rose-50 text-rose-600 rounded-full flex items-center justify-center mx-auto border border-rose-200">
+                <AlertTriangle size={32} />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-lg font-bold text-gray-900">Unable to load verification queue</h3>
+                <p className="text-sm text-gray-500 max-w-md mx-auto">
+                  A network or server error occurred while retrieving verification tasks. Please try again.
+                </p>
+              </div>
+              <button
+                onClick={loadQueue}
+                className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-sm transition-colors inline-flex items-center gap-2"
+              >
+                <RefreshCw size={15} /> Retry
+              </button>
             </div>
           ) : tasks.length === 0 ? (
-            <div className="bg-white p-12 rounded-2xl border border-gray-200 text-center space-y-4">
+            <div className="bg-white p-12 rounded-2xl border border-gray-200 text-center space-y-4 shadow-sm">
               <div className="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto border border-emerald-100">
                 <CheckCircle2 size={32} />
               </div>
@@ -511,6 +611,8 @@ export default function VerificationQueue() {
                 const facultyAuthors = pub?.authors?.filter((a) => a.faculty) || [];
                 const confidenceScore = task.evidence?.score ?? pub?.metadata_confidence ?? 0;
                 const evidenceChain = task.evidence?.evidence_chain || [];
+                const isAttributionTask = task.task_type === 'attribution_ambiguous';
+                const canAct = task.review_actions_allowed || isAdmin;
 
                 return (
                   <div
@@ -528,7 +630,12 @@ export default function VerificationQueue() {
                         </span>
                         {pub?.verification_status && (
                           <span className={`px-2.5 py-1 rounded-lg text-xs font-semibold border ${getStatusBadgeClass(pub.verification_status)}`}>
-                            STATUS: {pub.verification_status.replace('_', ' ').toUpperCase()}
+                            METADATA: {pub.verification_status.replace('_', ' ').toUpperCase()}
+                          </span>
+                        )}
+                        {isAttributionTask && (
+                          <span className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-300 flex items-center gap-1">
+                            <AlertTriangle size={12} /> ATTRIBUTION: HUMAN REVIEW REQUIRED
                           </span>
                         )}
                         {pub?.risk_level && pub.risk_level !== 'none' && (
@@ -549,9 +656,25 @@ export default function VerificationQueue() {
                       <div className="lg:col-span-2 space-y-3">
                         {pub ? (
                           <>
-                            <h3 className="text-lg font-bold text-gray-900 leading-snug">
-                              {pub.title}
-                            </h3>
+                            {(() => {
+                              const pubUrl = getPublicationUrl(pub, task.evidence);
+                              return pubUrl ? (
+                                <a
+                                  href={pubUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-lg font-bold text-blue-600 hover:text-blue-800 hover:underline leading-snug inline-flex items-center gap-1.5 group"
+                                  title="Open publication in new tab"
+                                >
+                                  <span>{pub.title}</span>
+                                  <ExternalLink size={15} className="shrink-0 text-blue-500 group-hover:text-blue-700 transition-transform group-hover:translate-x-0.5" />
+                                </a>
+                              ) : (
+                                <h3 className="text-lg font-bold text-blue-600 leading-snug">
+                                  {pub.title}
+                                </h3>
+                              );
+                            })()}
 
                             <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-600">
                               {pub.year && (
@@ -702,31 +825,58 @@ export default function VerificationQueue() {
                         </div>
 
                         {/* Actions Panel */}
-                        {isAdmin ? (
-                          <div className="pt-3 border-t border-gray-200 flex flex-wrap gap-2">
-                            <button
-                              onClick={() => openDecisionModal(task, 'approve')}
-                              className="flex-1 py-2 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors"
-                            >
-                              <CheckCircle2 size={14} /> Approve
-                            </button>
+                        {canAct ? (
+                          isAttributionTask && !isAdmin ? (
+                            <div className="pt-3 border-t border-gray-200 flex flex-col gap-2">
+                              <button
+                                onClick={() => openDecisionModal(task, 'approve')}
+                                className="w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors"
+                              >
+                                <CheckCircle2 size={15} /> ✓ THIS IS MY PUBLICATION
+                              </button>
+                              <div className="grid grid-cols-2 gap-2">
+                                <button
+                                  onClick={() => openDecisionModal(task, 'reject')}
+                                  className="py-2 px-2.5 bg-rose-50 hover:bg-rose-100 text-rose-800 border border-rose-300 font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition-colors"
+                                  title="Reject attribution to your profile"
+                                >
+                                  <XCircle size={13} /> ✕ NOT MINE
+                                </button>
+                                <button
+                                  onClick={() => openDecisionModal(task, 'request_correction')}
+                                  className="py-2 px-2.5 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-300 font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition-colors"
+                                  title="Request metadata correction"
+                                >
+                                  <AlertTriangle size={13} /> CORRECTION
+                                </button>
+                              </div>
+                            </div>
+                          ) : (
+                            <div className="pt-3 border-t border-gray-200 flex flex-wrap gap-2">
+                              <button
+                                onClick={() => openDecisionModal(task, 'approve')}
+                                className="flex-1 py-2 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors"
+                              >
+                                <CheckCircle2 size={14} /> Approve
+                              </button>
 
-                            <button
-                              onClick={() => openDecisionModal(task, 'request_correction')}
-                              className="py-2 px-3 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-300 font-semibold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors"
-                              title="Request Author Correction"
-                            >
-                              <AlertTriangle size={14} /> Correct
-                            </button>
+                              <button
+                                onClick={() => openDecisionModal(task, 'request_correction')}
+                                className="py-2 px-3 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-300 font-semibold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors"
+                                title="Request Author Correction"
+                              >
+                                <AlertTriangle size={14} /> Correct
+                              </button>
 
-                            <button
-                              onClick={() => openDecisionModal(task, 'reject')}
-                              className="py-2 px-3 bg-rose-50 hover:bg-rose-100 text-rose-800 border border-rose-300 font-semibold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors"
-                              title="Reject Publication"
-                            >
-                              <XCircle size={14} /> Reject
-                            </button>
-                          </div>
+                              <button
+                                onClick={() => openDecisionModal(task, 'reject')}
+                                className="py-2 px-3 bg-rose-50 hover:bg-rose-100 text-rose-800 border border-rose-300 font-semibold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors"
+                                title="Reject Publication"
+                              >
+                                <XCircle size={14} /> Reject
+                              </button>
+                            </div>
+                          )
                         ) : (
                           <div className="pt-2 border-t border-gray-200 text-xs text-gray-500 font-medium italic text-center">
                             Under institutional admin review
@@ -815,12 +965,18 @@ export default function VerificationQueue() {
               <h3 className="font-extrabold text-lg text-gray-900 flex items-center gap-2">
                 {decisionType === 'approve' && (
                   <>
-                    <CheckCircle2 className="text-emerald-600" size={22} /> Confirm & Approve Publication
+                    <CheckCircle2 className="text-emerald-600" size={22} />
+                    {selectedTask.task_type === 'attribution_ambiguous' && !isAdmin
+                      ? '✓ Confirm Faculty Attribution (This Is My Publication)'
+                      : 'Confirm & Approve Publication'}
                   </>
                 )}
                 {decisionType === 'reject' && (
                   <>
-                    <XCircle className="text-rose-600" size={22} /> Reject Publication Verification
+                    <XCircle className="text-rose-600" size={22} />
+                    {selectedTask.task_type === 'attribution_ambiguous' && !isAdmin
+                      ? '✕ Reject Attribution (Not My Publication)'
+                      : 'Reject Publication Verification'}
                   </>
                 )}
                 {decisionType === 'request_correction' && (
@@ -847,9 +1003,17 @@ export default function VerificationQueue() {
             {/* Decision Status Transition Info */}
             <div className="text-xs text-gray-600 bg-blue-50/60 p-3 rounded-xl border border-blue-200/80">
               <span className="font-bold text-blue-900">Action Effect: </span>
-              {decisionType === 'approve' && 'Status will transition to HUMAN_VERIFIED (Confidence set to 95%+).'}
-              {decisionType === 'reject' && 'Status will transition to HUMAN_REJECTED and flagged in audit log.'}
-              {decisionType === 'request_correction' && 'Status will transition to HUMAN_CORRECTED for faculty amendment.'}
+              {decisionType === 'approve' && (
+                selectedTask.task_type === 'attribution_ambiguous' && !isAdmin
+                  ? 'This publication will be confirmed and linked to your verified faculty profile (Attribution Confidence set to 100%).'
+                  : 'Status will transition to HUMAN_VERIFIED (Confidence set to 95%+).'
+              )}
+              {decisionType === 'reject' && (
+                selectedTask.task_type === 'attribution_ambiguous' && !isAdmin
+                  ? 'Attribution to your profile will be removed. The publication record will remain preserved in the institutional repository.'
+                  : 'Status will transition to HUMAN_REJECTED and flagged in audit log.'
+              )}
+              {decisionType === 'request_correction' && 'Status will transition to HUMAN_CORRECTED for administrative review.'}
             </div>
 
             {/* Comment / Note input */}
@@ -899,7 +1063,10 @@ export default function VerificationQueue() {
                   </>
                 ) : (
                   <>
-                    <Send size={13} /> Submit Decision
+                    <Send size={13} />
+                    {selectedTask.task_type === 'attribution_ambiguous' && !isAdmin
+                      ? (decisionType === 'approve' ? 'Confirm This Is My Publication' : decisionType === 'reject' ? 'Confirm Not My Publication' : 'Submit Request')
+                      : 'Submit Decision'}
                   </>
                 )}
               </button>

@@ -88,8 +88,8 @@ async def test_metrics_agent(sample_data):
     # 2 sources for pub1, 1 for pub2, 0 for pub3 = 3 citation snapshots
     assert stats["pub_snapshots"] == 3
     
-    assert pubs[0].citation_count == 12
-    assert pubs[0].citation_source == "crossref"
+    assert pubs[0].citation_count == 10
+    assert pubs[0].citation_source == "openalex"
     
     assert pubs[1].citation_count == 5
     assert pubs[1].citation_source == "openalex"

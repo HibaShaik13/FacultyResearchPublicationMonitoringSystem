@@ -1,0 +1,3820 @@
+[
+  {
+    "index": 1,
+    "pub_id": "568c3fd9-f2cc-4448-87fc-cdbf83656341",
+    "title": "Smart Attendance System using MERN Stack and Real-Time Face Recognition",
+    "doi": "10.1109/icssas68835.2026.11559393",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Cherukuri Pravalya",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Dept. of Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Manchala Narendra",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Dept. of Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "P. Siva Prasad",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Dept. of CSE,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "P. Siva Prasad",
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Dept. of CSE,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 2,
+    "pub_id": "a013544e-d00e-4eeb-aa1d-a5484e0101fb",
+    "title": "Gesture-based File Management and Painting Application using Human Computer Interaction",
+    "doi": "10.1109/iciccs65191.2025.10985120",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "B. Siva Kanaka Raju",
+        "position": 1,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of CSE (AI &amp; ML),Nalgonda,Telangana,508284"
+        ]
+      },
+      {
+        "name": "A. Pushpita",
+        "position": 2,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of CSE (AI &amp; ML),Nalgonda,Telangana,508284"
+        ]
+      },
+      {
+        "name": "Ch. Shiva Prasad",
+        "position": 3,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of CSE (AI &amp; ML),Nalgonda,Telangana,508284"
+        ]
+      },
+      {
+        "name": "K. Karthik",
+        "position": 4,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of CSE (AI &amp; ML),Nalgonda,Telangana,508284"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "B. Siva Kanaka Raju",
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of CSE (AI &amp; ML),Nalgonda,Telangana,508284"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "Ch. Shiva Prasad",
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of CSE (AI &amp; ML),Nalgonda,Telangana,508284"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 3,
+    "pub_id": "056aba7c-802c-4927-8beb-6380668f72fb",
+    "title": "Effect of Fiber Orientation on the Flexural Properties of Glass Fiber Reinforced, Epoxy- Matrix Composite",
+    "doi": "10.4028/www.scientific.net/msf.969.502",
+    "year": 2019,
+    "citation_count": 17,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "K.Chandra Shekar",
+        "position": 1,
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ]
+      },
+      {
+        "name": "B. Singaravel",
+        "position": 2,
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ]
+      },
+      {
+        "name": "S. Deva Prasad",
+        "position": 3,
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ]
+      },
+      {
+        "name": "N. Venkateshwarlu",
+        "position": 4,
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "S. Deva Prasad",
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 4,
+    "pub_id": "70bb84fb-9888-454d-ab8c-7a957597697b",
+    "title": "Early Detection of Cyber Attacks Based on Feature Selection Algorithm",
+    "doi": "10.1166/jctn.2020.9293",
+    "year": 2020,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "J. Dayanika",
+        "position": 1,
+        "affiliations": [
+          "Vignan Nirula Institute of Technology and Science for Women, Pedapalakaluru, Guntur 522009, Andhra Pradesh, India"
+        ]
+      },
+      {
+        "name": "G. Archana",
+        "position": 2,
+        "affiliations": [
+          "Vignan Nirula Institute of Technology and Science for Women, Pedapalakaluru, Guntur 522009, Andhra Pradesh, India"
+        ]
+      },
+      {
+        "name": "K. Siva Kumar",
+        "position": 3,
+        "affiliations": [
+          "Vignan Nirula Institute of Technology and Science for Women, Pedapalakaluru, Guntur 522009, Andhra Pradesh, India"
+        ]
+      },
+      {
+        "name": "N. Pavani",
+        "position": 4,
+        "affiliations": [
+          "Vignan Nirula Institute of Technology and Science for Women, Pedapalakaluru, Guntur 522009, Andhra Pradesh, India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "K. Siva Kumar",
+        "affiliations": [
+          "Vignan Nirula Institute of Technology and Science for Women, Pedapalakaluru, Guntur 522009, Andhra Pradesh, India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 5,
+    "pub_id": "c4982688-2324-406c-8dc9-52033452f57e",
+    "title": "SWIN BTS Using Deep Learning",
+    "doi": "10.1109/icdsis61070.2024.10594617",
+    "year": 2024,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Elumalai Harshini",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology &#x0026; Research (Deemed to University),Department of IT&#x0026;CA,Guntur,India"
+        ]
+      },
+      {
+        "name": "Siva Koteswararao Chinnam",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology &#x0026; Research (Deemed to University),Department of IT&#x0026;CA,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Siva Koteswararao Chinnam",
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology &#x0026; Research (Deemed to University),Department of IT&#x0026;CA,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 6,
+    "pub_id": "f045c0b2-35b5-4176-861e-58ed5e6921b3",
+    "title": "Advancing Breast Cancer Diagnosis: Ensemble Machine Learning Approach with Preprocessing and Feature Engineering",
+    "doi": "10.1109/iatmsi64286.2025.10985553",
+    "year": 2025,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Malasani Karthik",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Kundakarla Madhuri",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Musunuri Siva Rama Krishna",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Ongole Gandhi",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Musunuri Siva Rama Krishna",
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 7,
+    "pub_id": "5e48e2fb-39d2-4590-bb96-56ecabcdadfe",
+    "title": "Performance Analysis of Vegetable Oil as Dielectric Fluid in Electric Discharge Machining Process of Inconel 800",
+    "doi": "10.4028/www.scientific.net/msf.978.77",
+    "year": 2020,
+    "citation_count": 26,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "B. Singaravel",
+        "position": 1,
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ]
+      },
+      {
+        "name": "K.Chandra Shekar",
+        "position": 2,
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ]
+      },
+      {
+        "name": "G.Gowtham Reddy",
+        "position": 3,
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ]
+      },
+      {
+        "name": "S. Deva Prasad",
+        "position": 4,
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "S. Deva Prasad",
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 8,
+    "pub_id": "45ee0428-ba41-4e69-9596-fec515838673",
+    "title": "Deep Learning based College Student Uniform Classification System using Transfer Learning",
+    "doi": "10.1109/aic61668.2024.10731054",
+    "year": 2024,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "B Suvarna",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,AP,India"
+        ]
+      },
+      {
+        "name": "Sivadi Balakrishna",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of ACSE,Guntur,AP,India"
+        ]
+      },
+      {
+        "name": "B Vinay",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,AP,India"
+        ]
+      },
+      {
+        "name": "R Siva",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,AP,India"
+        ]
+      },
+      {
+        "name": "Y Charan",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,AP,India"
+        ]
+      },
+      {
+        "name": "P Uday",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,AP,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Sivadi Balakrishna",
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of ACSE,Guntur,AP,India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "R Siva",
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,AP,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 9,
+    "pub_id": "a72a5163-fa74-4c17-bd27-5a34bd0cc27a",
+    "title": "A Drift Voidance Perturb &amp; Observe MPPT Algorithm in Photovoltaic Systems",
+    "doi": "10.1109/resem57584.2023.10236066",
+    "year": 2023,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Madisa V G Varaprasad",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ]
+      },
+      {
+        "name": "B. Arundhati",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ]
+      },
+      {
+        "name": "D. S. R. S. L. Avanthika",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ]
+      },
+      {
+        "name": "P. Sri Vamsi",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ]
+      },
+      {
+        "name": "Ch. D V Prasad Mouli",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ]
+      },
+      {
+        "name": "K. Rohit Sai Kiran",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ]
+      },
+      {
+        "name": "M. Durga Prasad",
+        "position": 7,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ]
+      },
+      {
+        "name": "G. RaviT Eja",
+        "position": 8,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Madisa V G Varaprasad",
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "Ch. D V Prasad Mouli",
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "K. Rohit Sai Kiran",
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "M. Durga Prasad",
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 10,
+    "pub_id": "a6c950ff-5ac9-4df0-b2b6-810fd58e1ab8",
+    "title": "A Proactive Approach for Detecting SQL and XSS Injection Attacks",
+    "doi": "10.1109/icaaic60222.2024.10575599",
+    "year": 2024,
+    "citation_count": 8,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "B. Siva Lakshmi",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Institute Of Engineering For Women,Department Information technology,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Divya Kovvuri",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Institute Of Engineering For Women,Information Technology,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "H N Valli Bolisetti",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Institute Of Engineering For Women,Information Technology,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Dhana Sree Chikkala",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Institute Of Engineering For Women,Information Technology,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Sravanthi Karri",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Institute Of Engineering For Women,Information Technology,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Geetha Yadlapalli",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x2019;s Institute Of Engineering For Women,Information Technology,Visakhapatnam,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "B. Siva Lakshmi",
+        "affiliations": [
+          "Vignan&#x2019;s Institute Of Engineering For Women,Department Information technology,Visakhapatnam,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 11,
+    "pub_id": "faa0ff6d-2047-40a5-bc1d-1b1b4fc5e362",
+    "title": "Future Diagnosis: Detection of Pneumonia and Pandemic Pathogen using CNN",
+    "doi": "10.1109/icaaic60222.2024.10575804",
+    "year": 2024,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Netaji Gandi",
+        "position": 1,
+        "affiliations": [
+          "Information Technology Vignan&#x2019;s Institute of Engineering for Women,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Siva Sai Sravanthi Damisetti",
+        "position": 2,
+        "affiliations": [
+          "Information Technology Vignan&#x2019;s Institute of Engineering for Women,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "K. Geethika Srujana Bharathi",
+        "position": 3,
+        "affiliations": [
+          "Information Technology Vignan&#x2019;s Institute of Engineering for Women,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "D. Mounika Santhoshini",
+        "position": 4,
+        "affiliations": [
+          "Information Technology Vignan&#x2019;s Institute of Engineering for Women,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "V. Pavani",
+        "position": 5,
+        "affiliations": [
+          "Information Technology Vignan&#x2019;s Institute of Engineering for Women,Visakhapatnam,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Siva Sai Sravanthi Damisetti",
+        "affiliations": [
+          "Information Technology Vignan&#x2019;s Institute of Engineering for Women,Visakhapatnam,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 12,
+    "pub_id": "65c3deab-f63c-45d2-9e79-76c8899cb926",
+    "title": "Effect of Amino Multi Walled Carbon Nanotubes Reinforcement on the Flexural Properties of Neat Epoxy",
+    "doi": "10.4028/www.scientific.net/amm.592-594.912",
+    "year": 2014,
+    "citation_count": 8,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "K.Chandra Shekar",
+        "position": 1,
+        "affiliations": [
+          "Vignan Institute of Technology and Science"
+        ]
+      },
+      {
+        "name": "Dr. Anjaneya Prasad",
+        "position": 2,
+        "affiliations": [
+          "Jawaharlal Nehru Technological University College of Engineering"
+        ]
+      },
+      {
+        "name": "N. Eswara Prasad",
+        "position": 3,
+        "affiliations": [
+          "CEMILAC"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Dr. Anjaneya Prasad",
+        "affiliations": [
+          "Jawaharlal Nehru Technological University College of Engineering"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "N. Eswara Prasad",
+        "affiliations": [
+          "CEMILAC"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 13,
+    "pub_id": "d29976e8-2e2e-4d3a-bc7d-e53e733087fc",
+    "title": "AI-Powered Diabetes Prediction: A Comprehensive Machine Learning Strategy for Early Diagnosis",
+    "doi": "10.1109/icsss66939.2025.11346111",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Srija Avula",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x00B4;s Foundation for Science, Technology and Research,Department of CSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "R Renugadevi",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x00B4;s Foundation for Science, Technology and Research,Department of CSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Siva Phanindra Kumar Gumma",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x00B4;s Foundation for Science, Technology and Research,Department of CSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Lahari Kommuri",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x00B4;s Foundation for Science, Technology and Research,Department of CSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Maddula Dhanusri",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x00B4;s Foundation for Science, Technology and Research,Department of CSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Shaik Nissar Ahamad",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x00B4;s Foundation for Science, Technology and Research,Department of CSE,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Siva Phanindra Kumar Gumma",
+        "affiliations": [
+          "Vignan&#x00B4;s Foundation for Science, Technology and Research,Department of CSE,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 14,
+    "pub_id": "e836e98f-e0ae-4db7-9aa3-5cabca44cfd7",
+    "title": "An AI-based Energy Management System For The Grid Integration of Energy Storage and Hybrid Devices",
+    "doi": "10.1109/wconf64849.2025.11233627",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Srikanth D",
+        "position": 1,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of EEE,Telangana,India"
+        ]
+      },
+      {
+        "name": "G Durga Sukumar",
+        "position": 2,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of EEE,Telangana,India"
+        ]
+      },
+      {
+        "name": "R Ramanjan Prasad",
+        "position": 3,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of EEE,Telangana,India"
+        ]
+      },
+      {
+        "name": "K Vishnu",
+        "position": 4,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of EEE,Telangana,India"
+        ]
+      },
+      {
+        "name": "Koorapati Rajashekhar",
+        "position": 5,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of EEE,Telangana,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "R Ramanjan Prasad",
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of EEE,Telangana,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 15,
+    "pub_id": "529324e8-6d93-474e-aefc-ee91354724fa",
+    "title": "Cognisight-AI Orchestrated Lifecycle Management System",
+    "doi": "10.1109/icadcs70036.2026.11583751",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "M. Nagaraju",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Dept. of Computer Science &#x0026; Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Makkena Venkataprathyusha",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Dept. of Computer Science &#x0026; Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Dontuboina Divya Siva Naga",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Dept. of Computer Science &#x0026; Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Kesani Santhosh Kumar",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Dept. of Computer Science &#x0026; Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Koti Venkata Srinivasarao",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Dept. of Computer Science &#x0026; Engineering,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Dontuboina Divya Siva Naga",
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Dept. of Computer Science &#x0026; Engineering,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 16,
+    "pub_id": "65232357-b33d-4277-afdc-cd6752547270",
+    "title": "Predicting Employee Layoffs With Machine Learning : A Social Network and Data Mining Approach",
+    "doi": "10.33425/3066-1226.1127",
+    "year": 2025,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Sai Lalith Prasad T",
+        "position": 1,
+        "affiliations": [
+          "Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Monika Gunda",
+        "position": 2,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Esargundi Rishikesh",
+        "position": 3,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Ganesh Kandagatla",
+        "position": 4,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Sai Lalith Prasad T",
+        "affiliations": [
+          "Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 17,
+    "pub_id": "25319605-643e-4106-b31e-e09631168dcf",
+    "title": "Crime Prediction and Analysis Using Machine Learning",
+    "doi": "10.33425/3066-1226.1155",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Prasad Yadav B",
+        "position": 1,
+        "affiliations": [
+          "Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Gayathri N",
+        "position": 2,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Srilekha M",
+        "position": 3,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Thanmayee S",
+        "position": 4,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Prasad Yadav B",
+        "affiliations": [
+          "Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 18,
+    "pub_id": "7438aab0-965b-449f-8baf-d7cb90a82ec0",
+    "title": "UPI Fraud Detection Using Convolutional Neural Networks",
+    "doi": "10.1109/cicn70047.2026.11594368",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "V. Rishitha",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x0027;s University,Department of Advanced Computer Science and Engineering,Vadlamudi,India"
+        ]
+      },
+      {
+        "name": "S.Bharat Sai",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x0027;s University,Department of Advanced Computer Science and Engineering,Vadlamudi,India"
+        ]
+      },
+      {
+        "name": "K. Lasya Priya",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x0027;s University,Department of Advanced Computer Science and Engineering,Vadlamudi,India"
+        ]
+      },
+      {
+        "name": "B.Syam Prasad",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x0027;s University,Department of Advanced Computer Science and Engineering,Vadlamudi,India"
+        ]
+      },
+      {
+        "name": "P Gayatri",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x0027;s University,Department of Advanced Computer Science and Engineering,Vadlamudi,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "S.Bharat Sai",
+        "affiliations": [
+          "Vignan&#x0027;s University,Department of Advanced Computer Science and Engineering,Vadlamudi,India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "B.Syam Prasad",
+        "affiliations": [
+          "Vignan&#x0027;s University,Department of Advanced Computer Science and Engineering,Vadlamudi,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 19,
+    "pub_id": "0c9db1a8-a539-4441-b85a-41ca1536e92c",
+    "title": "Predictive Analysis for Retail: Sales Forecasting at Walmart",
+    "doi": "10.1109/icaaic60222.2024.10575027",
+    "year": 2024,
+    "citation_count": 2,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Nemalikanti Naga Alekhyasri",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s University,dept. of CSE,Vadlamudi,AndhraPradesh,India"
+        ]
+      },
+      {
+        "name": "Gunturu Bhanu Prasad",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s University,dept. of CSE,Vadlamudi,AndhraPradesh,India"
+        ]
+      },
+      {
+        "name": "Tarigopula Pardhasaradhi",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s University,dept. of CSE,Vadlamudi,AndhraPradesh,India"
+        ]
+      },
+      {
+        "name": "Arumalla Purna Vignesh Reddy",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s University,dept. of CSE,Vadlamudi,AndhraPradesh,India"
+        ]
+      },
+      {
+        "name": "Maridu Bhargavi",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s University,dept. of CSE,Vadlamudi,AndhraPradesh,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Gunturu Bhanu Prasad",
+        "affiliations": [
+          "Vignan&#x2019;s University,dept. of CSE,Vadlamudi,AndhraPradesh,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 20,
+    "pub_id": "44447dc2-3438-495c-81ad-fdf4456d18c1",
+    "title": "Traffic Sign Recognition Using YOLO And RCNN",
+    "doi": "10.33425/3066-1226.1136",
+    "year": 2025,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Prasad Yadav B",
+        "position": 1,
+        "affiliations": [
+          "1 Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Jagat",
+        "position": 2,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Jahnavi Sivani Motapotula",
+        "position": 3,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Teja Sai Koka",
+        "position": 4,
+        "affiliations": [
+          "Department of AI&DS, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Prasad Yadav B",
+        "affiliations": [
+          "1 Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "Jahnavi Sivani Motapotula",
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "Teja Sai Koka",
+        "affiliations": [
+          "Department of AI&DS, Vignan Institute of Technology and Science, Hyderabad, India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 21,
+    "pub_id": "e8c6f516-e46f-4e3f-9142-eb307aa2d183",
+    "title": "CT Scan-Based COVID-19 Detection Using Feature Extraction and Stack-Based Ensemble Techniques",
+    "doi": "10.1109/icaiihi67124.2025.11403612",
+    "year": 2025,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Yekkanti Lakshmi",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Sourav Mondal",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Debnarayan Khatua",
+        "position": 3,
+        "affiliations": [
+          "Parul University,Computer Science and Engineering,Vadodara,Gujarat,India"
+        ]
+      },
+      {
+        "name": "Pathan Nayeem Khan",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Harendra Kumar",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Gorla Siva Rama Krishna",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Computer Science and Engineering,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Gorla Siva Rama Krishna",
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Computer Science and Engineering,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 22,
+    "pub_id": "9a7ad3f4-aac7-411a-aefb-bb861c43c3b4",
+    "title": "Simulation of DC fast charging station for EV using Solar PV Array",
+    "doi": "10.1109/icees61253.2024.10776818",
+    "year": 2024,
+    "citation_count": 2,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Boga Jyothi",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology (A),Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Kotni Revathi Devi",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology (A),Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Kanakala Durga Praneeth",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology (A),Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Koda Shiva Shankara Vara Prasad",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology (A),Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Marpina Dhana Prasanth",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology (A),Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Moparthi Abhishikth",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology (A),Visakhapatnam,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Koda Shiva Shankara Vara Prasad",
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Information Technology (A),Visakhapatnam,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 23,
+    "pub_id": "e7c902d5-a33c-4c9d-958f-f2f5e0225cbb",
+    "title": "Interactive Augmented Reality Education Platform for Computer Science Engineering",
+    "doi": "10.1109/icetetsip64213.2025.11156519",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Asha Priyadarshini Manda",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology &#x0026; Science (Affiliated by JNTUK),Dept of Computer Science &#x0026; engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Amit Ghosh",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology &#x0026; Science (Affiliated by JNTUK),Dept of Computer Science &#x0026; engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Naga Sarvani Talluri",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology &#x0026; Science (Affiliated by JNTUK),Dept of Computer Science &#x0026; engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Supriyanka Thondepu",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology &#x0026; Science (Affiliated by JNTUK),Dept of Computer Science &#x0026; engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Kowsalya Suryadevara",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology &#x0026; Science (Affiliated by JNTUK),Dept of Computer Science &#x0026; engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Siva Kotireddy Somala",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology &#x0026; Science (Affiliated by JNTUK),Dept of Computer Science &#x0026; engineering,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Siva Kotireddy Somala",
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology &#x0026; Science (Affiliated by JNTUK),Dept of Computer Science &#x0026; engineering,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 24,
+    "pub_id": "a110dea8-c59b-4779-ac09-7e97a87b1803",
+    "title": "IoT-Enabled Smart Robotic System for Borewell Rescues Using ESP32-S3",
+    "doi": "10.1109/icetetsip64213.2025.11156253",
+    "year": 2025,
+    "citation_count": 3,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "M. Revathi",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Electronics and Communication Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "K. Gnana Siva Deepika",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Electronics and Communication Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "M. Balaji",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Electronics and Communication Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "J. Hemanth Kumar",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Electronics and Communication Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "N. Om Sri Venkat",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Electronics and Communication Engineering,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "K. Gnana Siva Deepika",
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Electronics and Communication Engineering,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 25,
+    "pub_id": "6ed4a55e-7aa0-4c6d-b51e-722088e9d915",
+    "title": "Enhancement of Ship Classification Accuracy with Balanced Data and Convolutional Neural Networks",
+    "doi": "10.1109/conit65521.2025.11167820",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "R. Darwin Hareesh",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "J. Durga Prasad",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Ch. Ganesh Kumar",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Arnab De",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "J. Durga Prasad",
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 26,
+    "pub_id": "62c0e8ca-c8c1-40bc-99b4-110d9f2e361b",
+    "title": "Improving Bankruptcy Prediction Using Machine Learning",
+    "doi": "10.33425/3066-1226.1137",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Sai Lalith Prasad T",
+        "position": 1,
+        "affiliations": [
+          "1 Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Neeraja Reddy K",
+        "position": 2,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Eeshita G",
+        "position": 3,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Sai Shivani K",
+        "position": 4,
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Sai Lalith Prasad T",
+        "affiliations": [
+          "1 Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "Sai Shivani K",
+        "affiliations": [
+          "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 27,
+    "pub_id": "1827fe17-f7d7-4935-b188-ca37381b2146",
+    "title": "Text to Image Generation Using Machine Learning",
+    "doi": "10.1109/iciteics64870.2025.11340874",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "O. Bhaskaru",
+        "position": 1,
+        "affiliations": [
+          "Technology and Research Vadlamudi,Department of CSE Vignan&#x0027;s Foundation for Science,Guntur,Andhra Pradesh,522213"
+        ]
+      },
+      {
+        "name": "Chukkapalli Ganesh Prasad",
+        "position": 2,
+        "affiliations": [
+          "Technology and Research Vadlamudi,Department of CSE Vignan&#x0027;s Foundation for Science,Guntur,Andhra Pradesh,522213"
+        ]
+      },
+      {
+        "name": "Kshama Kumari",
+        "position": 3,
+        "affiliations": [
+          "Technology and Research Vadlamudi,Department of CSE Vignan&#x0027;s Foundation for Science,Guntur,Andhra Pradesh,522213"
+        ]
+      },
+      {
+        "name": "Penugonda Surya Teja",
+        "position": 4,
+        "affiliations": [
+          "Technology and Research Vadlamudi,Department of CSE Vignan&#x0027;s Foundation for Science,Guntur,Andhra Pradesh,522213"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Chukkapalli Ganesh Prasad",
+        "affiliations": [
+          "Technology and Research Vadlamudi,Department of CSE Vignan&#x0027;s Foundation for Science,Guntur,Andhra Pradesh,522213"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 28,
+    "pub_id": "9359eb75-15fe-45fc-b435-95616ad1eb22",
+    "title": "Deep Ensemble Learning for Alzheimer\u2019s Disease Classification from Structural MRI Using Fine-Tuned VGG Models",
+    "doi": "10.1109/isac364032.2025.11156369",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Taraka Siva Sai Ponnuru",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Dept. of Electronics &#x0026; Communication Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Vishnu Vardhan Sai Talluri",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Dept. of Electronics &#x0026; Communication Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Rakcinpha Hatibaruah",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Dept. of Electronics &#x0026; Communication Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Gana Sekhar Karneti",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Dept. of Electronics &#x0026; Communication Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Hilly Gohain Baruah",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Dept. of Advanced Computer Science &#x0026; Engineering,Andhra Pradesh,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Taraka Siva Sai Ponnuru",
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Dept. of Electronics &#x0026; Communication Engineering,Andhra Pradesh,India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "Vishnu Vardhan Sai Talluri",
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Dept. of Electronics &#x0026; Communication Engineering,Andhra Pradesh,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 29,
+    "pub_id": "29a46bb6-3ff7-467d-a392-0dd9203ba778",
+    "title": "An Emotion-Aware Neural Framework for Personalized Video Recommendation",
+    "doi": "10.1109/icpcsn68523.2026.11543592",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "K.Pradeep",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Lara Institute of Technology and Science,Department of Computer Science and Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "M.Sai",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Ch.Satya Katyayini",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "D.Kamal Kumar Naik",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "K.Jayendra Prasad Naik",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Andhra Pradesh,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "M.Sai",
+        "affiliations": [
+          "Vignan&#x2019;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Andhra Pradesh,India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "K.Jayendra Prasad Naik",
+        "affiliations": [
+          "Vignan&#x2019;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Andhra Pradesh,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 30,
+    "pub_id": "5464a6ea-48e7-401e-b561-e444cb2e1745",
+    "title": "RP-HPLC Method for Determination of Azelnidipine and Telmisartan in Pharmaceutical Dosage Form",
+    "doi": "10.52711/0974-360x.2023.00086",
+    "year": 2023,
+    "citation_count": 11,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Manisha Panda",
+        "position": 1,
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Duvvada, Vishakapatnam - 530049, Andhra Pradesh, India."
+        ]
+      },
+      {
+        "name": "Vasudha Dadi",
+        "position": 2,
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Duvvada, Vishakapatnam - 530049, Andhra Pradesh, India."
+        ]
+      },
+      {
+        "name": "Srinivas Rao Yarraguntla",
+        "position": 3,
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Duvvada, Vishakapatnam - 530049, Andhra Pradesh, India."
+        ]
+      },
+      {
+        "name": "Vara Prasad Rao K",
+        "position": 4,
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Duvvada, Vishakapatnam - 530049, Andhra Pradesh, India."
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Vara Prasad Rao K",
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Duvvada, Vishakapatnam - 530049, Andhra Pradesh, India."
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 31,
+    "pub_id": "fb5b2023-621f-45f4-b6e1-a898ee5481f6",
+    "title": "Video Object Forgery Detection using Image Processing Techniques",
+    "doi": "10.1109/i-smac58438.2023.10290604",
+    "year": 2023,
+    "citation_count": 9,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "P. Lavanya Kumari",
+        "position": 1,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (Data Science),Hyderabad,India"
+        ]
+      },
+      {
+        "name": "M. Siva",
+        "position": 2,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (Data Science),Hyderabad,India"
+        ]
+      },
+      {
+        "name": "N. Muthukumaran",
+        "position": 3,
+        "affiliations": [
+          "Sri Eshwar College of Engineering,Centre for Computational Imaging and Machine Vision,Department of ECE,Coimbatore,Tamil Nadu,India"
+        ]
+      },
+      {
+        "name": "D. Dharani",
+        "position": 4,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (Data Science),Hyderabad,India"
+        ]
+      },
+      {
+        "name": "K. Kavitha Sahithi",
+        "position": 5,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (Data Science),Hyderabad,India"
+        ]
+      },
+      {
+        "name": "V. Ashwin Kumar",
+        "position": 6,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (Data Science),Hyderabad,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "M. Siva",
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (Data Science),Hyderabad,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 32,
+    "pub_id": "c16a6123-1c0f-4d0b-9dab-4a643f76c0d3",
+    "title": "Anomaly Detection in Network Traffic Using Machine Learning Techniques",
+    "doi": "10.33425/3066-1226.1129",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Sai Lalith Prasad T",
+        "position": 1,
+        "affiliations": [
+          "Assitant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Aditya Beeram",
+        "position": 2,
+        "affiliations": [
+          "UG Student, Department of AI&DS, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Likhitha Bodige",
+        "position": 3,
+        "affiliations": [
+          "UG Student, Department of AI&DS, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      },
+      {
+        "name": "Asta Govardhan Reddy G A",
+        "position": 4,
+        "affiliations": [
+          "UG Student, Department of AI&DS, Vignan Institute of Technology and Science, Hyderabad, India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Sai Lalith Prasad T",
+        "affiliations": [
+          "Assitant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 33,
+    "pub_id": "33f803cc-e60f-461c-b814-952eb52aab7c",
+    "title": "Smart System for Missing Child Identification",
+    "doi": "10.1109/iciccs65191.2025.10985301",
+    "year": 2025,
+    "citation_count": 2,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Vineela Madireddy",
+        "position": 1,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,India"
+        ]
+      },
+      {
+        "name": "Jonnalagadda Varsha",
+        "position": 2,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,India"
+        ]
+      },
+      {
+        "name": "K. Ram Prasad",
+        "position": 3,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,India"
+        ]
+      },
+      {
+        "name": "T. Sai Bhargava",
+        "position": 4,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "K. Ram Prasad",
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "T. Sai Bhargava",
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 34,
+    "pub_id": "af697aba-505e-4174-9366-b46a42b27a2c",
+    "title": "Strengthening Cloud Data Privacy: A Dual Access Control Solution",
+    "doi": "10.1109/icssas66150.2025.11080846",
+    "year": 2025,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Vineela Madireddy",
+        "position": 1,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,508284"
+        ]
+      },
+      {
+        "name": "J. Varsha",
+        "position": 2,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,508284"
+        ]
+      },
+      {
+        "name": "K. Ram Prasad",
+        "position": 3,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,508284"
+        ]
+      },
+      {
+        "name": "T. Sai Bhargava",
+        "position": 4,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,508284"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "K. Ram Prasad",
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,508284"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "T. Sai Bhargava",
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,508284"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 35,
+    "pub_id": "e1dd514b-837d-4964-81bd-99f49fd26d69",
+    "title": "Air Quality Monitoring System with Alerts",
+    "doi": "10.1109/ice2cpt66440.2025.11340477",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Mavuri Arunakumari",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x0027;s Institute of Information and Technology,Department of Electrical and Electronics Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Molleti Sravan Kumar",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x0027;s Institute of Information and Technology,Department of Electrical and Electronics Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Kosireddy Hemavarshini",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x0027;s Institute of Information and Technology,Department of Electrical and Electronics Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Kanithi Yaswitha",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x0027;s Institute of Information and Technology,Department of Electrical and Electronics Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Jonnada Manikanta",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x0027;s Institute of Information and Technology,Department of Electrical and Electronics Engineering,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Kandhi Durga Prasad",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x0027;s Institute of Information and Technology,Department of Electrical and Electronics Engineering,Andhra Pradesh,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Kandhi Durga Prasad",
+        "affiliations": [
+          "Vignan&#x0027;s Institute of Information and Technology,Department of Electrical and Electronics Engineering,Andhra Pradesh,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 36,
+    "pub_id": "27416195-80f2-448d-91db-89636f3ac6e4",
+    "title": "Android Controlled WI-FI Robotic Lawn Mower",
+    "doi": "10.1109/icccnt61001.2024.10723949",
+    "year": 2024,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Bhanu Prasad Eppe",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Nirula Institute of Technology and Science for Women,Electronics and Communication Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "A. Sahithya",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Nirula Institute of Technology and Science for Women,Electronics and Communication Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "B. Alekhya Deepthi",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Nirula Institute of Technology and Science for Women,Electronics and Communication Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "G. Sai Sreeja",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Nirula Institute of Technology and Science for Women,Electronics and Communication Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "Y. Sai Ramya",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Nirula Institute of Technology and Science for Women,Electronics and Communication Engineering,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Bhanu Prasad Eppe",
+        "affiliations": [
+          "Vignan&#x2019;s Nirula Institute of Technology and Science for Women,Electronics and Communication Engineering,Guntur,India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "G. Sai Sreeja",
+        "affiliations": [
+          "Vignan&#x2019;s Nirula Institute of Technology and Science for Women,Electronics and Communication Engineering,Guntur,India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "Y. Sai Ramya",
+        "affiliations": [
+          "Vignan&#x2019;s Nirula Institute of Technology and Science for Women,Electronics and Communication Engineering,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 37,
+    "pub_id": "1aae3ca8-f0e0-4c61-8a3a-9346f20e92e5",
+    "title": "Protective Role of Hispolon and its Derivatives in Apoptosis Induced by Exposure of Mobile Phone Radiation to Primary Culture of Cortical Neurons",
+    "doi": "10.21203/rs.3.rs-1644043/v1",
+    "year": 2022,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Vara Prasad Saka",
+        "position": 1,
+        "affiliations": [
+          "Vignan Pharmacy College"
+        ]
+      },
+      {
+        "name": "Chitra Vellapandian",
+        "position": 2,
+        "affiliations": [
+          "SRM College of Pharmacy"
+        ]
+      },
+      {
+        "name": "Damodharan Narayanaswamy",
+        "position": 3,
+        "affiliations": [
+          "SRM College of Pharmacy"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Vara Prasad Saka",
+        "affiliations": [
+          "Vignan Pharmacy College"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 38,
+    "pub_id": "7ccf67d5-3700-4b66-9316-4888602ce34a",
+    "title": "Smart Motor Analytics: Real-Time Internal and External Parameters Identification Through IoT",
+    "doi": "10.1109/iccigst60741.2024.10717539",
+    "year": 2024,
+    "citation_count": 4,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Kapu V Sri Ram Prasad",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women Kapujaggarajupeta,Department of Electrical &#x0026; Electronics Engineering,Visakhapatnam,Andhra Pradesh"
+        ]
+      },
+      {
+        "name": "T. Mrudhula",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women Kapujaggarajupeta,Department of Electrical &#x0026; Electronics Engineering,Visakhapatnam,Andhra Pradesh"
+        ]
+      },
+      {
+        "name": "J. Ooha",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women Kapujaggarajupeta,Department of Electrical &#x0026; Electronics Engineering,Visakhapatnam,Andhra Pradesh"
+        ]
+      },
+      {
+        "name": "Rani Sharma",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women Kapujaggarajupeta,Department of Electrical &#x0026; Electronics Engineering,Visakhapatnam,Andhra Pradesh"
+        ]
+      },
+      {
+        "name": "Y. Jyothi",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women Kapujaggarajupeta,Department of Electrical &#x0026; Electronics Engineering,Visakhapatnam,Andhra Pradesh"
+        ]
+      },
+      {
+        "name": "K. Vimala",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women Kapujaggarajupeta,Department of Electrical &#x0026; Electronics Engineering,Visakhapatnam,Andhra Pradesh"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Kapu V Sri Ram Prasad",
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women Kapujaggarajupeta,Department of Electrical &#x0026; Electronics Engineering,Visakhapatnam,Andhra Pradesh"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 39,
+    "pub_id": "15ad80fb-f604-4669-9b20-9e5305e18678",
+    "title": "Antioxidant studies of hispolon and its derivatives.",
+    "doi": "10.21203/rs.3.rs-1644043/v2",
+    "year": 2022,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Vara Prasad Saka",
+        "position": 1,
+        "affiliations": [
+          "Vignan Pharmacy College"
+        ]
+      },
+      {
+        "name": "Chitra Vellapandian",
+        "position": 2,
+        "affiliations": [
+          "SRM College of Pharmacy"
+        ]
+      },
+      {
+        "name": "Damodharan Narayanaswamy",
+        "position": 3,
+        "affiliations": [
+          "SRM College of Pharmacy"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Vara Prasad Saka",
+        "affiliations": [
+          "Vignan Pharmacy College"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 40,
+    "pub_id": "dbffd8d1-9aa2-441e-97bc-31da18ee8c17",
+    "title": "Supervised Model-Based Feature Selection on Diverse Dataset",
+    "doi": "10.1109/icaect68478.2026.11426102",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Srimannarayana Mopidevi",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology &#x0026; Research (Deemed to be University),Department of Information Technology,Guntur,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Durga Prasad Pitti",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology &#x0026; Research (Deemed to be University),Department of Information Technology,Guntur,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Kavyasri Thatavarthi",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology &#x0026; Research (Deemed to be University),Department of Information Technology,Guntur,Andhra Pradesh,India"
+        ]
+      },
+      {
+        "name": "Vishnavi Eddu",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology &#x0026; Research (Deemed to be University),Department of Information Technology,Guntur,Andhra Pradesh,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Durga Prasad Pitti",
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology &#x0026; Research (Deemed to be University),Department of Information Technology,Guntur,Andhra Pradesh,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 41,
+    "pub_id": "55be8d57-23f2-4af8-9155-6cad1b3a561c",
+    "title": "RP-HPLC Method for Quantification of Bilastine and Monteleukast Sodium in Pharmaceutical Dosage form",
+    "doi": "10.52711/0974-360x.2023.00180",
+    "year": 2023,
+    "citation_count": 4,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Mohammed Sameera Bhanu",
+        "position": 1,
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Beside VSEZ, Duvvada, Visakhapatnam \u2013 530049, Andhra Pradesh, India."
+        ]
+      },
+      {
+        "name": "Vasudha Dadi",
+        "position": 2,
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Beside VSEZ, Duvvada, Visakhapatnam \u2013 530049, Andhra Pradesh, India."
+        ]
+      },
+      {
+        "name": "Srinivasa Rao Yarraguntla",
+        "position": 3,
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Beside VSEZ, Duvvada, Visakhapatnam \u2013 530049, Andhra Pradesh, India."
+        ]
+      },
+      {
+        "name": "Vara Prasad Rao K",
+        "position": 4,
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Beside VSEZ, Duvvada, Visakhapatnam \u2013 530049, Andhra Pradesh, India."
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Vara Prasad Rao K",
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Beside VSEZ, Duvvada, Visakhapatnam \u2013 530049, Andhra Pradesh, India."
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 42,
+    "pub_id": "73b358da-10d3-4ed3-beaa-a99437528e89",
+    "title": "Multi-Face Recognition-Based Attendance System Using Image and Video Inputs",
+    "doi": "10.1109/cicn70047.2026.11594254",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "crossref_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Gunturu Aravinda Swamy",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Gunturu Tejaswini",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Jagarlamudi Durga Prasad",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Payidimarri Venkata Rama Naga Surendra",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ]
+      },
+      {
+        "name": "Shaik Mastan Sharif",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Jagarlamudi Durga Prasad",
+        "affiliations": [
+          "Vignan&#x0027;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 43,
+    "pub_id": "d51496fb-974c-4a56-b0c7-21d6615d903d",
+    "title": "Modeling and analysis of an environmentally friendly CuBi2O4 solar cell with advanced n/p/p+ architecture",
+    "doi": "10.1016/j.jpcs.2025.113227",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Dakua P.K.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 44,
+    "pub_id": "7f124e68-5aa7-4451-8b5d-17315df2fd95",
+    "title": "Deep Learning in Cyber Security: A Guide to Harnessing Generative AI for Enhanced Threat Detection",
+    "doi": "10.1002/9781394305698-02",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Lavanya Kumari P.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 45,
+    "pub_id": "34745496-8747-44da-a036-7790d2227313",
+    "title": "Enhancing Speech Emotion Recognition with\u00a0Hybrid Deep Learning Models and\u00a0Multi-feature Fusion",
+    "doi": "10.1007/978-3-032-09572-5_8",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Elnazer M.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 46,
+    "pub_id": "3b5226d8-6be5-430e-a6ca-dc0dfa01e156",
+    "title": "A User-centred Hybrid Framework for Material Selection Using QFD, TOPSIS, Entropy Validated Using Sensitivity Analysis",
+    "doi": "10.1007/s40032-025-01247-z",
+    "year": 2025,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Krishna Murthy P.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 47,
+    "pub_id": "00dd46af-885b-48eb-84a0-99af38462f1f",
+    "title": "Principal component and cluster analysis of yield and its contributing traits in sesame (Sesamum indicum L.) genotypes",
+    "doi": "10.14719/pst.11556",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Prasad B.V.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 48,
+    "pub_id": "9ca82526-1445-4990-87f2-1ed4cf5a8f76",
+    "title": "Foreseeing Worker Attrition Using Machine Learning",
+    "doi": "10.1007/978-3-031-51338-1_33",
+    "year": 2025,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "LaxmiKanth P.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 49,
+    "pub_id": "b8f60123-6b98-4d88-aabd-a0659a2a0878",
+    "title": "Enhancing Smart Grid Efficiency with Distributed Energy Resource and Electric Vehicle Coordination Using a Pyramidal Dilation Attention Convolutional Neural Network",
+    "doi": "10.1109/icecst66106.2025.11307481",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Manchana R.K.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 50,
+    "pub_id": "fd4010bb-cae8-444e-8dd5-f67475a43079",
+    "title": "Optimizing Traffic Lights with Artificial Intelligence for Smarter Control",
+    "doi": "10.1007/978-3-031-72747-4_27",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Nagarjuna N.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 51,
+    "pub_id": "938e0a0c-9121-4a32-80c8-52fc5712704e",
+    "title": "Enhancing Urban Mobility: Deep Learning-Based Traffic Sign Assistant for the Visually Impaired",
+    "doi": "10.1109/teeccon64024.2024.10939317",
+    "year": 2024,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Prasad B.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 52,
+    "pub_id": "a392ae78-a542-4e88-b34b-d29fc09aca24",
+    "title": "Pioneering Minimalist Speech Analysis Through Optimized Spectral Features Machine Learning Models",
+    "doi": "10.1109/esci59607.2024.10497288",
+    "year": 2024,
+    "citation_count": 3,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Harsha Vardhini P.A.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 53,
+    "pub_id": "b2f02d05-0c55-404d-ad76-75925d736717",
+    "title": "Identification of Gender from the Shortest Speech using Hybrid and Optimised Spectral Features using Machine Learning Model",
+    "doi": "10.1109/inc460750.2024.10649072",
+    "year": 2024,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Shiva Prasad S.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 54,
+    "pub_id": "a62d70ef-e479-4d55-a41e-7b842e2d2ee1",
+    "title": "On Primitive Ternary \u0413-Semirings",
+    "doi": "10.52783/cana.v31.1297",
+    "year": 2024,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Maha Lakshmi K.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 55,
+    "pub_id": "60bc13f0-7f1b-46e8-830c-002ca7c15c86",
+    "title": "Modelling of Shallow Drawing of Aluminium Alloy AA2014 Thin Sheet Using FE Simulations",
+    "doi": "10.1007/s40033-022-00419-w",
+    "year": 2023,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Narender G.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 56,
+    "pub_id": "2212f0b2-8800-44c0-a154-34b782b3daee",
+    "title": "Enhancement in performance of DHTprecoding over WHT for EC companded OFDM in wireless networks",
+    "doi": "10.1007/s13204-021-02016-x",
+    "year": 2023,
+    "citation_count": 5,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Narayana A.L.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 57,
+    "pub_id": "6d6d8a4b-8639-46ab-b31f-7b59245a7a3f",
+    "title": "Carbon Footprint Assessment and Energy Budgeting of Different Annual and Perennial Forage Cropping Systems: A Study from the Semi-Arid Region of Karnataka, India",
+    "doi": "10.3390/agronomy12081783",
+    "year": 2022,
+    "citation_count": 22,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Manoj K.N.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 58,
+    "pub_id": "49ce7db3-c285-4807-892d-ce0153014065",
+    "title": "Spectroscopic, quantum mechanical, electronic excitation properties (Ethanol solvent), DFT investigations and molecular docking analysis of an anti-cancer drug Bendamustine",
+    "doi": "10.1016/j.molstruc.2021.132211",
+    "year": 2022,
+    "citation_count": 37,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Ramana P.V.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 59,
+    "pub_id": "36041beb-8b3e-4bd9-b952-e648bc754945",
+    "title": "Voltage Analysis of Multilevel Diode Clamped Inverter with SVPWM Technique",
+    "doi": "10.14447/jnmes.v25i2.a07",
+    "year": 2022,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Rao C.N.N.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 60,
+    "pub_id": "c34713b1-34ba-4575-a09f-89cd647d1834",
+    "title": "Genetic Dissection and Quantitative Trait Loci Mapping of Agronomic and Fodder Quality Traits in Sorghum Under Different Water Regimes",
+    "doi": "10.3389/fpls.2022.810632",
+    "year": 2022,
+    "citation_count": 13,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Somegowda V.K.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 61,
+    "pub_id": "39bed3f0-8907-4d12-91a8-27978091d7f3",
+    "title": "An Efficient Approach for Identification of Multi-plant Disease Using Image Processing Technique",
+    "doi": "10.1007/978-981-19-0898-9_25",
+    "year": 2022,
+    "citation_count": 5,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Kranthi Kumar K.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 62,
+    "pub_id": "6aaadb83-a46a-4beb-8a68-43fdb5eae0b2",
+    "title": "Power System Monitoring, Control and Protection for Network, IOT and Cyber Security",
+    "doi": "10.1109/icacite53722.2022.9823483",
+    "year": 2022,
+    "citation_count": 4,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Nagesh O.S.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 63,
+    "pub_id": "34f56a3d-51f8-43c1-817f-a89457436a2b",
+    "title": "Biomass quantity and quality from different year-round cereal\u2013legume cropping systems as forage or fodder for livestock",
+    "doi": "10.3390/su13169414",
+    "year": 2021,
+    "citation_count": 26,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Manoj K.N.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 64,
+    "pub_id": "e05de7e9-8fec-4354-864e-98d78533b05a",
+    "title": "Medicine allotment for COVID-19 patients by statistical data analysis",
+    "doi": "10.1109/esci50559.2021.9396830",
+    "year": 2021,
+    "citation_count": 9,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Harsha Vardhini P.A.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 65,
+    "pub_id": "933dd44d-e2c1-4ea9-8bc0-c8ed53f44fdc",
+    "title": "Comparative Analysis of Small and Large Capacity Sized On-grid, Rooftop Solar PV Systems\u00a0-\u00a0An LCA Approach",
+    "doi": "10.1007/978-981-15-7557-0_48",
+    "year": 2021,
+    "citation_count": 3,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Leela Prasad N.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 66,
+    "pub_id": "a13d1166-7eae-4529-a9a2-fca01e83f9ba",
+    "title": "Evaluation of fodder yield and fodder quality in sorghum and its interaction with grain yield under different water availability regimes",
+    "doi": "10.1016/j.cpb.2020.100191",
+    "year": 2021,
+    "citation_count": 25,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Somegowda V.K.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 67,
+    "pub_id": "7ac4ae71-e504-4818-a0b9-bd890c6d5c69",
+    "title": "Second law analysis of MHD Jeffrey fluid through assymetric channel with peristalsis",
+    "doi": "10.1063/5.0014416",
+    "year": 2020,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Shekar P.R.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 68,
+    "pub_id": "36c66228-2a3c-4f08-8075-1c63dfaa3a13",
+    "title": "Carrier frequency offset (CFO) estimation in MC-CDMA system",
+    "doi": null,
+    "year": 2020,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Raju G.N.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 69,
+    "pub_id": "ee5c83d1-b3fd-44c7-bf53-9c90472403bc",
+    "title": "Visible luminescence characteristics of Pr3+ ions in TeO2\u2013Sb2O3\u2013WO3 glasses",
+    "doi": "10.1016/j.optmat.2020.109740",
+    "year": 2020,
+    "citation_count": 31,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Rao V.H.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 70,
+    "pub_id": "e70b833e-3939-477d-b248-bcfc86902c26",
+    "title": "Life Cycle Assessment of a 100 kWp\u00a0Solar PV-Based Electric Power Generation System in India",
+    "doi": "10.1007/978-981-15-1124-0_7",
+    "year": 2020,
+    "citation_count": 3,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Leela Prasad N.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 71,
+    "pub_id": "a4b8890d-bb99-4c5a-a728-c59ff257ed59",
+    "title": "Design of analysis of wideband hexagonal circular ring patch antenna using defected ground structures",
+    "doi": null,
+    "year": 2019,
+    "citation_count": 3,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Rakesh Kumar P.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 72,
+    "pub_id": "34e538d1-4725-45f9-a863-893355054f56",
+    "title": "Artificial neural networks model to improve the performance index of the coil-disc assembly in tube flow",
+    "doi": "10.1007/978-981-10-2471-9_4",
+    "year": 2017,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Kanaka Durga R.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 73,
+    "pub_id": "f094d8ee-d3ba-4e71-b52b-b29d315c7d26",
+    "title": "Adaptive fuzzy membership functions with AGA techniques in Telugu character recognition",
+    "doi": "10.3923/ajit.2015.11.22",
+    "year": 2015,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Venkateswar Lai P.K.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 74,
+    "pub_id": "11f13c10-86ab-4500-a5d0-d3607a9c484f",
+    "title": "An efficient approach for knowledge discovery in decision trees using attribute transform and outlier detection",
+    "doi": null,
+    "year": 2015,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Prasad C.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 75,
+    "pub_id": "99fc85ef-2eae-472d-b01e-bda663b9098d",
+    "title": "Fracture behaviour of carbon nanotube and carbon fibre-reinforced, epoxy-matrix hybrid composite",
+    "doi": "10.1504/ijmpt.2015.070075",
+    "year": 2015,
+    "citation_count": 5,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Chandra Shekar K.C.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 76,
+    "pub_id": "6ebeb58a-7425-445d-82c7-472290f130c0",
+    "title": "A novel prototype decision tree method using sampling strategy",
+    "doi": "10.1007/978-3-319-21404-7_7",
+    "year": 2015,
+    "citation_count": 0,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Battula B.P.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 77,
+    "pub_id": "bd90a25e-d243-45e0-8397-bb7e66d59e68",
+    "title": "Effect of notch root radius on the apparent fracture toughness in CNT and carbon fiber reinforced, epoxy-matrix hybrid composite",
+    "doi": "10.1007/s12666-013-0312-4",
+    "year": 2014,
+    "citation_count": 9,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Chandra Shekar K.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 78,
+    "pub_id": "b2c89777-d2e3-4388-ba5c-7dad7cc5231d",
+    "title": "FPGA implementation of back propagation algorithm for ANN using Verilog HDL",
+    "doi": null,
+    "year": 2014,
+    "citation_count": 2,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Krishna V.V.S.V.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 79,
+    "pub_id": "ccf8c567-05dd-4c0a-9606-b4faedec05e2",
+    "title": "Processing, structure and flexural strength of CNT and carbon fibre reinforced, epoxy-matrix hybrid composite",
+    "doi": "10.1007/s12034-014-0703-0",
+    "year": 2014,
+    "citation_count": 14,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Shekar K.C.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 80,
+    "pub_id": "b390b1a9-8973-43fb-bd6d-908adae638f7",
+    "title": "A novel spectrofluorimetric method for the determination of gemifloxacin in bulk and pharmaceutical formulation",
+    "doi": null,
+    "year": 2014,
+    "citation_count": 1,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Nagaraju P.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 81,
+    "pub_id": "ded2aa9e-9cdc-423c-996e-ad64d301ba4d",
+    "title": "A novel decision tree approach for the prediction of precipitation using entropy in SLIQ",
+    "doi": "10.1109/uksim.2013.74",
+    "year": 2013,
+    "citation_count": 7,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Prasad N.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 82,
+    "pub_id": "16114bd4-a3ee-4813-85d5-81f2f586bd31",
+    "title": "An approach to prediction of precipitation using Gini Index in SLIQ decision tree",
+    "doi": "10.1109/isms.2013.27",
+    "year": 2013,
+    "citation_count": 30,
+    "pa_author_name_raw": "Dr P. Siva Prasad",
+    "pa_attribution_method": "scopus_author_search",
+    "pa_attribution_confidence": 0.95,
+    "all_parsed_authors": [
+      {
+        "name": "Prasad N.",
+        "position": 1,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 83,
+    "pub_id": "1dbc18d6-b7d6-4e0d-a95d-e026912f616e",
+    "title": "Clustering Student Learners based on performance using K-Means Algorithm",
+    "doi": "10.1109/mecon53876.2022.9752165",
+    "year": 2022,
+    "citation_count": 13,
+    "pa_author_name_raw": "S. Shiva Prasad",
+    "pa_attribution_method": "name_affiliation_heuristic",
+    "pa_attribution_confidence": 0.896551724137931,
+    "all_parsed_authors": [
+      {
+        "name": "Venkata Rami Reddy",
+        "position": 1,
+        "affiliations": [
+          "BVRIT Hyderabad College of Engineering for Women,Department of Computer Science &#x0026; Engineering,Hyderabad,India"
+        ]
+      },
+      {
+        "name": "D. Yakobu",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Foundation for Science Technology and Research,Department of Computer Science &#x0026; Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "S. Shiva Prasad",
+        "position": 3,
+        "affiliations": [
+          "Malla Reddy Engineering College,Department of Computer Science &#x0026; Engineering,Hyderabad,India"
+        ]
+      },
+      {
+        "name": "P A Harsha Vardhini",
+        "position": 4,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of ECE,Hyderabad,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "S. Shiva Prasad",
+        "affiliations": [
+          "Malla Reddy Engineering College,Department of Computer Science &#x0026; Engineering,Hyderabad,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 84,
+    "pub_id": "10bd3dac-5d08-4862-aa8e-fc83d5dd02c5",
+    "title": "An Adaptive Hybrid Learning Framework for Cyber Threat Identification and Automated Response in Industrial IoT Networks",
+    "doi": "10.1109/iciccs67901.2026.11502731",
+    "year": 2026,
+    "citation_count": 0,
+    "pa_author_name_raw": "P Sai Prasad",
+    "pa_attribution_method": "name_affiliation_heuristic",
+    "pa_attribution_confidence": 1.0,
+    "all_parsed_authors": [
+      {
+        "name": "P Sai Prasad",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "K Naga Tulasi",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "N Shyam Prasad",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "M Keerthi",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Guntur,India"
+        ]
+      },
+      {
+        "name": "K Phani Sekhar",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Guntur,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "P Sai Prasad",
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Computer Science and Engineering,Guntur,India"
+        ],
+        "source": "crossref"
+      },
+      {
+        "name": "N Shyam Prasad",
+        "affiliations": [
+          "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Guntur,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 85,
+    "pub_id": "c5be66b7-a98a-47ee-8641-b4bfd132811b",
+    "title": "A Smart Water Leakage Detection System using Internet of Things",
+    "doi": "10.1109/ciacon65473.2025.11189462",
+    "year": 2025,
+    "citation_count": 0,
+    "pa_author_name_raw": "Kapu V Sri Ram Prasad",
+    "pa_attribution_method": "name_affiliation_heuristic",
+    "pa_attribution_confidence": 0.8558823529411764,
+    "all_parsed_authors": [
+      {
+        "name": "Kapu V Sri Ram Prasad",
+        "position": 1,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women (Autonomous),Department of Electrical and Electronics Engineering,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "G. Santhi",
+        "position": 2,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women (Autonomous),Department of Electrical and Electronics Engineering,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "K. Akhila",
+        "position": 3,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women (Autonomous),Department of Electrical and Electronics Engineering,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "Ch Bala Lalli Priya",
+        "position": 4,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women (Autonomous),Department of Electrical and Electronics Engineering,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "D. Yasaswini",
+        "position": 5,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women (Autonomous),Department of Electrical and Electronics Engineering,Visakhapatnam,India"
+        ]
+      },
+      {
+        "name": "A. Sireesha",
+        "position": 6,
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women (Autonomous),Department of Electrical and Electronics Engineering,Visakhapatnam,India"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Kapu V Sri Ram Prasad",
+        "affiliations": [
+          "Vignan&#x2019;s Institute of Engineering for Women (Autonomous),Department of Electrical and Electronics Engineering,Visakhapatnam,India"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  },
+  {
+    "index": 86,
+    "pub_id": "c9c7f55c-064a-4381-9003-b3b71590bd9c",
+    "title": "Oxidative Stress in Liver Tissues of Marek \u2019 s Disease Affected Layer Chicken KV",
+    "doi": null,
+    "year": 2017,
+    "citation_count": 3,
+    "pa_author_name_raw": "P. E. Prasad",
+    "pa_attribution_method": "name_affiliation_heuristic",
+    "pa_attribution_confidence": 0.9166666666666665,
+    "all_parsed_authors": [
+      {
+        "name": "R. Kishore",
+        "position": 1,
+        "affiliations": []
+      },
+      {
+        "name": "K. Padmaja",
+        "position": 2,
+        "affiliations": []
+      },
+      {
+        "name": "P. E. Prasad",
+        "position": 3,
+        "affiliations": []
+      },
+      {
+        "name": "B. Kumari",
+        "position": 4,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 87,
+    "pub_id": "125c6200-30c6-4aef-a512-427753c9167f",
+    "title": "Synthesis and In-silico Docking Analysis of 2-Phenylindolizine Acetamide\nScaffolds: Potent Anticancer and Antibacterial Ta",
+    "doi": "10.2174/0115734072301391240604062819",
+    "year": 2024,
+    "citation_count": 0,
+    "pa_author_name_raw": "P. R. Prasad",
+    "pa_attribution_method": "name_affiliation_heuristic",
+    "pa_attribution_confidence": 0.9166666666666665,
+    "all_parsed_authors": [
+      {
+        "name": "A. Shaik",
+        "position": 1,
+        "affiliations": []
+      },
+      {
+        "name": "M. Prasad",
+        "position": 2,
+        "affiliations": []
+      },
+      {
+        "name": "P. R. Prasad",
+        "position": 3,
+        "affiliations": []
+      },
+      {
+        "name": "P. V. Kishore",
+        "position": 4,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 88,
+    "pub_id": "990efe3c-a5e8-46aa-80a2-c6671f1bd8b3",
+    "title": "Safety and immunogenicity of an inactivated SARS-CoV-2 vaccine, BBV152: a double-blind, randomised, phase 1 trial",
+    "doi": "10.1016/s1473-3099(20)30942-7",
+    "year": 2021,
+    "citation_count": 288,
+    "pa_author_name_raw": "S. Prasad",
+    "pa_attribution_method": "name_affiliation_heuristic",
+    "pa_attribution_confidence": 0.8571428571428572,
+    "all_parsed_authors": [
+      {
+        "name": "R. Ella",
+        "position": 1,
+        "affiliations": []
+      },
+      {
+        "name": "K. M. Vadrevu",
+        "position": 2,
+        "affiliations": []
+      },
+      {
+        "name": "H. Jogdand",
+        "position": 3,
+        "affiliations": []
+      },
+      {
+        "name": "S. Prasad",
+        "position": 4,
+        "affiliations": []
+      },
+      {
+        "name": "S. Reddy",
+        "position": 5,
+        "affiliations": []
+      },
+      {
+        "name": "V. Sarangi",
+        "position": 6,
+        "affiliations": []
+      },
+      {
+        "name": "B. Ganneru",
+        "position": 7,
+        "affiliations": []
+      },
+      {
+        "name": "G. Sapkal",
+        "position": 8,
+        "affiliations": []
+      },
+      {
+        "name": "P. Yadav",
+        "position": 9,
+        "affiliations": []
+      },
+      {
+        "name": "P. Abraham",
+        "position": 10,
+        "affiliations": []
+      },
+      {
+        "name": "S. Panda",
+        "position": 11,
+        "affiliations": []
+      },
+      {
+        "name": "N. Gupta",
+        "position": 12,
+        "affiliations": []
+      },
+      {
+        "name": "P. Reddy",
+        "position": 13,
+        "affiliations": []
+      },
+      {
+        "name": "S. Verma",
+        "position": 14,
+        "affiliations": []
+      },
+      {
+        "name": "Sanjay Kumar Rai",
+        "position": 15,
+        "affiliations": []
+      },
+      {
+        "name": "C. Singh",
+        "position": 16,
+        "affiliations": []
+      },
+      {
+        "name": "S. Redkar",
+        "position": 17,
+        "affiliations": []
+      },
+      {
+        "name": "C. S. Gillurkar",
+        "position": 18,
+        "affiliations": []
+      },
+      {
+        "name": "J. Kushwaha",
+        "position": 19,
+        "affiliations": []
+      },
+      {
+        "name": "S. Mohapatra",
+        "position": 20,
+        "affiliations": []
+      },
+      {
+        "name": "V. Rao",
+        "position": 21,
+        "affiliations": []
+      },
+      {
+        "name": "R. Guleria",
+        "position": 22,
+        "affiliations": []
+      },
+      {
+        "name": "K. Ella",
+        "position": 23,
+        "affiliations": []
+      },
+      {
+        "name": "B. Bhargava",
+        "position": 24,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 89,
+    "pub_id": "c75a26af-52b4-474a-babb-93b008e2ebfd",
+    "title": "Safety and immunogenicity of an inactivated SARS-CoV-2 vaccine, BBV152: interim results from a double-blind, randomised, multicentre, phase 2 trial, and 3-month follow-up of a double-blind, randomised phase 1 trial",
+    "doi": "10.1016/s1473-3099(21)00070-0",
+    "year": 2021,
+    "citation_count": 237,
+    "pa_author_name_raw": "S. Prasad",
+    "pa_attribution_method": "name_affiliation_heuristic",
+    "pa_attribution_confidence": 0.8571428571428572,
+    "all_parsed_authors": [
+      {
+        "name": "R. Ella",
+        "position": 1,
+        "affiliations": []
+      },
+      {
+        "name": "S. Reddy",
+        "position": 2,
+        "affiliations": []
+      },
+      {
+        "name": "H. Jogdand",
+        "position": 3,
+        "affiliations": []
+      },
+      {
+        "name": "V. Sarangi",
+        "position": 4,
+        "affiliations": []
+      },
+      {
+        "name": "B. Ganneru",
+        "position": 5,
+        "affiliations": []
+      },
+      {
+        "name": "S. Prasad",
+        "position": 6,
+        "affiliations": []
+      },
+      {
+        "name": "D. Das",
+        "position": 7,
+        "affiliations": []
+      },
+      {
+        "name": "D. Raju",
+        "position": 8,
+        "affiliations": []
+      },
+      {
+        "name": "U. Praturi",
+        "position": 9,
+        "affiliations": []
+      },
+      {
+        "name": "G. Sapkal",
+        "position": 10,
+        "affiliations": []
+      },
+      {
+        "name": "P. Yadav",
+        "position": 11,
+        "affiliations": []
+      },
+      {
+        "name": "P. Reddy",
+        "position": 12,
+        "affiliations": []
+      },
+      {
+        "name": "S. Verma",
+        "position": 13,
+        "affiliations": []
+      },
+      {
+        "name": "C. Singh",
+        "position": 14,
+        "affiliations": []
+      },
+      {
+        "name": "S. Redkar",
+        "position": 15,
+        "affiliations": []
+      },
+      {
+        "name": "C. S. Gillurkar",
+        "position": 16,
+        "affiliations": []
+      },
+      {
+        "name": "J. Kushwaha",
+        "position": 17,
+        "affiliations": []
+      },
+      {
+        "name": "S. Mohapatra",
+        "position": 18,
+        "affiliations": []
+      },
+      {
+        "name": "A. Bhate",
+        "position": 19,
+        "affiliations": []
+      },
+      {
+        "name": "S. Rai",
+        "position": 20,
+        "affiliations": []
+      },
+      {
+        "name": "S. Panda",
+        "position": 21,
+        "affiliations": []
+      },
+      {
+        "name": "P. Abraham",
+        "position": 22,
+        "affiliations": []
+      },
+      {
+        "name": "N. Gupta",
+        "position": 23,
+        "affiliations": []
+      },
+      {
+        "name": "K. Ella",
+        "position": 24,
+        "affiliations": []
+      },
+      {
+        "name": "B. Bhargava",
+        "position": 25,
+        "affiliations": []
+      },
+      {
+        "name": "K. M. Vadrevu",
+        "position": 26,
+        "affiliations": []
+      }
+    ],
+    "prasad_authors_in_source": [],
+    "affiliation_text": null
+  },
+  {
+    "index": 90,
+    "pub_id": "eed8d870-886d-4825-9071-4413decbda88",
+    "title": "Road Accident Severity and Hospital Recommendation using Deep Learning Techniques",
+    "doi": "10.1109/icimia67127.2025.11200643",
+    "year": 2025,
+    "citation_count": 3,
+    "pa_author_name_raw": "Ch. Shiva Prasad",
+    "pa_attribution_method": "name_affiliation_heuristic",
+    "pa_attribution_confidence": 1.0,
+    "all_parsed_authors": [
+      {
+        "name": "Ravi Kishore Polisetti",
+        "position": 1,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &amp; ML),Nalgonda,Telangana,508284"
+        ]
+      },
+      {
+        "name": "A. Pushpita",
+        "position": 2,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &amp; ML),Nalgonda,Telangana,508284"
+        ]
+      },
+      {
+        "name": "Ch. Shiva Prasad",
+        "position": 3,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &amp; ML),Nalgonda,Telangana,508284"
+        ]
+      },
+      {
+        "name": "K. Karthik",
+        "position": 4,
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &amp; ML),Nalgonda,Telangana,508284"
+        ]
+      }
+    ],
+    "prasad_authors_in_source": [
+      {
+        "name": "Ch. Shiva Prasad",
+        "affiliations": [
+          "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &amp; ML),Nalgonda,Telangana,508284"
+        ],
+        "source": "crossref"
+      }
+    ],
+    "affiliation_text": null
+  }
+]

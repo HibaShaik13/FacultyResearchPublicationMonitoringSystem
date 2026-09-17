@@ -61,3 +61,29 @@ class CrossrefClient:
             params["query.affiliation"] = affiliation
             
         return await self._fetch_works_paginated(params)
+
+    async def get_work_by_doi(self, doi: str) -> Dict[str, Any] | None:
+        """Fetch a single work directly by DOI from Crossref."""
+        if not doi:
+            return None
+        clean_doi = doi.replace("https://doi.org/", "").replace("http://doi.org/", "").strip()
+        url = f"{self.BASE_URL}/works/{clean_doi}"
+        async with httpx.AsyncClient(timeout=15.0, headers=self.headers) as client:
+            for attempt in range(3):
+                try:
+                    response = await client.get(url)
+                    if response.status_code == 404:
+                        return None
+                    if response.status_code == 429:
+                        await asyncio.sleep(2 ** attempt)
+                        continue
+                    response.raise_for_status()
+                    data = response.json()
+                    return data.get("message")
+                except httpx.HTTPStatusError as e:
+                    logger.warning(f"Crossref get_work_by_doi HTTP error for {clean_doi}: {e}")
+                    break
+                except Exception as e:
+                    logger.warning(f"Crossref get_work_by_doi error for {clean_doi}: {e}")
+                    await asyncio.sleep(1)
+        return None

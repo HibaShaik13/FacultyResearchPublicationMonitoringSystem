@@ -1,0 +1,248 @@
+{
+  "Dr Prashant Upadhyay": {
+    "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+    "raw_name": "Dr Prashant Upadhyay",
+    "department": "CSE",
+    "total_snapshots_in_db": 2,
+    "latest_snapshot_in_db": {
+      "snapshot_date": "2026-09-17",
+      "total_publications": 127,
+      "total_citations": 19531,
+      "h_index": 27,
+      "i10_index": 43
+    },
+    "attributed_publications_count": 127,
+    "sample_publications": [
+      {
+        "title": "P. Kumar, P. Upadhyay, \u201cA Modified Deep Learning Based Convolutional Neural Network Model for Facial Emotion Prediction\u201d, Computer and Research Development, Vol.24, No.7, pp.382-390, 2024 (Scopus)",
+        "doi": "None",
+        "citation_count": 0,
+        "citation_source": "none"
+      },
+      {
+        "title": "Thakur, D., Patidar, H., Maheshwari, V., Kar, R., Upadhyay, P. (2023). An Efficient 8T GDI Enable Full Adder Design for Data Path Subsystem. In: Chakraborty, B., Biswas, A., Chakrabarti, A. (eds) Advances in Data Science and Computing Technologies. ADSC 2022. Lecture Notes in Electrical Engineering, vol 1056. Springer, Singapore. https://doi.org/10.1007/978-981-99-3656-4_66 (Scopus)",
+        "doi": "10.1007/978-981-99-3656-4_66",
+        "citation_count": 0,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "LAYA, P., HARSHITHA, E., MADHU, Y., UPADHYAY, P., & RAJASEKARAN, S. (2023). IOT BASED WHEELED ROBOTIC ARM. INTERNATIONAL JOURNAL OF SCIENTIFIC & TECHNICAL DEVELOPMENT.",
+        "doi": "None",
+        "citation_count": 0,
+        "citation_source": "none"
+      },
+      {
+        "title": "R. Bera, S. Cheruvu, K. Kundu, P. Upadhyay, D. Mandal, \u201cArray Antenna Pattern Synthesis using Improved Particle Swarm Optimization (IPSO) Algorithm\u201d, ECTI Transactions on Electrical Engineering, Electronics, and Communications, Vol. 21, No. 2, pp.249806, 2023. (Scopus)",
+        "doi": "None",
+        "citation_count": 0,
+        "citation_source": "none"
+      },
+      {
+        "title": "V. Aggarwal, S. Kesharwani, A. Khosla, P. Upadhyay, & A. Kumar, \u201cA Study on Tunable SIW-Based Self-Diplexing Antenna\u201d, Singapore: Springer Nature Singapore, Jan, Vol. 554, pp. 215-225, 2023. (Scopus)",
+        "doi": "None",
+        "citation_count": 0,
+        "citation_source": "none"
+      },
+      {
+        "title": "S. Nanda, P. Upadhyay, \u201cA compact UWB Monopole Antenna for GPS, LTE and Satellite application with Hybrid Polarization\u201d, 2023 IEEE3rd International conference on Artificial Intelligence and Signal Processing (AISP), pp.1-4, 2023",
+        "doi": "None",
+        "citation_count": 0,
+        "citation_source": "none"
+      },
+      {
+        "title": "A. Nayyer and P. Upadhyay, \u201cRole of Artificial Intelligence in Healthcare System: An Overview\u201d, Mobile Health: Advances in Research and Applications-Volume-II, Chapter-6, Nova Science Publisher, October 06, 2022. (Scopus)",
+        "doi": "None",
+        "citation_count": 0,
+        "citation_source": "none"
+      },
+      {
+        "title": "I. Rosaline, A. Kumar, P. Upadhyay, A. H. Murshed, \u201cFour Element MIMO Antenna System with Decoupling lines for High Speed 5G Wireless Data Communication\u201d, International Journal of Antennas and Propagation, 2022. (SCI-IF- 1.5)",
+        "doi": "None",
+        "citation_count": 0,
+        "citation_source": "none"
+      }
+    ],
+    "api_verification": {
+      "faculty_endpoint": {
+        "status_code": 200,
+        "total_publications": 127,
+        "total_citations": 19531,
+        "h_index": 27,
+        "i10_index": 43,
+        "snapshot_date": "2026-09-17"
+      },
+      "dashboard_endpoint": {
+        "status_code": 200,
+        "total_publications": 127,
+        "total_citations": 19531,
+        "h_index": 27,
+        "i10_index": 43
+      },
+      "metrics_consistent": true
+    }
+  },
+  "Dr M Umadevi": {
+    "faculty_id": "b836df5d-0fbe-4fa0-b977-7b185969f2b8",
+    "raw_name": "Dr M Umadevi",
+    "department": "CSE",
+    "total_snapshots_in_db": 2,
+    "latest_snapshot_in_db": {
+      "snapshot_date": "2026-09-17",
+      "total_publications": 110,
+      "total_citations": 36222,
+      "h_index": 35,
+      "i10_index": 49
+    },
+    "attributed_publications_count": 110,
+    "sample_publications": [
+      {
+        "title": "The antimicrobial activity of nanoparticles: present situation and prospects for the future",
+        "doi": "10.2147/ijn.s121956",
+        "citation_count": 4046,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "Comprehensive molecular profiling of lung adenocarcinoma",
+        "doi": "10.1038/nature13385",
+        "citation_count": 5946,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "Comprehensive molecular characterization of urothelial bladder carcinoma",
+        "doi": "10.1038/nature12965",
+        "citation_count": 3099,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "Characterization of silver nanoparticles by green synthesis method using Pedalium murex leaf extract and their antibacterial activity",
+        "doi": "10.1007/s13204-015-0449-z",
+        "citation_count": 1064,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "Large scale ZnTe nanostructures on polymer micro patterns via capillary force photolithography",
+        "doi": "10.1063/1.4953120",
+        "citation_count": 2,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "Comprehensive, Integrative Genomic Analysis of Diffuse Lower-Grade Gliomas",
+        "doi": "10.1056/nejmoa1402121",
+        "citation_count": 3288,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "Green synthesis of silver nanoparticles using plant extracts and their antimicrobial activities: a review of recent literature",
+        "doi": "10.1039/d0ra09941d",
+        "citation_count": 787,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "Urinary tract infections: epidemiology, mechanisms of infection and treatment options",
+        "doi": "10.1038/nrmicro3432",
+        "citation_count": 4314,
+        "citation_source": "openalex"
+      }
+    ],
+    "api_verification": {
+      "faculty_endpoint": {
+        "status_code": 200,
+        "total_publications": 110,
+        "total_citations": 36222,
+        "h_index": 35,
+        "i10_index": 49,
+        "snapshot_date": "2026-09-17"
+      },
+      "dashboard_endpoint": {
+        "status_code": 200,
+        "total_publications": 110,
+        "total_citations": 36222,
+        "h_index": 35,
+        "i10_index": 49
+      },
+      "metrics_consistent": true
+    }
+  },
+  "Dr Venkatrama Phani Kumar S": {
+    "faculty_id": "754179a9-ceef-4a60-8a9c-94e31d2fe1b8",
+    "raw_name": "Dr Venkatrama Phani Kumar S",
+    "department": "Unknown",
+    "total_snapshots_in_db": 2,
+    "latest_snapshot_in_db": {
+      "snapshot_date": "2026-09-17",
+      "total_publications": 150,
+      "total_citations": 6945,
+      "h_index": 12,
+      "i10_index": 16
+    },
+    "attributed_publications_count": 150,
+    "sample_publications": [
+      {
+        "title": "Face Recognition by Classification using Radial Basis Function",
+        "doi": "10.14257/ijmue.2015.10.5.05",
+        "citation_count": 1,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "A Hybrid Framework for Sarcasm Detection Using CB Technique",
+        "doi": "10.14419/z470zd97",
+        "citation_count": 0,
+        "citation_source": "openalex"
+      },
+      {
+        "title": "A Cascaded Ensemble Framework Using BERT and Graph Features for Emotion Detection From English Poetry",
+        "doi": "10.1109/access.2025.3555897",
+        "citation_count": 0,
+        "citation_source": "crossref"
+      },
+      {
+        "title": "Deep Learning Based Real Time Semantic Segmentation of Autonomous Vehicles",
+        "doi": "10.1109/icccit62592.2025.10927974",
+        "citation_count": 1,
+        "citation_source": "crossref"
+      },
+      {
+        "title": "Performance Evaluation of Various Deep Learning Models for Sign Language Recognition",
+        "doi": "10.1109/esic64052.2025.10962660",
+        "citation_count": 3,
+        "citation_source": "crossref"
+      },
+      {
+        "title": "Bi-GRU and Glove Based Aspect-Level Movie Recommendation",
+        "doi": "10.1109/icccit62592.2025.10927787",
+        "citation_count": 0,
+        "citation_source": "crossref"
+      },
+      {
+        "title": "Optimizing Music Genre Classification: A Hybrid Approach with ACO and Ensemble Learning",
+        "doi": "10.1109/acoit62457.2024.10939430",
+        "citation_count": 1,
+        "citation_source": "crossref"
+      },
+      {
+        "title": "Mathematical study of SEIR model with functional rates of incidence and treatment",
+        "doi": "10.26637/mjm0804/0105",
+        "citation_count": 1,
+        "citation_source": "crossref"
+      }
+    ],
+    "api_verification": {
+      "faculty_endpoint": {
+        "status_code": 200,
+        "total_publications": 150,
+        "total_citations": 6945,
+        "h_index": 12,
+        "i10_index": 16,
+        "snapshot_date": "2026-09-17"
+      },
+      "dashboard_endpoint": {
+        "status_code": 200,
+        "total_publications": 150,
+        "total_citations": 6945,
+        "h_index": 12,
+        "i10_index": 16
+      },
+      "metrics_consistent": true
+    }
+  }
+}

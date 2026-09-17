@@ -115,6 +115,8 @@ async def test_deduplication(sample_publications):
     sample_publications[1].doi = "10.123/456"
     
     mock_session = AsyncMock(spec=AsyncSession)
+    mock_session.add = MagicMock()
+    mock_session.delete = MagicMock()
     
     # Needs to handle the initial select and the ReviewTask idempotency select
     def execute_side_effect(stmt):

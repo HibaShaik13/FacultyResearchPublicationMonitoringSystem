@@ -18,6 +18,8 @@ async def dashboard_stats(
     db: AsyncSession = Depends(get_db)
 ):
     """Get dashboard-level KPIs."""
+    from app.models.review import ReviewTask
+
     if not faculty_id:
         total_faculty = (await db.execute(select(func.count(FacultyProfile.id)))).scalar() or 0
         total_pubs = (await db.execute(select(func.count(Publication.id)))).scalar() or 0
@@ -30,8 +32,8 @@ async def dashboard_stats(
         ).scalar() or 0
         pending_review = (
             await db.execute(
-                select(func.count(Publication.id)).where(
-                    Publication.verification_status == "needs_review"
+                select(func.count(ReviewTask.id)).where(
+                    ReviewTask.status == "pending"
                 )
             )
         ).scalar() or 0
@@ -66,47 +68,59 @@ async def dashboard_stats(
         metrics_query = select(FacultyMetricSnapshot).where(FacultyMetricSnapshot.faculty_id == fac_uuid).order_by(FacultyMetricSnapshot.snapshot_date.desc()).limit(1)
         metrics = (await db.execute(metrics_query)).scalars().first()
         
-        if metrics and metrics.total_publications > 0:
+        # Real-time direct calculation from publication-author links
+        direct_pubs_count = (await db.execute(
+            select(func.count(Publication.id))
+            .join(Publication.authors)
+            .where(PublicationAuthor.faculty_id == fac_uuid)
+        )).scalar() or 0
+        
+        direct_cits_count = (await db.execute(
+            select(func.coalesce(func.sum(Publication.citation_count), 0))
+            .join(Publication.authors)
+            .where(PublicationAuthor.faculty_id == fac_uuid)
+        )).scalar() or 0
+
+        cits_res = await db.execute(
+            select(Publication.citation_count)
+            .join(Publication.authors)
+            .where(PublicationAuthor.faculty_id == fac_uuid)
+            .order_by(Publication.citation_count.desc())
+        )
+        citations = [c or 0 for c in cits_res.scalars().all()]
+        h_idx = 0
+        for i, c in enumerate(citations):
+            if c >= i + 1:
+                h_idx = i + 1
+            else:
+                break
+        i10_idx = sum(1 for c in citations if c >= 10)
+
+        if direct_pubs_count > 0:
+            total_pubs = direct_pubs_count
+            total_citations = direct_cits_count
+            h_index = h_idx
+            i10_index = i10_idx
+        elif metrics:
             total_pubs = metrics.total_publications
             total_citations = metrics.total_citations
             h_index = metrics.h_index
             i10_index = metrics.i10_index
         else:
-            # Resilient direct calculation from publication-author links
-            direct_pubs_count = (await db.execute(
-                select(func.count(Publication.id))
-                .join(Publication.authors)
-                .where(PublicationAuthor.faculty_id == fac_uuid)
-            )).scalar() or 0
-            
-            direct_cits_count = (await db.execute(
-                select(func.coalesce(func.sum(Publication.citation_count), 0))
-                .join(Publication.authors)
-                .where(PublicationAuthor.faculty_id == fac_uuid)
-            )).scalar() or 0
-
-            cits_res = await db.execute(
-                select(Publication.citation_count)
-                .join(Publication.authors)
-                .where(PublicationAuthor.faculty_id == fac_uuid)
-                .order_by(Publication.citation_count.desc())
-            )
-            citations = [c or 0 for c in cits_res.scalars().all()]
-            h_idx = 0
-            for i, c in enumerate(citations):
-                if c >= i + 1:
-                    h_idx = i + 1
-                else:
-                    break
-            i10_idx = sum(1 for c in citations if c >= 10)
-
-            total_pubs = direct_pubs_count
-            total_citations = direct_cits_count
-            h_index = h_idx
-            i10_index = i10_idx
+            total_pubs = 0
+            total_citations = 0
+            h_index = 0
+            i10_index = 0
         
+        from sqlalchemy import or_
         pending_review = (await db.execute(
-            select(func.count(ReviewTask.id)).where(ReviewTask.entity_id == fac_uuid)
+            select(func.count(ReviewTask.id)).where(
+                or_(
+                    ReviewTask.related_entity_id == fac_uuid,
+                    ReviewTask.entity_id == fac_uuid
+                ),
+                ReviewTask.status == "pending"
+            )
         )).scalar() or 0
         
         # Verify pubs for faculty
@@ -114,7 +128,7 @@ async def dashboard_stats(
             select(func.count(Publication.id))
             .join(Publication.authors)
             .where(PublicationAuthor.faculty_id == fac_uuid)
-            .where(Publication.verification_status.in_(["verified", "partially_verified"]))
+            .where(Publication.verification_status.in_(["verified", "partially_verified", "auto_verified", "human_verified"]))
         )).scalar() or 0
         
         flagged = (await db.execute(

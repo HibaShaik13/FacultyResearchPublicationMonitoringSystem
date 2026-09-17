@@ -1,0 +1,335 @@
+{
+  "check1_verified_records": {
+    "total_attributed_publications": 90,
+    "status_breakdown": {
+      "verified": 89,
+      "needs_review": 1
+    },
+    "verified_count": 89,
+    "needs_review_count": 1,
+    "snapshot_verified_publications": 90,
+    "non_verified_publications": [
+      {
+        "id": "c9c7f55c-064a-4381-9003-b3b71590bd9c",
+        "title": "Oxidative Stress in Liver Tissues of Marek \u2019 s Disease Affected Layer Chicken KV",
+        "status": "needs_review",
+        "citations": 3
+      }
+    ]
+  },
+  "check2_queue_isolation": {
+    "total_pending_tasks": 84,
+    "all_tasks_related_to_siva": true,
+    "dehtaj_linked_tasks": [
+      {
+        "task_id": "77fa58b7-fbfa-4bb2-9c87-a424278c04f8",
+        "task_type": "attribution_ambiguous",
+        "entity_id": "b3d9163d-80f5-4c3c-9780-9abafbe40605",
+        "related_entity_id": "e7399ee0-758c-453b-8a96-329e3dc2cc96",
+        "explanation": "Ambiguous attribution for author 'M. R. Asad' (score: 0.73)",
+        "evidence": {
+          "affiliations": [],
+          "matched_faculty": "p. siva prasad",
+          "raw_author_name": "M. R. Asad"
+        },
+        "publication_title": "The impact of delay in HIV diagnosis on patient survival: analysis of HIV infection trends from 2007 to 2023",
+        "linked_faculty": "Mr Dehtaj Shaik"
+      },
+      {
+        "task_id": "065ff9ee-9676-403a-8ff6-a3c6e461010b",
+        "task_type": "attribution_ambiguous",
+        "entity_id": "19b603a2-4b1e-4c0e-87d3-add8752eff61",
+        "related_entity_id": "e7399ee0-758c-453b-8a96-329e3dc2cc96",
+        "explanation": "Ambiguous attribution for author 'P. Durgaprasad' (score: 0.74)",
+        "evidence": {
+          "affiliations": [],
+          "matched_faculty": "p. siva prasad",
+          "raw_author_name": "P. Durgaprasad"
+        },
+        "publication_title": "Mixed convection flow of Magnetohydrodynamic Prandtl nanofluid containing gyrotactic microorganisms: Multi-layer neural network model",
+        "linked_faculty": "Mr Dehtaj Shaik"
+      },
+      {
+        "task_id": "ebffe44c-45ba-4f11-ad5f-4a7c88e95e5b",
+        "task_type": "attribution_ambiguous",
+        "entity_id": "ccd3ca9b-e5b0-4d22-9b87-a9d2fe498907",
+        "related_entity_id": "e7399ee0-758c-453b-8a96-329e3dc2cc96",
+        "explanation": "Ambiguous attribution for author 'A. Rashad' (score: 0.67)",
+        "evidence": {
+          "affiliations": [],
+          "matched_faculty": "p. siva prasad",
+          "raw_author_name": "A. Rashad"
+        },
+        "publication_title": "Nonlinear analysis of Darcy-Forchheimer flow in EMHD ternary hybrid nanofluid (Cu-CNT-Ti/water) with radiation effect",
+        "linked_faculty": "Mr Dehtaj Shaik"
+      },
+      {
+        "task_id": "67dd5869-bfb2-4579-96b5-95b7e18b365f",
+        "task_type": "attribution_ambiguous",
+        "entity_id": "125c6200-30c6-4aef-a512-427753c9167f",
+        "related_entity_id": "e7399ee0-758c-453b-8a96-329e3dc2cc96",
+        "explanation": "Ambiguous attribution for author 'M. Prasad' (score: 0.76)",
+        "evidence": {
+          "affiliations": [],
+          "matched_faculty": "p. siva prasad",
+          "raw_author_name": "M. Prasad"
+        },
+        "publication_title": "Synthesis and In-silico Docking Analysis of 2-Phenylindolizine Acetamide\nScaffolds: Potent Anticancer and Antibacterial Ta",
+        "linked_faculty": "Mr Dehtaj Shaik"
+      },
+      {
+        "task_id": "3e675e95-f317-495c-b0f8-3af8e84db317",
+        "task_type": "attribution_ambiguous",
+        "entity_id": "2e4d1f90-b6a1-4afc-acf3-e1e0d2bfa58b",
+        "related_entity_id": "e7399ee0-758c-453b-8a96-329e3dc2cc96",
+        "explanation": "Ambiguous attribution for author 'R. Rama Venkata Sai' (score: 0.76)",
+        "evidence": {
+          "affiliations": [
+            "Vignan Institute of Technology &#x0026; Science(A),Department of IT,Hyderabad,India"
+          ],
+          "matched_faculty": "p. siva prasad",
+          "raw_author_name": "R. Rama Venkata Sai"
+        },
+        "publication_title": "Real-Time Monitoring &amp; Protection Against Malicious Attacks in IoT Security Frameworks",
+        "linked_faculty": "Mr Dehtaj Shaik"
+      },
+      {
+        "task_id": "edf26bcc-d9cd-443c-b9e3-5b6458f30bd8",
+        "task_type": "attribution_ambiguous",
+        "entity_id": "72f2241d-7cf7-4e01-be99-2b2921b42047",
+        "related_entity_id": "e7399ee0-758c-453b-8a96-329e3dc2cc96",
+        "explanation": "Ambiguous attribution for author 'P. Srilatha' (score: 0.76)",
+        "evidence": {
+          "affiliations": [
+            "Vignan Institute of Technology and Science,Dept of IT,Hyderabad,India"
+          ],
+          "matched_faculty": "p. siva prasad",
+          "raw_author_name": "P. Srilatha"
+        },
+        "publication_title": "A Framework for Design and Development of Message sharing using Open-Source Software",
+        "linked_faculty": "Mr Dehtaj Shaik"
+      }
+    ]
+  },
+  "check3_research_focus": {
+    "faculty_research_interests": [
+      "Algebra",
+      "Machine Learning",
+      "Deep learning",
+      "Cryptography"
+    ],
+    "interests_count": 4
+  },
+  "check4_scholarly_output": {
+    "yearly_breakdown": [
+      {
+        "year": 2013,
+        "publications": 2,
+        "citations": 37
+      },
+      {
+        "year": 2014,
+        "publications": 5,
+        "citations": 34
+      },
+      {
+        "year": 2015,
+        "publications": 4,
+        "citations": 6
+      },
+      {
+        "year": 2017,
+        "publications": 2,
+        "citations": 3
+      },
+      {
+        "year": 2019,
+        "publications": 2,
+        "citations": 20
+      },
+      {
+        "year": 2020,
+        "publications": 6,
+        "citations": 62
+      },
+      {
+        "year": 2021,
+        "publications": 6,
+        "citations": 588
+      },
+      {
+        "year": 2022,
+        "publications": 9,
+        "citations": 94
+      },
+      {
+        "year": 2023,
+        "publications": 6,
+        "citations": 30
+      },
+      {
+        "year": 2024,
+        "publications": 13,
+        "citations": 24
+      },
+      {
+        "year": 2025,
+        "publications": 25,
+        "citations": 15
+      },
+      {
+        "year": 2026,
+        "publications": 10,
+        "citations": 0
+      }
+    ],
+    "top_cited_publications": [
+      {
+        "title": "Safety and immunogenicity of an inactivated SARS-CoV-2 vaccine, BBV152: a double-blind, randomised, phase 1 trial",
+        "year": 2021,
+        "citations": 288,
+        "journal": null,
+        "doi": "10.1016/s1473-3099(20)30942-7"
+      },
+      {
+        "title": "Safety and immunogenicity of an inactivated SARS-CoV-2 vaccine, BBV152: interim results from a double-blind, randomised, multicentre, phase 2 trial, and 3-month follow-up of a double-blind, randomised phase 1 trial",
+        "year": 2021,
+        "citations": 237,
+        "journal": null,
+        "doi": "10.1016/s1473-3099(21)00070-0"
+      },
+      {
+        "title": "Spectroscopic, quantum mechanical, electronic excitation properties (Ethanol solvent), DFT investigations and molecular docking analysis of an anti-cancer drug Bendamustine",
+        "year": 2022,
+        "citations": 37,
+        "journal": null,
+        "doi": "10.1016/j.molstruc.2021.132211"
+      },
+      {
+        "title": "Visible luminescence characteristics of Pr3+ ions in TeO2\u2013Sb2O3\u2013WO3 glasses",
+        "year": 2020,
+        "citations": 31,
+        "journal": null,
+        "doi": "10.1016/j.optmat.2020.109740"
+      },
+      {
+        "title": "An approach to prediction of precipitation using Gini Index in SLIQ decision tree",
+        "year": 2013,
+        "citations": 30,
+        "journal": null,
+        "doi": "10.1109/isms.2013.27"
+      },
+      {
+        "title": "Performance Analysis of Vegetable Oil as Dielectric Fluid in Electric Discharge Machining Process of Inconel 800",
+        "year": 2020,
+        "citations": 26,
+        "journal": null,
+        "doi": "10.4028/www.scientific.net/msf.978.77"
+      },
+      {
+        "title": "Biomass quantity and quality from different year-round cereal\u2013legume cropping systems as forage or fodder for livestock",
+        "year": 2021,
+        "citations": 26,
+        "journal": null,
+        "doi": "10.3390/su13169414"
+      },
+      {
+        "title": "Evaluation of fodder yield and fodder quality in sorghum and its interaction with grain yield under different water availability regimes",
+        "year": 2021,
+        "citations": 25,
+        "journal": null,
+        "doi": "10.1016/j.cpb.2020.100191"
+      },
+      {
+        "title": "Carbon Footprint Assessment and Energy Budgeting of Different Annual and Perennial Forage Cropping Systems: A Study from the Semi-Arid Region of Karnataka, India",
+        "year": 2022,
+        "citations": 22,
+        "journal": null,
+        "doi": "10.3390/agronomy12081783"
+      },
+      {
+        "title": "Effect of Fiber Orientation on the Flexural Properties of Glass Fiber Reinforced, Epoxy- Matrix Composite",
+        "year": 2019,
+        "citations": 17,
+        "journal": null,
+        "doi": "10.4028/www.scientific.net/msf.969.502"
+      }
+    ]
+  },
+  "check5_metric_consistency": {
+    "direct_db": {
+      "publications": 90,
+      "citations": 913,
+      "h_index": 13,
+      "i10_index": 14
+    },
+    "snapshot": {
+      "publications": 90,
+      "citations": 913,
+      "h_index": 13,
+      "i10_index": 14
+    }
+  },
+  "check6_zero_citations": [
+    {
+      "title": "Smart Attendance System using MERN Stack and Real-Time Face Recognition",
+      "doi": "10.1109/icssas68835.2026.11559393",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    },
+    {
+      "title": "Gesture-based File Management and Painting Application using Human Computer Interaction",
+      "doi": "10.1109/iciccs65191.2025.10985120",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    },
+    {
+      "title": "A Drift Voidance Perturb &amp; Observe MPPT Algorithm in Photovoltaic Systems",
+      "doi": "10.1109/resem57584.2023.10236066",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    },
+    {
+      "title": "AI-Powered Diabetes Prediction: A Comprehensive Machine Learning Strategy for Early Diagnosis",
+      "doi": "10.1109/icsss66939.2025.11346111",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    },
+    {
+      "title": "An AI-based Energy Management System For The Grid Integration of Energy Storage and Hybrid Devices",
+      "doi": "10.1109/wconf64849.2025.11233627",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    },
+    {
+      "title": "Cognisight-AI Orchestrated Lifecycle Management System",
+      "doi": "10.1109/icadcs70036.2026.11583751",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    },
+    {
+      "title": "Crime Prediction and Analysis Using Machine Learning",
+      "doi": "10.33425/3066-1226.1155",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    },
+    {
+      "title": "UPI Fraud Detection Using Convolutional Neural Networks",
+      "doi": "10.1109/cicn70047.2026.11594368",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    },
+    {
+      "title": "Interactive Augmented Reality Education Platform for Computer Science Engineering",
+      "doi": "10.1109/icetetsip64213.2025.11156519",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    },
+    {
+      "title": "Enhancement of Ship Classification Accuracy with Balanced Data and Convolutional Neural Networks",
+      "doi": "10.1109/conit65521.2025.11167820",
+      "citation_count": 0,
+      "citation_source": "crossref"
+    }
+  ]
+}

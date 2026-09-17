@@ -118,16 +118,56 @@ class HumanReviewAgent:
             pub = await self.session.get(Publication, task.entity_id)
             if pub:
                 old_entity_status = pub.verification_status
-                if canonical_decision == "approve":
-                    new_entity_status = "human_verified"
-                    pub.verification_status = "human_verified"
-                    pub.metadata_confidence = max(pub.metadata_confidence or 0.0, 95.0)
-                elif canonical_decision == "reject":
-                    new_entity_status = "human_rejected"
-                    pub.verification_status = "human_rejected"
-                elif canonical_decision == "request_correction":
-                    new_entity_status = "human_corrected"
-                    pub.verification_status = "human_corrected"
+                if task.task_type == "attribution_ambiguous":
+                    if canonical_decision == "approve" and task.related_entity_id:
+                        pa_stmt = select(PublicationAuthor).where(
+                            PublicationAuthor.publication_id == pub.id,
+                            PublicationAuthor.faculty_id == task.related_entity_id
+                        )
+                        pa_res = await self.session.execute(pa_stmt)
+                        pa = pa_res.scalars().first()
+                        if not pa:
+                            raw_name = ""
+                            if task.evidence and isinstance(task.evidence, dict):
+                                raw_name = task.evidence.get("raw_author_name", "")
+                            pa = PublicationAuthor(
+                                id=uuid.uuid4(),
+                                publication_id=pub.id,
+                                faculty_id=task.related_entity_id,
+                                author_position=1,
+                                author_name_raw=raw_name,
+                                attribution_confidence=1.0,
+                                attribution_method="human_confirmed",
+                                is_corresponding=False
+                            )
+                            self.session.add(pa)
+                        else:
+                            pa.attribution_confidence = 1.0
+                            pa.attribution_method = "human_confirmed"
+                        new_entity_status = "attribution_confirmed"
+                    elif canonical_decision == "reject" and task.related_entity_id:
+                        pa_stmt = select(PublicationAuthor).where(
+                            PublicationAuthor.publication_id == pub.id,
+                            PublicationAuthor.faculty_id == task.related_entity_id
+                        )
+                        pa_res = await self.session.execute(pa_stmt)
+                        pa = pa_res.scalars().first()
+                        if pa:
+                            await self.session.delete(pa)
+                        new_entity_status = "attribution_rejected"
+                    elif canonical_decision == "request_correction":
+                        new_entity_status = "attribution_correction_requested"
+                else:
+                    if canonical_decision == "approve":
+                        new_entity_status = "human_verified"
+                        pub.verification_status = "human_verified"
+                        pub.metadata_confidence = max(pub.metadata_confidence or 0.0, 95.0)
+                    elif canonical_decision == "reject":
+                        new_entity_status = "human_rejected"
+                        pub.verification_status = "human_rejected"
+                    elif canonical_decision == "request_correction":
+                        new_entity_status = "human_corrected"
+                        pub.verification_status = "human_corrected"
 
                 # Apply corrected fields if any
                 if corrected_fields and isinstance(corrected_fields, dict):

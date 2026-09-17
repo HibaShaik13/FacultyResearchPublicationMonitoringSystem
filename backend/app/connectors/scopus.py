@@ -66,8 +66,9 @@ class ScopusClient:
                 for attempt in range(3):
                     try:
                         response = await client.get(self.SEARCH_URL, params=params)
-                        if response.status_code == 401:
-                            logger.warning("Scopus API key invalid or expired")
+                        if response.status_code in (401, 403):
+                            logger.warning("Scopus API key invalid, unauthorized, or expired — disabling Scopus client")
+                            self.enabled = False
                             return results
                         if response.status_code == 429:
                             await asyncio.sleep(2 ** attempt)
@@ -84,10 +85,60 @@ class ScopusClient:
                             return results
                         break
                     except httpx.HTTPStatusError as e:
+                        if e.response.status_code in (401, 403):
+                            self.enabled = False
                         logger.error(f"Scopus HTTP error: {e}")
                         break
                     except Exception as e:
                         logger.error(f"Scopus search error: {e}")
+                        await asyncio.sleep(1)
+        return results
+
+    async def search_author_works(
+        self, author_id: str, count: int = 50
+    ) -> List[Dict[str, Any]]:
+        """
+        Search Scopus publications directly by Scopus Author ID (AU-ID).
+        Example: 54788460700 for Dr. M. Umadevi
+        """
+        if not self.enabled or not author_id:
+            return []
+
+        clean_id = str(author_id).replace("AUTHOR_ID:", "").strip()
+        query = f"AU-ID({clean_id})"
+        params = {
+            "query": query,
+            "count": min(count, 25),
+            "start": 0,
+            "sort": "-coverDate",
+        }
+
+        results: List[Dict[str, Any]] = []
+        async with httpx.AsyncClient(timeout=20.0, headers=self.headers) as client:
+            for page in range(2):
+                params["start"] = page * 25
+                for attempt in range(3):
+                    try:
+                        response = await client.get(self.SEARCH_URL, params=params)
+                        if response.status_code in (401, 403):
+                            self.enabled = False
+                            return results
+                        if response.status_code == 429:
+                            await asyncio.sleep(2 ** attempt)
+                            continue
+                        response.raise_for_status()
+                        data = response.json()
+                        search_results = data.get("search-results", {})
+                        entries = search_results.get("entry", [])
+                        if not entries or (len(entries) == 1 and entries[0].get("@_fa") == "true" and "error" in entries[0]):
+                            return results
+                        results.extend(entries)
+                        total = int(search_results.get("opensearch:totalResults", 0))
+                        if len(results) >= total:
+                            return results
+                        break
+                    except Exception as e:
+                        logger.error(f"Scopus author works error: {e}")
                         await asyncio.sleep(1)
 
         return results
@@ -112,7 +163,8 @@ class ScopusClient:
                 try:
                     response = await client.get(self.AUTHOR_SEARCH_URL, params=params)
                     if response.status_code in (401, 403):
-                        logger.warning("Scopus author search: auth error")
+                        logger.warning("Scopus author search: auth error — disabling Scopus client")
+                        self.enabled = False
                         return []
                     if response.status_code == 429:
                         await asyncio.sleep(2 ** attempt)

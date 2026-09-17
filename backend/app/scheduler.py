@@ -15,8 +15,14 @@ import logging
 import uuid
 from datetime import datetime, timezone
 
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from apscheduler.triggers.cron import CronTrigger
+try:
+    from apscheduler.schedulers.asyncio import AsyncIOScheduler
+    from apscheduler.triggers.cron import CronTrigger
+    HAS_APSCHEDULER = True
+except ImportError:
+    AsyncIOScheduler = None
+    CronTrigger = None
+    HAS_APSCHEDULER = False
 
 from app.config import get_settings
 from app.database import async_session_factory
@@ -24,7 +30,7 @@ from app.database import async_session_factory
 logger = logging.getLogger(__name__)
 
 # Global scheduler instance
-_scheduler: AsyncIOScheduler | None = None
+_scheduler = None
 
 
 def _parse_cron(expr: str) -> dict:
@@ -136,9 +142,13 @@ async def _run_report_generation():
         logger.error(f"SCHEDULER: Report generation failed — {e}", exc_info=True)
 
 
-def start_scheduler() -> AsyncIOScheduler:
+def start_scheduler():
     """Initialize and start the APScheduler with configured cron jobs."""
     global _scheduler
+
+    if not HAS_APSCHEDULER:
+        logger.warning("APScheduler is not installed. Background cron scheduler is disabled.")
+        return None
 
     if _scheduler and _scheduler.running:
         logger.info("Scheduler already running")

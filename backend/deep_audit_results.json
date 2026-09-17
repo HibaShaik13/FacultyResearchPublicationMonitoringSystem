@@ -1,0 +1,1437 @@
+{
+  "faculty_profiles": [
+    {
+      "faculty_id": "b836df5d-0fbe-4fa0-b977-7b185969f2b8",
+      "name": "Dr M Umadevi",
+      "normalized_name": "m umadevi",
+      "department": "CSE",
+      "designation": "Associate Professor",
+      "email": "druma_cse@vignan.ac.in",
+      "name_variants": [
+        "umadevi m",
+        "m umadevi"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5003901187",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        },
+        "ieee": {
+          "value": "37085445363",
+          "verified": true,
+          "confidence": 1.0,
+          "verification_source": "Institutional Verified Identity (IEEE Xplore)",
+          "created_at": "2026-09-17T08:56:11.048324+00:00"
+        },
+        "scopus": {
+          "value": "54788460700",
+          "verified": true,
+          "confidence": 1.0,
+          "verification_source": "Institutional Verified Identity (Scopus Author ID)",
+          "created_at": "2026-09-17T08:56:11.048324+00:00"
+        }
+      },
+      "confirmed_publications_count": 18,
+      "confirmed_citations_sum": 18,
+      "recomputed_h_index": 3,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 18,
+        "total_citations": 18,
+        "h_index": 3,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 105,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import",
+        "openalex"
+      ]
+    },
+    {
+      "faculty_id": "754179a9-ceef-4a60-8a9c-94e31d2fe1b8",
+      "name": "Dr Venkatrama Phani Kumar S",
+      "normalized_name": "venkatrama phani kumar s",
+      "department": "Unknown",
+      "designation": "Professor",
+      "email": "hodcse@vignan.ac.in",
+      "name_variants": [
+        "venkatrama phani kumar s",
+        "phani kumar s v",
+        "v phani kumar s",
+        "phani kumar s venkatrama"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5114220386",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 36,
+      "confirmed_citations_sum": 112,
+      "recomputed_h_index": 4,
+      "recomputed_i10_index": 2,
+      "db_snapshot": {
+        "total_publications": 36,
+        "total_citations": 112,
+        "h_index": 4,
+        "i10_index": 2,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 161,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "311f2b4f-f0ef-46c2-8839-048fa4f8f205",
+      "name": "Dr MD OQAIL AHMAD",
+      "normalized_name": "md oqail ahmad",
+      "department": "Unknown",
+      "designation": "Assistant Professor",
+      "email": "drmoa@vignan.ac.in",
+      "name_variants": [
+        "m oqail ahmad",
+        "oqail ahmad m",
+        "md oqail ahmad",
+        "oqail ahmad md"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5011106823",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 12,
+      "confirmed_citations_sum": 8,
+      "recomputed_h_index": 1,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 12,
+        "total_citations": 8,
+        "h_index": 1,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 27,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import"
+      ]
+    },
+    {
+      "faculty_id": "ce6367ac-c0e7-43f0-8115-e011c7511b08",
+      "name": "Dr Keerthi G",
+      "normalized_name": "keerthi g",
+      "department": "Unknown",
+      "designation": "Assistant Professor",
+      "email": "drgrk@vignan.ac.in",
+      "name_variants": [
+        "g k",
+        "g keerthi",
+        "keerthi g",
+        "k g"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5113871666",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 13,
+      "confirmed_citations_sum": 3,
+      "recomputed_h_index": 1,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 13,
+        "total_citations": 3,
+        "h_index": 1,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 92,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "csv_import",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "30a62a71-57f0-4a9d-be69-2e10af13981d",
+      "name": "Dr Bhimavarapu Krishna Reddy",
+      "normalized_name": "bhimavarapu krishna reddy",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "bkr_cse@vignan.ac.in",
+      "name_variants": [
+        "krishna reddy bhimavarapu",
+        "b krishna reddy",
+        "krishna reddy b",
+        "bhimavarapu krishna reddy"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5137388384",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 5,
+      "confirmed_citations_sum": 3,
+      "recomputed_h_index": 1,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 5,
+        "total_citations": 3,
+        "h_index": 1,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 130,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import",
+        "openalex",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "2476f63f-69ff-4ba9-b1d4-7cb3436d6ba2",
+      "name": "Dr K.V. KRISHNA KISHORE",
+      "normalized_name": "k.v. krishna kishore",
+      "department": "Unknown",
+      "designation": "Professor",
+      "email": "kvkkishore@vignan.ac.in",
+      "name_variants": [
+        "krishna kishore k",
+        "krishna kishore k.v.",
+        "k krishna kishore",
+        "k.v. krishna kishore"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5146718279",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 15,
+      "confirmed_citations_sum": 207,
+      "recomputed_h_index": 4,
+      "recomputed_i10_index": 4,
+      "db_snapshot": {
+        "total_publications": 15,
+        "total_citations": 207,
+        "h_index": 4,
+        "i10_index": 4,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 152,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "semantic_scholar",
+        "scopus",
+        "csv_import",
+        "openalex"
+      ]
+    },
+    {
+      "faculty_id": "e1ef7798-8612-4c8f-9152-706ff4a3b3a0",
+      "name": "Dr K Rachananjali",
+      "normalized_name": "k rachananjali",
+      "department": "EEE",
+      "designation": "Associate Professor",
+      "email": "rs_eee@vignan.ac.in",
+      "name_variants": [
+        "rachananjali k",
+        "k rachananjali"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5010433677",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 41,
+      "confirmed_citations_sum": 22,
+      "recomputed_h_index": 3,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 41,
+        "total_citations": 22,
+        "h_index": 3,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 74,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "scopus",
+        "csv_import",
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "faculty_id": "bceec20d-dfad-46c3-94db-f1747ed4ac19",
+      "name": "Dr D. Yakobu",
+      "normalized_name": "d. yakobu",
+      "department": "CSE",
+      "designation": "Associate Professor",
+      "email": "dy_cse@vignan.ac.in",
+      "name_variants": [
+        "d yakobu",
+        "yakobu d",
+        "yakobu d.",
+        "d. yakobu"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5085591164",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 16,
+      "confirmed_citations_sum": 201,
+      "recomputed_h_index": 5,
+      "recomputed_i10_index": 4,
+      "db_snapshot": {
+        "total_publications": 16,
+        "total_citations": 201,
+        "h_index": 5,
+        "i10_index": 4,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 70,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import",
+        "openalex",
+        "scopus"
+      ]
+    },
+    {
+      "faculty_id": "3b04b44a-1add-48d5-a7bf-93c85164bb78",
+      "name": "Dr Prashant Upadhyay",
+      "normalized_name": "prashant upadhyay",
+      "department": "CSE",
+      "designation": "Associate Professor",
+      "email": "drpu_cse@vignan.ac.in",
+      "name_variants": [
+        "upadhyay p",
+        "upadhyay prashant",
+        "prashant upadhyay",
+        "p upadhyay"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5077652724",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 95,
+      "confirmed_citations_sum": 411,
+      "recomputed_h_index": 14,
+      "recomputed_i10_index": 16,
+      "db_snapshot": {
+        "total_publications": 95,
+        "total_citations": 411,
+        "h_index": 14,
+        "i10_index": 16,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 113,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import",
+        "openalex",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "c8fa8f15-e91e-4afb-b81a-03eb247f08ad",
+      "name": "Dr SATISH KUMAR SATTI",
+      "normalized_name": "satish kumar satti",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "sskumar_cse@vignan.ac.in",
+      "name_variants": [
+        "satish kumar satti",
+        "kumar satti s",
+        "s kumar satti",
+        "kumar satti satish"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5014580670",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 19,
+      "confirmed_citations_sum": 216,
+      "recomputed_h_index": 9,
+      "recomputed_i10_index": 7,
+      "db_snapshot": {
+        "total_publications": 19,
+        "total_citations": 216,
+        "h_index": 9,
+        "i10_index": 7,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 95,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import",
+        "openalex"
+      ]
+    },
+    {
+      "faculty_id": "8ea42715-dc59-4f95-ab2b-71b10d122d56",
+      "name": "Mr Vishal Jaiswal",
+      "normalized_name": "vishal jaiswal",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "vj_cse@vignan.ac.in",
+      "name_variants": [
+        "vishal jaiswal",
+        "jaiswal vishal",
+        "jaiswal v",
+        "v jaiswal"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5039879207",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 0,
+      "confirmed_citations_sum": 0,
+      "recomputed_h_index": 0,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 0,
+        "total_citations": 0,
+        "h_index": 0,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 30,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": []
+    },
+    {
+      "faculty_id": "b62be645-7f68-4417-99ea-13a7dbbb4a08",
+      "name": "Dr Vijitha Ananthi J.",
+      "normalized_name": "vijitha ananthi j",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "jva_cse@vignan.ac.in",
+      "name_variants": [
+        "vijitha ananthi j",
+        "v ananthi j",
+        "ananthi j vijitha",
+        "ananthi j v"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5097976090",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 24,
+      "confirmed_citations_sum": 211,
+      "recomputed_h_index": 3,
+      "recomputed_i10_index": 2,
+      "db_snapshot": {
+        "total_publications": 24,
+        "total_citations": 211,
+        "h_index": 3,
+        "i10_index": 2,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 51,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import",
+        "openalex",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "6a3e4004-cebb-4b44-82ff-3601213bfd10",
+      "name": "Mr VENKATA RAJULU PILLI",
+      "normalized_name": "venkata rajulu pilli",
+      "department": "Unknown",
+      "designation": "Assistant Professor",
+      "email": "rajumtech6@gmail.com",
+      "name_variants": [
+        "rajulu pilli venkata",
+        "rajulu pilli v",
+        "venkata rajulu pilli",
+        "v rajulu pilli"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5116836693",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 1,
+      "confirmed_citations_sum": 0,
+      "recomputed_h_index": 0,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 1,
+        "total_citations": 0,
+        "h_index": 0,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 56,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "ce4ae9c7-5472-4cb5-81f9-e379fadee464",
+      "name": "Dr Vinoj Jothipandian",
+      "normalized_name": "vinoj jothipandian",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "drjv_cse@vignan.ac.in",
+      "name_variants": [
+        "v jothipandian",
+        "vinoj jothipandian",
+        "jothipandian vinoj",
+        "jothipandian v"
+      ],
+      "identifiers": {},
+      "confirmed_publications_count": 1,
+      "confirmed_citations_sum": 0,
+      "recomputed_h_index": 0,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 1,
+        "total_citations": 0,
+        "h_index": 0,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 19,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "csv_import"
+      ]
+    },
+    {
+      "faculty_id": "38da9bfc-3352-4450-9383-6bab2866003a",
+      "name": "Mr .Kiran Kumar Kaveti",
+      "normalized_name": "kiran kumar kaveti",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "kkk_cse@vignan.ac.in",
+      "name_variants": [
+        "k kumar kaveti",
+        "kiran kumar kaveti",
+        "kumar kaveti kiran",
+        "kumar kaveti k"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5029871706",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 9,
+      "confirmed_citations_sum": 13,
+      "recomputed_h_index": 2,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 9,
+        "total_citations": 13,
+        "h_index": 2,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 74,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import"
+      ]
+    },
+    {
+      "faculty_id": "3da9f460-f47a-4fe0-a6e7-ee5361cb9fd0",
+      "name": "Mr AKHIL BABU EDARA",
+      "normalized_name": "akhil babu edara",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "ea_cse@vignan.ac.in",
+      "name_variants": [
+        "babu edara akhil",
+        "babu edara a",
+        "a babu edara",
+        "akhil babu edara"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5119514358",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 2,
+      "confirmed_citations_sum": 2,
+      "recomputed_h_index": 1,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 2,
+        "total_citations": 2,
+        "h_index": 1,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 46,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "59a40f76-3567-4ce1-9766-ea1648ca0dbb",
+      "name": "Ms Bhimavarapu. Jyothika",
+      "normalized_name": "bhimavarapu. jyothika",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "jb_cse@vignan.ac.in",
+      "name_variants": [
+        "b jyothika",
+        "jyothika bhimavarapu.",
+        "bhimavarapu. jyothika",
+        "jyothika b"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5092713951",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 3,
+      "confirmed_citations_sum": 0,
+      "recomputed_h_index": 0,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 3,
+        "total_citations": 0,
+        "h_index": 0,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 17,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import"
+      ]
+    },
+    {
+      "faculty_id": "e25a7264-6bb1-4f39-ba8f-b4a6c490ec72",
+      "name": "Mr Dehtaj Shaik",
+      "normalized_name": "dehtaj shaik",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "dsk_cse@vignan.ac.in",
+      "name_variants": [
+        "shaik dehtaj",
+        "dehtaj shaik",
+        "d shaik",
+        "shaik d"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5117364053",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 1,
+      "confirmed_citations_sum": 0,
+      "recomputed_h_index": 0,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 1,
+        "total_citations": 0,
+        "h_index": 0,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 85,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "917ea8af-0f1c-4e60-818e-9606639ca2f0",
+      "name": "Mr Dega Bala Kotaiah",
+      "normalized_name": "dega bala kotaiah",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "db_cse@vignan.ac.in",
+      "name_variants": [
+        "bala kotaiah d",
+        "d bala kotaiah",
+        "bala kotaiah dega",
+        "dega bala kotaiah"
+      ],
+      "identifiers": {},
+      "confirmed_publications_count": 5,
+      "confirmed_citations_sum": 9,
+      "recomputed_h_index": 1,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 5,
+        "total_citations": 9,
+        "h_index": 1,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 31,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "8933ad1b-66ce-4976-a882-c519a367ca00",
+      "name": "Dr G Veerabhadra Chary",
+      "normalized_name": "g veerabhadra chary",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "gvb_cse@vignan.ac.in",
+      "name_variants": [
+        "veerabhadra chary g",
+        "g veerabhadra chary"
+      ],
+      "identifiers": {},
+      "confirmed_publications_count": 5,
+      "confirmed_citations_sum": 0,
+      "recomputed_h_index": 0,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 5,
+        "total_citations": 0,
+        "h_index": 0,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 49,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "csv_import"
+      ]
+    },
+    {
+      "faculty_id": "b59c7d20-ac31-438b-bd7d-c1fefeba8b4c",
+      "name": "Mr Kiran Kumar Raja Pagidipalli",
+      "normalized_name": "kiran kumar raja pagidipalli",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "pkk_cse@vignan.ac.in",
+      "name_variants": [
+        "kumar raja pagidipalli kiran",
+        "kiran kumar raja pagidipalli",
+        "kumar raja pagidipalli k",
+        "k kumar raja pagidipalli"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5123502120",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 1,
+      "confirmed_citations_sum": 0,
+      "recomputed_h_index": 0,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 1,
+        "total_citations": 0,
+        "h_index": 0,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 31,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "csv_import"
+      ]
+    },
+    {
+      "faculty_id": "b921b279-b967-4270-a59f-468e5f8fc456",
+      "name": "Mr Mihir Barman",
+      "normalized_name": "mihir barman",
+      "department": "MECH",
+      "designation": "Assistant Professor",
+      "email": "mb_mech@vignan.ac.in",
+      "name_variants": [
+        "m barman",
+        "barman mihir",
+        "barman m",
+        "mihir barman"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5101516457",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 9,
+      "confirmed_citations_sum": 6,
+      "recomputed_h_index": 2,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 9,
+        "total_citations": 6,
+        "h_index": 2,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 92,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "csv_import",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "c3eedd47-0d14-44e0-a35f-c8406cc4859a",
+      "name": "Mr MIHIR BHATT",
+      "normalized_name": "mihir bhatt",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "email": "mkb_cse@vignan.ac.in",
+      "name_variants": [
+        "bhatt mihir",
+        "mihir bhatt",
+        "bhatt m",
+        "m bhatt"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5074684306",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 3,
+      "confirmed_citations_sum": 0,
+      "recomputed_h_index": 0,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 3,
+        "total_citations": 0,
+        "h_index": 0,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 40,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "csv_import"
+      ]
+    },
+    {
+      "faculty_id": "96780b82-9c5f-4dd5-8a82-94977f40913b",
+      "name": "Dr VIJAI MEYYAPPAN MOORTHY",
+      "normalized_name": "vijai meyyappan moorthy",
+      "department": "ACSE",
+      "designation": "Assistant Professor",
+      "email": "drmv_acse@vignan.ac.in",
+      "name_variants": [
+        "vijai meyyappan moorthy",
+        "meyyappan moorthy v",
+        "meyyappan moorthy vijai",
+        "v meyyappan moorthy"
+      ],
+      "identifiers": {
+        "openalex": {
+          "value": "https://openalex.org/A5021381742",
+          "verified": false,
+          "confidence": 0.7,
+          "verification_source": "Agent 1 (IdentityAgent)",
+          "created_at": "2026-09-17T05:51:41.648256+00:00"
+        }
+      },
+      "confirmed_publications_count": 15,
+      "confirmed_citations_sum": 28,
+      "recomputed_h_index": 3,
+      "recomputed_i10_index": 1,
+      "db_snapshot": {
+        "total_publications": 15,
+        "total_citations": 28,
+        "h_index": 3,
+        "i10_index": 1,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 25,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref",
+        "csv_import",
+        "openalex",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "faculty_id": "e7399ee0-758c-453b-8a96-329e3dc2cc96",
+      "name": "Dr P. Siva Prasad",
+      "normalized_name": "p. siva prasad",
+      "department": "CSE",
+      "designation": "Associate Professor",
+      "email": "drpsp_cse@vignan.ac.in",
+      "name_variants": [
+        "p. siva prasad",
+        "p siva prasad",
+        "siva prasad p",
+        "siva prasad p.",
+        "sivaprasad p",
+        "p. sivaprasad",
+        "dr p. siva prasad",
+        "dr. p. siva prasad",
+        "dr p siva prasad",
+        "p. s. prasad"
+      ],
+      "identifiers": {},
+      "confirmed_publications_count": 1,
+      "confirmed_citations_sum": 0,
+      "recomputed_h_index": 0,
+      "recomputed_i10_index": 0,
+      "db_snapshot": {
+        "total_publications": 1,
+        "total_citations": 0,
+        "h_index": 0,
+        "i10_index": 0,
+        "snapshot_date": "2026-09-17"
+      },
+      "metric_mismatch": false,
+      "pending_reviews_count": 63,
+      "approved_reviews_count": 0,
+      "rejected_reviews_count": 0,
+      "citation_sources": [
+        "crossref"
+      ]
+    }
+  ],
+  "dr_umadevi_reference": {
+    "faculty_id": "b836df5d-0fbe-4fa0-b977-7b185969f2b8",
+    "name": "Dr M Umadevi",
+    "identifiers": {
+      "openalex": "https://openalex.org/A5003901187",
+      "ieee": "37085445363",
+      "scopus": "54788460700"
+    },
+    "confirmed_publications": [
+      {
+        "id": "dd611f20-4a02-4fab-855b-1708f7cf1317",
+        "title": "Sini Raj Pulari, Maramreddy Umadevi, Shriram K. Vasudevan, Optimizing multimodal personalized disease prediction accuracy using generated prompts and large language models, Image and Vision Computing, Volume 161, 2025, 105649, ISSN 0262-8856, https://doi.org/10.1016/j.imavis.2025.105649.",
+        "doi": "10.1016/j.imavis.2025.105649",
+        "year": 2025,
+        "citation_count": 3,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "72c3963ea70810a363bce18205eb10baaa65b60fc8c7f755685149fe8c039638",
+            "url": "https://doi.org/10.1016/j.imavis.2025.105649",
+            "method": "csv_bootstrap"
+          },
+          {
+            "system": "openalex",
+            "source_id": "https://openalex.org/W4411920148",
+            "url": null,
+            "method": "doi_lookup"
+          }
+        ]
+      },
+      {
+        "id": "f7f4960c-2434-4468-9bac-7a11d4f30c82",
+        "title": "Vit-Based Deepfake Detection with Progressive Fine-Tuning",
+        "doi": "10.1109/cicn70047.2026.11594324",
+        "year": 2026,
+        "citation_count": 0,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "crossref",
+            "source_id": "10.1109/cicn70047.2026.11594324",
+            "url": null,
+            "method": "crossref_api"
+          }
+        ]
+      },
+      {
+        "id": "b0bb68ad-4a3d-4e5e-9ee3-b75d4c3f0c11",
+        "title": "S. R. Pulari, M. Umadevi, S. K. Vasudevan. Improved Fine-Tuned Reinforcement Learning From Human Feedback Using Prompting Methods for News Summarization, International Journal of Interactive Multimedia and Artificial Intelligence, vol. 9, no. 2, pp. 59-67, 2025, http://dx.doi.org/10.9781/ijimai.2025.02.001",
+        "doi": "10.9781/ijimai.2025.02.001",
+        "year": 2025,
+        "citation_count": 2,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "42d5aaa7a152950444f01cf5f29eae246e9c3ae15f84e82b84c122c8123a5cf7",
+            "url": "http://dx.doi.org/10.9781/ijimai.2025.02.001",
+            "method": "csv_bootstrap"
+          },
+          {
+            "system": "openalex",
+            "source_id": "https://openalex.org/W4407219009",
+            "url": null,
+            "method": "doi_lookup"
+          }
+        ]
+      },
+      {
+        "id": "0474677a-4a42-43a5-9357-8d9e87c92141",
+        "title": "Raj, Sini. , Maramreddy, Umadevi. , K., Shriram. A comprehensive and systematic exposition on Automatic Text Summarization Technique: A deeper coverage on extractive, abstractive and hybrid methods. Fusion: Practice and Applications, vol. , no. , 2025, pp. 179-192. DOI: https://doi.org/10.54216/FPA.200114",
+        "doi": "10.54216/fpa.200114",
+        "year": 2025,
+        "citation_count": 0,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "fded1342fa52119da9dfab8c20fda8018bf7d5c45dc5671f6143781c4ec5fd17",
+            "url": "https://doi.org/10.54216/FPA.200114",
+            "method": "csv_bootstrap"
+          },
+          {
+            "system": "openalex",
+            "source_id": "https://openalex.org/W4410384606",
+            "url": null,
+            "method": "doi_lookup"
+          }
+        ]
+      },
+      {
+        "id": "af7dd899-0f1d-4117-a227-1f911aa53855",
+        "title": "J Hima Bindu, M Uma Devi,'Deriving Efficient 3D U-Net Based Segmented Anomaly Detection and Classification in 3D MRI Images Using ConvLSTM Model and Shuffled Frog Leaping Algorithm',https://doi.org/10.52783/jisem.v10i16s.2591, Vol. 10 No. 16s (2025)",
+        "doi": "10.52783/jisem.v10i16s.2591",
+        "year": 2025,
+        "citation_count": 0,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "e26f4a0e9a06148036f904903d401387aec9a3544c2f214ba78306729b9a37e5",
+            "url": "https://doi.org/10.52783/jisem.v10i16s.2591",
+            "method": "csv_bootstrap"
+          },
+          {
+            "system": "openalex",
+            "source_id": "https://openalex.org/W4408242681",
+            "url": null,
+            "method": "doi_lookup"
+          }
+        ]
+      },
+      {
+        "id": "b18c0803-9920-4961-b0e9-87552b3f1986",
+        "title": "Pulari, S.R., Maramreddy, U., Vasudevan, S.K. (2024). Enhancing Text Summarization Through Reinforcement Learning in LLMs: RLHF Versus RLAIF with Human Selection Strategy (HSS). In: Hassanien, A.E., Anand, S., Jaiswal, A., Kumar, P. (eds) Innovative Computing and Communications. ICICC 2024. Lecture Notes in Networks and Systems, vol 1043. Springer, Singapore.",
+        "doi": null,
+        "year": 2024,
+        "citation_count": 0,
+        "verification_status": "needs_review",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "f89cd23bcc33e74852657c533195a7aba60d65be75601568006d1212b5e47a82",
+            "url": null,
+            "method": "csv_bootstrap"
+          }
+        ]
+      },
+      {
+        "id": "0431e9a8-84e9-4b30-a95a-de05ee866636",
+        "title": "12. Dr. C. Raghavendra rao Dr. M. umadevi, \u201cIdentification of Print Technology based on Homogeneous regions of Image A forensic Perspective\u201d, IRJET, Volume 8, Issue 11, Pages 1331-1341, Nov 2021. EISSN 2395-0056",
+        "doi": null,
+        "year": 2021,
+        "citation_count": 0,
+        "verification_status": "needs_review",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "7df681849288d6083536089815101069083d9328f7ed2cfec593d803b6d47984",
+            "url": null,
+            "method": "csv_bootstrap"
+          }
+        ]
+      },
+      {
+        "id": "d33193ac-51f7-4dee-92d4-8379e98ff06e",
+        "title": "M. Umadevi, \u2018Document Comparison Based on TF-IDF Metric\u2019 , IRJET, Volume 7, Issue 2, February 2020 , Print ISSN 2395-0072",
+        "doi": null,
+        "year": 2020,
+        "citation_count": 0,
+        "verification_status": "needs_review",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "372c1e0b763099dc4a658687682777e59902e84370120d75c1f7562953c9e82f",
+            "url": null,
+            "method": "csv_bootstrap"
+          }
+        ]
+      },
+      {
+        "id": "7c5495c6-718f-486a-b6e4-fc47441e81b0",
+        "title": "Umadevi M, Srujana P and Krishna Vamsi P, \u2018Sentiment Analysis of Twitter JET, Volume 6, Issue 12, Pg 2120-2125, December 2019. Print ISSN 2395-0072",
+        "doi": null,
+        "year": 2019,
+        "citation_count": 0,
+        "verification_status": "needs_review",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "fb61add3af46b8f12eb56c75b0020365aad6d1da3d960b985732e13dd60d82c3",
+            "url": null,
+            "method": "csv_bootstrap"
+          }
+        ]
+      },
+      {
+        "id": "cf072689-07ed-4f96-aeb2-bcd7beee9e72",
+        "title": "M. Umadevi, C. Raghavendra Rao and M. Jayaram, \u2018Statistical Measures for Differentiation of Photocopy from Print technology \u2013Forensic perspective\u2019, IJCA, Volume 105, No.15, Pages 1-7, Nov 2014.",
+        "doi": null,
+        "year": 2014,
+        "citation_count": 0,
+        "verification_status": "needs_review",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "8fa97541fdaa07f5b6fdb1b008fc29dab4cf6343498f9a6acf9ce16fd0b9590f",
+            "url": null,
+            "method": "csv_bootstrap"
+          }
+        ]
+      },
+      {
+        "id": "e932b802-b295-4314-9206-6318ad6e54f0",
+        "title": "M Umadevi, Arun Agarwal and C. Raghavendra Rao, `Printed Text Characterization for Identifying Print Technology using Expectation Maximization Algorithm\u2019 MIWAI 2011, Multidisciplinary international Workshop on Artificial Intelligence, Dec2011, Hyderabad, Springer Verlag, LNAI, Vol.7080, Pages 201-212, 2011. Print ISBN 978-3-642-25724-7",
+        "doi": null,
+        "year": 2011,
+        "citation_count": 0,
+        "verification_status": "needs_review",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "2cceaf2dd891376eff0d6129172d35a78b5d57f106183c5e9264854dad27c43a",
+            "url": null,
+            "method": "csv_bootstrap"
+          }
+        ]
+      },
+      {
+        "id": "26d3992e-c906-4537-9c44-694c86ba3227",
+        "title": "M. Umadevi, Arun Agarwal and C. Raghavendra Rao,`Identification of Print technology based on Homogeneous regions of Image\u2019, RSKT \u20182011, 6th International Conference on Roughset and Knowledge Technology Oct 9-12,2011, Banff, Canada. Springer Verlag LNCS 6954. Print ISBN 978-3-642-24424-7",
+        "doi": null,
+        "year": 2011,
+        "citation_count": 0,
+        "verification_status": "needs_review",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "6e4f539fe9559472e8ed657e848394d6d88fc85645824298b6136dacb2bcd8e3",
+            "url": null,
+            "method": "csv_bootstrap"
+          }
+        ]
+      },
+      {
+        "id": "7c168843-ea00-4b33-a32e-5a975cbc10f8",
+        "title": "3. M. Uma Devi, C. Raghavendra Rao and Arun Agarwal, `A Survey of Image Processing Techniques for Identification of Printing Technology in Document Forensic Perspective' IJCA, Special Issue on RTIPPR(1), Pages 9-15, 2010",
+        "doi": null,
+        "year": 2010,
+        "citation_count": 0,
+        "verification_status": "needs_review",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "080c409b423d21bf2264ccdd516426ea630c1f255e73ddc9101008a02c9588e1",
+            "url": null,
+            "method": "csv_bootstrap"
+          }
+        ]
+      },
+      {
+        "id": "65d21383-33e8-48c5-b833-f3ae5546f1f8",
+        "title": "M Umadevi, Arun Agarwal and C. Raghavendra Rao, `Gaussian Variogram Model for Printing Technology Identification', IEEE International Conference on Asian Modeling Symposium, Indonesia, Pages 320-325, 2009. http://doi.ieeecomputersociety.org/10.1109/AMS.2009.20. ISBN: 978-1-4244-4154-9",
+        "doi": "10.1109/ams.2009.20",
+        "year": 2009,
+        "citation_count": 3,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "4bb3460eac8417454fe3547e9203ff830f82aa18b1396e6184156e3a9515462f",
+            "url": "https://doi.org/10.1109/AMS.2009.20",
+            "method": "csv_bootstrap"
+          },
+          {
+            "system": "openalex",
+            "source_id": "https://openalex.org/W2168000486",
+            "url": null,
+            "method": "doi_lookup"
+          }
+        ]
+      },
+      {
+        "id": "229c97d4-93ba-4c63-bfa4-ab2f9240116d",
+        "title": "Jyothika, Bhimavarapu & Umadevi, M.. (2025). Performance Analysis of Pretrained CNN Models vs Dataset Biases in Deep Fake Identification Perspective. 896-903. 10.1109/ICIRCA65293.2025.11089555.",
+        "doi": "10.1109/icirca65293.2025.11089555",
+        "year": 2025,
+        "citation_count": 0,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "crossref",
+            "source_id": "10.1109/icirca65293.2025.11089555",
+            "url": null,
+            "method": "crossref_api"
+          },
+          {
+            "system": "csv_import",
+            "source_id": "252866d404d077954bc66ab094d217445f772d373541d5a02fc614e2b1d6650d",
+            "url": "https://doi.org/10.1109/ICIRCA65293.2025.11089555",
+            "method": "csv_bootstrap"
+          }
+        ]
+      },
+      {
+        "id": "bdc04732-5dd7-4bba-a3ff-7c7f2dde067c",
+        "title": "15. J. H. Bindu and M. U. Devi, \"An Extensive Review of Intelligent Deep Learning Based Anomaly Detection and Classification of 3D MRI Brain Imaging Data,\" 2024 3rd International Conference on Sentiment Analysis and Deep Learning (ICSADL), Bhimdatta, Nepal, 2024, pp. 71-75, doi: 10.1109/ICSADL61749.2024.00017.",
+        "doi": "10.1109/icsadl61749.2024.00017",
+        "year": 2024,
+        "citation_count": 1,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "d7f1daacca5d60c3447806df0f42396eeaee0ee885dedf009d520c8f38e0b4db",
+            "url": "https://doi.org/10.1109/ICSADL61749.2024.00017",
+            "method": "csv_bootstrap"
+          },
+          {
+            "system": "openalex",
+            "source_id": "https://openalex.org/W4400975948",
+            "url": null,
+            "method": "doi_lookup"
+          }
+        ]
+      },
+      {
+        "id": "551d7296-55a2-4cc0-8b7b-891f09687458",
+        "title": "J. H. Bindu and M. U. Devi, \"Classification of Brain Tumor Images using Segmentation and Transfer Learning,\" 2024 5th International Conference on Mobile Computing and Sustainable Informatics (ICMCSI), Lalitpur, Nepal, 2024, pp. 225-232,doi:10.1109/ICMCSI61536.2024.00040.",
+        "doi": "10.1109/icmcsi61536.2024.00040",
+        "year": 2024,
+        "citation_count": 1,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "csv_import",
+            "source_id": "dc48424c8ddc587ccc4bf4ae5fceb6fd16d1b41c73e3c555ba2d392f5aefc773",
+            "url": "https://doi.org/10.1109/ICMCSI61536.2024.00040",
+            "method": "csv_bootstrap"
+          },
+          {
+            "system": "openalex",
+            "source_id": "https://openalex.org/W4394712044",
+            "url": null,
+            "method": "doi_lookup"
+          }
+        ]
+      },
+      {
+        "id": "b7ad882a-b8ee-4207-866c-86343354fc7e",
+        "title": "13. M. Umadevi, S. B. Krishna and N. S. Kumar, \"Deep Fake Face Detection using Efficient Convolutional Neural Networks,\" 2024 5th International Conference on Image Processing and Capsule Networks (ICIPCN), Dhulikhel, Nepal, 2024, pp. 344-352, doi: 10.1109/ICIPCN63822.2024.00063.",
+        "doi": "10.1109/icipcn63822.2024.00063",
+        "year": 2023,
+        "citation_count": 8,
+        "verification_status": "verified",
+        "sources": [
+          {
+            "system": "crossref",
+            "source_id": "10.1109/icipcn63822.2024.00063",
+            "url": null,
+            "method": "crossref_api"
+          },
+          {
+            "system": "csv_import",
+            "source_id": "def5cc2fd3fb010f20838e398d0a0bac237b6f242beb1b96a77afaac381c0d93",
+            "url": "https://doi.org/10.1109/ICIPCN63822.2024.00063",
+            "method": "csv_bootstrap"
+          }
+        ]
+      }
+    ],
+    "pending_tasks_count": 105,
+    "rejected_tasks_count": 0
+  },
+  "integrity": {
+    "duplicate_dois_count": 0,
+    "duplicate_dois": [],
+    "orphan_publication_authors": 0,
+    "orphan_publication_sources": 0,
+    "orphan_review_tasks": 0,
+    "total_canonical_publications": 1570,
+    "total_publication_sources": 1652,
+    "total_publication_authors": 350,
+    "total_review_tasks": 1989,
+    "multi_source_deduplicated_publications": 79
+  },
+  "api_status": {
+    "ieee": {
+      "configured": false,
+      "status": "ACCESS_UNAVAILABLE"
+    },
+    "scopus": {
+      "configured": true,
+      "status": "CONFIGURED"
+    },
+    "openalex": {
+      "configured": true,
+      "status": "CONFIGURED (POLITE POOL)"
+    },
+    "crossref": {
+      "configured": true,
+      "status": "CONFIGURED (POLITE POOL)"
+    },
+    "orcid": {
+      "configured": false,
+      "status": "ACCESS_UNAVAILABLE"
+    },
+    "semantic_scholar": {
+      "configured": false,
+      "status": "PUBLIC_RATE_LIMITED"
+    }
+  }
+}

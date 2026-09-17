@@ -1,0 +1,1471 @@
+{
+  "summary_counts": {
+    "A": 15,
+    "B": 61,
+    "C": 0,
+    "D": 14
+  },
+  "metrics_comparison": {
+    "current_stored": {
+      "publications": 90,
+      "citations": 913,
+      "h_index": 13,
+      "i10_index": 14
+    },
+    "high_confidence_only_A": {
+      "publications": 15,
+      "citations": 8,
+      "h_index": 1,
+      "i10_index": 0
+    },
+    "high_plus_medium_AB": {
+      "publications": 76,
+      "citations": 296,
+      "h_index": 9,
+      "i10_index": 8
+    }
+  },
+  "records": [
+    {
+      "index": 1,
+      "title": "Smart Attendance System using MERN Stack and Real-Time Face Recognition",
+      "doi": "10.1109/icssas68835.2026.11559393",
+      "year": 2026,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x0027;s Foundation for Science, Technology and Research,Dept. of CSE,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 2,
+      "title": "Gesture-based File Management and Painting Application using Human Computer Interaction",
+      "doi": "10.1109/iciccs65191.2025.10985120",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Institute of Technology and Science,Department of CSE (AI &amp; ML),Nalgonda,Telangana,508284",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 3,
+      "title": "Effect of Fiber Orientation on the Flexural Properties of Glass Fiber Reinforced, Epoxy- Matrix Composite",
+      "doi": "10.4028/www.scientific.net/msf.969.502",
+      "year": 2019,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Institute of Technology and Science",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 17,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 4,
+      "title": "Early Detection of Cyber Attacks Based on Feature Selection Algorithm",
+      "doi": "10.1166/jctn.2020.9293",
+      "year": 2020,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Nirula Institute of Technology and Science for Women, Pedapalakaluru, Guntur 522009, Andhra Pradesh, India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 5,
+      "title": "SWIN BTS Using Deep Learning",
+      "doi": "10.1109/icdsis61070.2024.10594617",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Foundation for Science Technology &#x0026; Research (Deemed to University),Department of IT&#x0026;CA,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 6,
+      "title": "Advancing Breast Cancer Diagnosis: Ensemble Machine Learning Approach with Preprocessing and Feature Engineering",
+      "doi": "10.1109/iatmsi64286.2025.10985553",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 7,
+      "title": "Performance Analysis of Vegetable Oil as Dielectric Fluid in Electric Discharge Machining Process of Inconel 800",
+      "doi": "10.4028/www.scientific.net/msf.978.77",
+      "year": 2020,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Institute of Technology and Science",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 26,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 8,
+      "title": "Deep Learning based College Student Uniform Classification System using Transfer Learning",
+      "doi": "10.1109/aic61668.2024.10731054",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Foundation for Science Technology and Research,Department of ACSE,Guntur,AP,India | Vignan&#x2019;s Foundation for Science Technology and Research,Department of CSE,Guntur,AP,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 9,
+      "title": "A Drift Voidance Perturb &amp; Observe MPPT Algorithm in Photovoltaic Systems",
+      "doi": "10.1109/resem57584.2023.10236066",
+      "year": 2023,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Institute of Information Technology",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 10,
+      "title": "A Proactive Approach for Detecting SQL and XSS Injection Attacks",
+      "doi": "10.1109/icaaic60222.2024.10575599",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Institute Of Engineering For Women,Department Information technology,Visakhapatnam,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 8,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 11,
+      "title": "Future Diagnosis: Detection of Pneumonia and Pandemic Pathogen using CNN",
+      "doi": "10.1109/icaaic60222.2024.10575804",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Information Technology Vignan&#x2019;s Institute of Engineering for Women,Visakhapatnam,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 12,
+      "title": "Effect of Amino Multi Walled Carbon Nanotubes Reinforcement on the Flexural Properties of Neat Epoxy",
+      "doi": "10.4028/www.scientific.net/amm.592-594.912",
+      "year": 2014,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Jawaharlal Nehru Technological University College of Engineering | CEMILAC",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 8,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 13,
+      "title": "AI-Powered Diabetes Prediction: A Comprehensive Machine Learning Strategy for Early Diagnosis",
+      "doi": "10.1109/icsss66939.2025.11346111",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x00B4;s Foundation for Science, Technology and Research,Department of CSE,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 14,
+      "title": "An AI-based Energy Management System For The Grid Integration of Energy Storage and Hybrid Devices",
+      "doi": "10.1109/wconf64849.2025.11233627",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Institute of Technology and Science,Department of EEE,Telangana,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 15,
+      "title": "Cognisight-AI Orchestrated Lifecycle Management System",
+      "doi": "10.1109/icadcs70036.2026.11583751",
+      "year": 2026,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x0027;s Lara Institute of Technology and Science,Dept. of Computer Science &#x0026; Engineering,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "D",
+      "reason": "False match: Author is 'Dr P. Siva Prasad' affiliated with Vignan's Lara Institute (different faculty Dr. P. Sai Prasad)."
+    },
+    {
+      "index": 16,
+      "title": "Predicting Employee Layoffs With Machine Learning : A Social Network and Data Mining Approach",
+      "doi": "10.33425/3066-1226.1127",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 17,
+      "title": "Crime Prediction and Analysis Using Machine Learning",
+      "doi": "10.33425/3066-1226.1155",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 18,
+      "title": "UPI Fraud Detection Using Convolutional Neural Networks",
+      "doi": "10.1109/cicn70047.2026.11594368",
+      "year": 2026,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x0027;s University,Department of Advanced Computer Science and Engineering,Vadlamudi,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 19,
+      "title": "Predictive Analysis for Retail: Sales Forecasting at Walmart",
+      "doi": "10.1109/icaaic60222.2024.10575027",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s University,dept. of CSE,Vadlamudi,AndhraPradesh,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 2,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 20,
+      "title": "Traffic Sign Recognition Using YOLO And RCNN",
+      "doi": "10.33425/3066-1226.1136",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India | Department of AI&DS, Vignan Institute of Technology and Science, Hyderabad, India | 1 Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 21,
+      "title": "CT Scan-Based COVID-19 Detection Using Feature Extraction and Stack-Based Ensemble Techniques",
+      "doi": "10.1109/icaiihi67124.2025.11403612",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Foundation for Science, Technology and Research,Computer Science and Engineering,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 22,
+      "title": "Simulation of DC fast charging station for EV using Solar PV Array",
+      "doi": "10.1109/icees61253.2024.10776818",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Institute of Information Technology (A),Visakhapatnam,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 2,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 23,
+      "title": "Interactive Augmented Reality Education Platform for Computer Science Engineering",
+      "doi": "10.1109/icetetsip64213.2025.11156519",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x0027;s Lara Institute of Technology &#x0026; Science (Affiliated by JNTUK),Dept of Computer Science &#x0026; engineering,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "D",
+      "reason": "False match: Author is 'Dr P. Siva Prasad' affiliated with Vignan's Lara Institute (different faculty Dr. P. Sai Prasad)."
+    },
+    {
+      "index": 24,
+      "title": "IoT-Enabled Smart Robotic System for Borewell Rescues Using ESP32-S3",
+      "doi": "10.1109/icetetsip64213.2025.11156253",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Electronics and Communication Engineering,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 3,
+      "confidence_score": 0.95,
+      "classification": "D",
+      "reason": "False match: Author is 'Dr P. Siva Prasad' affiliated with Vignan's Lara Institute (different faculty Dr. P. Sai Prasad)."
+    },
+    {
+      "index": 25,
+      "title": "Enhancement of Ship Classification Accuracy with Balanced Data and Convolutional Neural Networks",
+      "doi": "10.1109/conit65521.2025.11167820",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 26,
+      "title": "Improving Bankruptcy Prediction Using Machine Learning",
+      "doi": "10.33425/3066-1226.1137",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India | 1 Assistant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 27,
+      "title": "Text to Image Generation Using Machine Learning",
+      "doi": "10.1109/iciteics64870.2025.11340874",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Technology and Research Vadlamudi,Department of CSE Vignan&#x0027;s Foundation for Science,Guntur,Andhra Pradesh,522213",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 28,
+      "title": "Deep Ensemble Learning for Alzheimer\u2019s Disease Classification from Structural MRI Using Fine-Tuned VGG Models",
+      "doi": "10.1109/isac364032.2025.11156369",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Foundation for Science Technology and Research,Dept. of Electronics &#x0026; Communication Engineering,Andhra Pradesh,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 29,
+      "title": "An Emotion-Aware Neural Framework for Personalized Video Recommendation",
+      "doi": "10.1109/icpcsn68523.2026.11543592",
+      "year": 2026,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Andhra Pradesh,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "D",
+      "reason": "False match: Author is 'Dr P. Siva Prasad' affiliated with Vignan's Lara Institute (different faculty Dr. P. Sai Prasad)."
+    },
+    {
+      "index": 30,
+      "title": "RP-HPLC Method for Determination of Azelnidipine and Telmisartan in Pharmaceutical Dosage Form",
+      "doi": "10.52711/0974-360x.2023.00086",
+      "year": 2023,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Duvvada, Vishakapatnam - 530049, Andhra Pradesh, India.",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 11,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 31,
+      "title": "Video Object Forgery Detection using Image Processing Techniques",
+      "doi": "10.1109/i-smac58438.2023.10290604",
+      "year": 2023,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (Data Science),Hyderabad,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 9,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 32,
+      "title": "Anomaly Detection in Network Traffic Using Machine Learning Techniques",
+      "doi": "10.33425/3066-1226.1129",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Assitant Professor, Department of Artificial Intelligence and Data Science, Vignan Institute of Technology and Science, Hyderabad, India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 33,
+      "title": "Smart System for Missing Child Identification",
+      "doi": "10.1109/iciccs65191.2025.10985301",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 2,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 34,
+      "title": "Strengthening Cloud Data Privacy: A Dual Access Control Solution",
+      "doi": "10.1109/icssas66150.2025.11080846",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &#x0026; ML),Nalgonda,Telangana,508284",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 35,
+      "title": "Air Quality Monitoring System with Alerts",
+      "doi": "10.1109/ice2cpt66440.2025.11340477",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x0027;s Institute of Information and Technology,Department of Electrical and Electronics Engineering,Andhra Pradesh,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 36,
+      "title": "Android Controlled WI-FI Robotic Lawn Mower",
+      "doi": "10.1109/icccnt61001.2024.10723949",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Nirula Institute of Technology and Science for Women,Electronics and Communication Engineering,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 37,
+      "title": "Protective Role of Hispolon and its Derivatives in Apoptosis Induced by Exposure of Mobile Phone Radiation to Primary Culture of Cortical Neurons",
+      "doi": "10.21203/rs.3.rs-1644043/v1",
+      "year": 2022,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Pharmacy College",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 38,
+      "title": "Smart Motor Analytics: Real-Time Internal and External Parameters Identification Through IoT",
+      "doi": "10.1109/iccigst60741.2024.10717539",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Institute of Engineering for Women Kapujaggarajupeta,Department of Electrical &#x0026; Electronics Engineering,Visakhapatnam,Andhra Pradesh",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 4,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 39,
+      "title": "Antioxidant studies of hispolon and its derivatives.",
+      "doi": "10.21203/rs.3.rs-1644043/v2",
+      "year": 2022,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan Pharmacy College",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 40,
+      "title": "Supervised Model-Based Feature Selection on Diverse Dataset",
+      "doi": "10.1109/icaect68478.2026.11426102",
+      "year": 2026,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x0027;s Foundation for Science, Technology &#x0026; Research (Deemed to be University),Department of Information Technology,Guntur,Andhra Pradesh,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 41,
+      "title": "RP-HPLC Method for Quantification of Bilastine and Monteleukast Sodium in Pharmaceutical Dosage form",
+      "doi": "10.52711/0974-360x.2023.00180",
+      "year": 2023,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Department of Pharmaceutical Analysis, Vignan Institute of Pharmaceutical Technology, Beside VSEZ, Duvvada, Visakhapatnam \u2013 530049, Andhra Pradesh, India.",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 4,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 42,
+      "title": "Multi-Face Recognition-Based Attendance System Using Image and Video Inputs",
+      "doi": "10.1109/cicn70047.2026.11594254",
+      "year": 2026,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x0027;s Foundation for Science, Technology and Research,Department of ACSE,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "A",
+      "reason": "High confidence: Exact name 'Dr P. Siva Prasad' with matching VFSTR/CSE/Math institutional affiliation."
+    },
+    {
+      "index": 43,
+      "title": "Modeling and analysis of an environmentally friendly CuBi2O4 solar cell with advanced n/p/p+ architecture",
+      "doi": "10.1016/j.jpcs.2025.113227",
+      "year": 2026,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 44,
+      "title": "Deep Learning in Cyber Security: A Guide to Harnessing Generative AI for Enhanced Threat Detection",
+      "doi": "10.1002/9781394305698-02",
+      "year": 2026,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 45,
+      "title": "Enhancing Speech Emotion Recognition with\u00a0Hybrid Deep Learning Models and\u00a0Multi-feature Fusion",
+      "doi": "10.1007/978-3-032-09572-5_8",
+      "year": 2026,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 46,
+      "title": "A User-centred Hybrid Framework for Material Selection Using QFD, TOPSIS, Entropy Validated Using Sensitivity Analysis",
+      "doi": "10.1007/s40032-025-01247-z",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 47,
+      "title": "Principal component and cluster analysis of yield and its contributing traits in sesame (Sesamum indicum L.) genotypes",
+      "doi": "10.14719/pst.11556",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 48,
+      "title": "Foreseeing Worker Attrition Using Machine Learning",
+      "doi": "10.1007/978-3-031-51338-1_33",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 49,
+      "title": "Enhancing Smart Grid Efficiency with Distributed Energy Resource and Electric Vehicle Coordination Using a Pyramidal Dilation Attention Convolutional Neural Network",
+      "doi": "10.1109/icecst66106.2025.11307481",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 50,
+      "title": "Optimizing Traffic Lights with Artificial Intelligence for Smarter Control",
+      "doi": "10.1007/978-3-031-72747-4_27",
+      "year": 2025,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 51,
+      "title": "Enhancing Urban Mobility: Deep Learning-Based Traffic Sign Assistant for the Visually Impaired",
+      "doi": "10.1109/teeccon64024.2024.10939317",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 52,
+      "title": "Pioneering Minimalist Speech Analysis Through Optimized Spectral Features Machine Learning Models",
+      "doi": "10.1109/esci59607.2024.10497288",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 3,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 53,
+      "title": "Identification of Gender from the Shortest Speech using Hybrid and Optimised Spectral Features using Machine Learning Model",
+      "doi": "10.1109/inc460750.2024.10649072",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 54,
+      "title": "On Primitive Ternary \u0413-Semirings",
+      "doi": "10.52783/cana.v31.1297",
+      "year": 2024,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 55,
+      "title": "Modelling of Shallow Drawing of Aluminium Alloy AA2014 Thin Sheet Using FE Simulations",
+      "doi": "10.1007/s40033-022-00419-w",
+      "year": 2023,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 56,
+      "title": "Enhancement in performance of DHTprecoding over WHT for EC companded OFDM in wireless networks",
+      "doi": "10.1007/s13204-021-02016-x",
+      "year": 2023,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 5,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 57,
+      "title": "Carbon Footprint Assessment and Energy Budgeting of Different Annual and Perennial Forage Cropping Systems: A Study from the Semi-Arid Region of Karnataka, India",
+      "doi": "10.3390/agronomy12081783",
+      "year": 2022,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 22,
+      "confidence_score": 0.95,
+      "classification": "D",
+      "reason": "False match: Medical/Agricultural paper without CSE/Math connection, matched generic Prasad."
+    },
+    {
+      "index": 58,
+      "title": "Spectroscopic, quantum mechanical, electronic excitation properties (Ethanol solvent), DFT investigations and molecular docking analysis of an anti-cancer drug Bendamustine",
+      "doi": "10.1016/j.molstruc.2021.132211",
+      "year": 2022,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 37,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 59,
+      "title": "Voltage Analysis of Multilevel Diode Clamped Inverter with SVPWM Technique",
+      "doi": "10.14447/jnmes.v25i2.a07",
+      "year": 2022,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 60,
+      "title": "Genetic Dissection and Quantitative Trait Loci Mapping of Agronomic and Fodder Quality Traits in Sorghum Under Different Water Regimes",
+      "doi": "10.3389/fpls.2022.810632",
+      "year": 2022,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 13,
+      "confidence_score": 0.95,
+      "classification": "D",
+      "reason": "False match: Medical/Agricultural paper without CSE/Math connection, matched generic Prasad."
+    },
+    {
+      "index": 61,
+      "title": "An Efficient Approach for Identification of Multi-plant Disease Using Image Processing Technique",
+      "doi": "10.1007/978-981-19-0898-9_25",
+      "year": 2022,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 5,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 62,
+      "title": "Power System Monitoring, Control and Protection for Network, IOT and Cyber Security",
+      "doi": "10.1109/icacite53722.2022.9823483",
+      "year": 2022,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 4,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 63,
+      "title": "Biomass quantity and quality from different year-round cereal\u2013legume cropping systems as forage or fodder for livestock",
+      "doi": "10.3390/su13169414",
+      "year": 2021,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 26,
+      "confidence_score": 0.95,
+      "classification": "D",
+      "reason": "False match: Medical/Agricultural paper without CSE/Math connection, matched generic Prasad."
+    },
+    {
+      "index": 64,
+      "title": "Medicine allotment for COVID-19 patients by statistical data analysis",
+      "doi": "10.1109/esci50559.2021.9396830",
+      "year": 2021,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 9,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 65,
+      "title": "Comparative Analysis of Small and Large Capacity Sized On-grid, Rooftop Solar PV Systems\u00a0-\u00a0An LCA Approach",
+      "doi": "10.1007/978-981-15-7557-0_48",
+      "year": 2021,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 3,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 66,
+      "title": "Evaluation of fodder yield and fodder quality in sorghum and its interaction with grain yield under different water availability regimes",
+      "doi": "10.1016/j.cpb.2020.100191",
+      "year": 2021,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 25,
+      "confidence_score": 0.95,
+      "classification": "D",
+      "reason": "False match: Medical/Agricultural paper without CSE/Math connection, matched generic Prasad."
+    },
+    {
+      "index": 67,
+      "title": "Second law analysis of MHD Jeffrey fluid through assymetric channel with peristalsis",
+      "doi": "10.1063/5.0014416",
+      "year": 2020,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 68,
+      "title": "Carrier frequency offset (CFO) estimation in MC-CDMA system",
+      "doi": null,
+      "year": 2020,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 69,
+      "title": "Visible luminescence characteristics of Pr3+ ions in TeO2\u2013Sb2O3\u2013WO3 glasses",
+      "doi": "10.1016/j.optmat.2020.109740",
+      "year": 2020,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 31,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 70,
+      "title": "Life Cycle Assessment of a 100 kWp\u00a0Solar PV-Based Electric Power Generation System in India",
+      "doi": "10.1007/978-981-15-1124-0_7",
+      "year": 2020,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 3,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 71,
+      "title": "Design of analysis of wideband hexagonal circular ring patch antenna using defected ground structures",
+      "doi": null,
+      "year": 2019,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 3,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 72,
+      "title": "Artificial neural networks model to improve the performance index of the coil-disc assembly in tube flow",
+      "doi": "10.1007/978-981-10-2471-9_4",
+      "year": 2017,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 73,
+      "title": "Adaptive fuzzy membership functions with AGA techniques in Telugu character recognition",
+      "doi": "10.3923/ajit.2015.11.22",
+      "year": 2015,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 74,
+      "title": "An efficient approach for knowledge discovery in decision trees using attribute transform and outlier detection",
+      "doi": null,
+      "year": 2015,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 75,
+      "title": "Fracture behaviour of carbon nanotube and carbon fibre-reinforced, epoxy-matrix hybrid composite",
+      "doi": "10.1504/ijmpt.2015.070075",
+      "year": 2015,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 5,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 76,
+      "title": "A novel prototype decision tree method using sampling strategy",
+      "doi": "10.1007/978-3-319-21404-7_7",
+      "year": 2015,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 0,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 77,
+      "title": "Effect of notch root radius on the apparent fracture toughness in CNT and carbon fiber reinforced, epoxy-matrix hybrid composite",
+      "doi": "10.1007/s12666-013-0312-4",
+      "year": 2014,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 9,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 78,
+      "title": "FPGA implementation of back propagation algorithm for ANN using Verilog HDL",
+      "doi": null,
+      "year": 2014,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 2,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 79,
+      "title": "Processing, structure and flexural strength of CNT and carbon fibre reinforced, epoxy-matrix hybrid composite",
+      "doi": "10.1007/s12034-014-0703-0",
+      "year": 2014,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 14,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 80,
+      "title": "A novel spectrofluorimetric method for the determination of gemifloxacin in bulk and pharmaceutical formulation",
+      "doi": null,
+      "year": 2014,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 1,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 81,
+      "title": "A novel decision tree approach for the prediction of precipitation using entropy in SLIQ",
+      "doi": "10.1109/uksim.2013.74",
+      "year": 2013,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 7,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 82,
+      "title": "An approach to prediction of precipitation using Gini Index in SLIQ decision tree",
+      "doi": "10.1109/isms.2013.27",
+      "year": 2013,
+      "matched_author": "Dr P. Siva Prasad",
+      "position": 1,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "scopus"
+      ],
+      "citations": 30,
+      "confidence_score": 0.95,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Dr P. Siva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 83,
+      "title": "Clustering Student Learners based on performance using K-Means Algorithm",
+      "doi": "10.1109/mecon53876.2022.9752165",
+      "year": 2022,
+      "matched_author": "S. Shiva Prasad",
+      "position": 3,
+      "pub_affiliation": "Malla Reddy Engineering College,Department of Computer Science &#x0026; Engineering,Hyderabad,India",
+      "sources": [
+        "crossref",
+        "scopus"
+      ],
+      "citations": 13,
+      "confidence_score": 0.896551724137931,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'S. Shiva Prasad', but affiliation is generic or unrecorded."
+    },
+    {
+      "index": 84,
+      "title": "An Adaptive Hybrid Learning Framework for Cyber Threat Identification and Automated Response in Industrial IoT Networks",
+      "doi": "10.1109/iciccs67901.2026.11502731",
+      "year": 2026,
+      "matched_author": "P Sai Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x0027;s Lara Institute of Technology and Science,Department of Allied Computer Science and Engineering,Guntur,India | Vignan&#x0027;s Lara Institute of Technology and Science,Department of Computer Science and Engineering,Guntur,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 1.0,
+      "classification": "D",
+      "reason": "False match: Author is 'P Sai Prasad' affiliated with Vignan's Lara Institute (different faculty Dr. P. Sai Prasad)."
+    },
+    {
+      "index": 85,
+      "title": "A Smart Water Leakage Detection System using Internet of Things",
+      "doi": "10.1109/ciacon65473.2025.11189462",
+      "year": 2025,
+      "matched_author": "Kapu V Sri Ram Prasad",
+      "position": 1,
+      "pub_affiliation": "Vignan&#x2019;s Institute of Engineering for Women (Autonomous),Department of Electrical and Electronics Engineering,Visakhapatnam,India",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 0,
+      "confidence_score": 0.8558823529411764,
+      "classification": "D",
+      "reason": "False match: Author is 'Kapu V Sri Ram Prasad' (forename/individual mismatch)."
+    },
+    {
+      "index": 86,
+      "title": "Oxidative Stress in Liver Tissues of Marek \u2019 s Disease Affected Layer Chicken KV",
+      "doi": null,
+      "year": 2017,
+      "matched_author": "P. E. Prasad",
+      "position": 3,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "semantic_scholar"
+      ],
+      "citations": 3,
+      "confidence_score": 0.9166666666666665,
+      "classification": "D",
+      "reason": "False match: Medical/Agricultural paper without CSE/Math connection, matched generic Prasad."
+    },
+    {
+      "index": 87,
+      "title": "Synthesis and In-silico Docking Analysis of 2-Phenylindolizine Acetamide\nScaffolds: Potent Anticancer and Antibacterial Ta",
+      "doi": "10.2174/0115734072301391240604062819",
+      "year": 2024,
+      "matched_author": "P. R. Prasad",
+      "position": 3,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "semantic_scholar"
+      ],
+      "citations": 0,
+      "confidence_score": 0.9166666666666665,
+      "classification": "D",
+      "reason": "False match: Unrelated author 'P. R. Prasad'."
+    },
+    {
+      "index": 88,
+      "title": "Safety and immunogenicity of an inactivated SARS-CoV-2 vaccine, BBV152: a double-blind, randomised, phase 1 trial",
+      "doi": "10.1016/s1473-3099(20)30942-7",
+      "year": 2021,
+      "matched_author": "S. Prasad",
+      "position": 4,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "semantic_scholar"
+      ],
+      "citations": 288,
+      "confidence_score": 0.8571428571428572,
+      "classification": "D",
+      "reason": "False match: Medical/Agricultural paper without CSE/Math connection, matched generic Prasad."
+    },
+    {
+      "index": 89,
+      "title": "Safety and immunogenicity of an inactivated SARS-CoV-2 vaccine, BBV152: interim results from a double-blind, randomised, multicentre, phase 2 trial, and 3-month follow-up of a double-blind, randomised phase 1 trial",
+      "doi": "10.1016/s1473-3099(21)00070-0",
+      "year": 2021,
+      "matched_author": "S. Prasad",
+      "position": 6,
+      "pub_affiliation": "Not recorded in source",
+      "sources": [
+        "semantic_scholar"
+      ],
+      "citations": 237,
+      "confidence_score": 0.8571428571428572,
+      "classification": "D",
+      "reason": "False match: Medical/Agricultural paper without CSE/Math connection, matched generic Prasad."
+    },
+    {
+      "index": 90,
+      "title": "Road Accident Severity and Hospital Recommendation using Deep Learning Techniques",
+      "doi": "10.1109/icimia67127.2025.11200643",
+      "year": 2025,
+      "matched_author": "Ch. Shiva Prasad",
+      "position": 3,
+      "pub_affiliation": "Vignan Institute of Technology and Science,Department of Computer Science and Engineering (AI &amp; ML),Nalgonda,Telangana,508284",
+      "sources": [
+        "crossref"
+      ],
+      "citations": 3,
+      "confidence_score": 1.0,
+      "classification": "B",
+      "reason": "Medium confidence: Author is 'Ch. Shiva Prasad', but affiliation is generic or unrecorded."
+    }
+  ]
+}

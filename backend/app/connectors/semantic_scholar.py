@@ -117,6 +117,34 @@ class SemanticScholarClient:
 
         return []
 
+    async def get_paper_by_doi(
+        self, doi: str, fields: str = "paperId,externalIds,title,year,citationCount,journal,authors,publicationTypes"
+    ) -> Dict[str, Any] | None:
+        """Fetch a single paper by DOI from Semantic Scholar."""
+        if not doi:
+            return None
+        clean_doi = doi.replace("https://doi.org/", "").replace("http://doi.org/", "").strip()
+        url = f"{self.BASE_URL}/paper/DOI:{clean_doi}"
+        params = {"fields": fields}
+        async with httpx.AsyncClient(timeout=15.0, headers=self.headers) as client:
+            for attempt in range(3):
+                try:
+                    response = await client.get(url, params=params)
+                    if response.status_code == 404:
+                        return None
+                    if response.status_code == 429:
+                        await asyncio.sleep(2 ** attempt)
+                        continue
+                    response.raise_for_status()
+                    return response.json()
+                except httpx.HTTPStatusError as e:
+                    logger.warning(f"S2 get_paper_by_doi HTTP error for {clean_doi}: {e}")
+                    break
+                except Exception as e:
+                    logger.warning(f"S2 get_paper_by_doi error for {clean_doi}: {e}")
+                    await asyncio.sleep(1)
+        return None
+
     def extract_paper_data(self, paper: Dict[str, Any]) -> Dict[str, Any]:
         """Extract normalized publication data from an S2 paper result."""
         ext_ids = paper.get("externalIds", {}) or {}

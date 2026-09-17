@@ -156,7 +156,7 @@ export default function ResearchImpact() {
             <p className="text-xs font-bold text-gray-500 uppercase tracking-wider">Total Publications</p>
             <h3 className="text-3xl font-black text-gray-900 mt-1">{stats.total_publications ?? 0}</h3>
             <p className="text-xs text-emerald-600 font-semibold mt-1 flex items-center gap-1">
-              <span className="font-bold">✓ {stats.verified_publications ?? 0}</span> verified records
+              <span className="font-bold">✓ {stats.verified_publications ?? 0}</span> metadata-verified · {Math.max(0, (stats.total_publications || 0) - (stats.verified_publications || 0))} needs review
             </p>
           </div>
           <div className="w-12 h-12 rounded-2xl bg-purple-50 text-purple-600 border border-purple-100 flex items-center justify-center">

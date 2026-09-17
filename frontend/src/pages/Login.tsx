@@ -39,7 +39,13 @@ export default function Login() {
       await login(res.data.access_token);
       navigate('/');
     } catch (err: any) {
-      setError('Invalid email or password. Please check your credentials.');
+      if (err.response?.data?.detail) {
+        setError(err.response.data.detail);
+      } else if (!err.response) {
+        setError('Unable to reach research authentication server. Please verify backend status and network connection.');
+      } else {
+        setError('Invalid email or password. Please check your credentials.');
+      }
     } finally {
       setIsLoading(false);
     }

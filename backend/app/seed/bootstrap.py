@@ -242,27 +242,88 @@ async def log_summary(session: AsyncSession):
     logger.info("============================================================")
 
 
+async def ensure_baseline_accounts(session: AsyncSession) -> dict:
+    """
+    Idempotent, transaction-safe startup assurance:
+    1. Ensures FacultyProfile records exist (if 0 exist, seeds from CSV).
+    2. Ensures Research Admin user exists (creates or activates).
+    3. Ensures every FacultyProfile has an active User account with valid password_hash.
+    4. Ensures Publication records exist if table is empty.
+    
+    Safe to run on every application startup. Never deletes or overwrites existing valid passwords.
+    """
+    settings = get_settings()
+    
+    # 1. Profiles
+    fac_count = (await session.execute(select(func.count(FacultyProfile.id)))).scalar() or 0
+    if fac_count == 0 and settings.bootstrap_seed_faculty:
+        logger.info("Startup: No faculty profiles found. Seeding from CSV...")
+        await seed_faculty_profiles(session)
+        
+    # 2. Admin User
+    admin_email = settings.bootstrap_admin_email.strip().lower()
+    admin_stmt = select(User).where(func.lower(User.email) == admin_email)
+    admin_user = (await session.execute(admin_stmt)).scalars().first()
+    if not admin_user:
+        logger.info(f"Startup: Admin user {admin_email} missing. Provisioning...")
+        await seed_admin_user(session, settings)
+    elif not admin_user.is_active:
+        admin_user.is_active = True
+        await session.commit()
+        
+    # 3. Faculty Users
+    profiles = (await session.execute(select(FacultyProfile))).scalars().all()
+    faculty_pwd_hash = hash_password(settings.bootstrap_faculty_password)
+    users_created = 0
+    
+    for profile in profiles:
+        email = (profile.institutional_email or profile.raw_email or "").strip().lower()
+        if not email:
+            continue
+        
+        u_stmt = select(User).where(func.lower(User.email) == email)
+        user = (await session.execute(u_stmt)).scalars().first()
+        
+        if not user:
+            new_user = User(
+                email=email,
+                full_name=profile.raw_name,
+                role="faculty",
+                faculty_id=profile.id,
+                password_hash=faculty_pwd_hash,
+                is_active=True,
+            )
+            session.add(new_user)
+            users_created += 1
+        else:
+            # Ensure binding and active status
+            if user.faculty_id != profile.id:
+                user.faculty_id = profile.id
+            if not user.is_active:
+                user.is_active = True
+            if not user.password_hash:
+                user.password_hash = faculty_pwd_hash
+    
+    await session.commit()
+    if users_created > 0:
+        logger.info(f"Startup: Provisioned {users_created} missing faculty user accounts.")
+        
+    # 4. Publications (only if table completely empty)
+    pub_count = (await session.execute(select(func.count(Publication.id)))).scalar() or 0
+    if pub_count == 0 and settings.bootstrap_seed_publications:
+        logger.info("Startup: No publications found. Seeding initial publications from CSV...")
+        await seed_faculty_publications(session)
+        
+    return {"status": "success", "faculty_profiles": len(profiles), "new_users": users_created}
+
+
 async def run_bootstrap():
     """Main bootstrap entry point."""
     settings = get_settings()
     logger.info("Starting production database bootstrap...")
 
     async with async_session_factory() as session:
-        # Step 1: Faculty Profiles
-        if settings.bootstrap_seed_faculty:
-            await seed_faculty_profiles(session)
-
-        # Step 2: Faculty Publications & Attribution
-        if settings.bootstrap_seed_publications:
-            await seed_faculty_publications(session)
-
-        # Step 3: Research Admin User
-        await seed_admin_user(session, settings)
-
-        # Step 4: Faculty Users
-        await seed_faculty_users(session, settings)
-
-        # Step 5: Log Verification Summary
+        await ensure_baseline_accounts(session)
         await log_summary(session)
 
     logger.info("Production database bootstrap finished successfully.")
@@ -270,3 +331,4 @@ async def run_bootstrap():
 
 if __name__ == "__main__":
     asyncio.run(run_bootstrap())
+

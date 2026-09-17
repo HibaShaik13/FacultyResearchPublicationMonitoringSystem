@@ -34,19 +34,14 @@ async def lifespan(app: FastAPI):
     except Exception as exc:
         logger.warning("Could not start background scheduler: %s", exc)
 
-    # Automatically provision initial admin and faculty accounts if database is empty
+    # Automatically ensure required baseline accounts exist (idempotent, safe on every startup)
     try:
         from app.database import async_session_factory
-        from app.models.user import User
-        from app.seed.bootstrap import run_bootstrap
-        from sqlalchemy import select, func
+        from app.seed.bootstrap import ensure_baseline_accounts
         async with async_session_factory() as session:
-            user_count = (await session.execute(select(func.count(User.id)))).scalar() or 0
-            if user_count == 0:
-                logger.info("No user accounts found in database. Running initial database bootstrap...")
-                await run_bootstrap()
+            await ensure_baseline_accounts(session)
     except Exception as exc:
-        logger.warning("Could not complete automatic initial bootstrap check: %s", exc)
+        logger.warning("Could not complete startup account verification: %s", exc)
 
     yield
 

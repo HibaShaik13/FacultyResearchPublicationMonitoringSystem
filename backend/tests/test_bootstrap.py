@@ -50,13 +50,13 @@ async def test_bootstrap_idempotent_flow():
     # Initial Run
     async with session_factory() as session:
         profiles_imported = await bootstrap.seed_faculty_profiles(session)
-        assert profiles_imported == 24
+        assert profiles_imported == 25
 
         admin_created = await bootstrap.seed_admin_user(session, settings)
         assert admin_created is True
 
         fac_stats = await bootstrap.seed_faculty_users(session, settings)
-        assert fac_stats["created"] == 24
+        assert fac_stats["created"] == 25
 
     # Verify Run 1 Data
     async with session_factory() as session:
@@ -74,7 +74,7 @@ async def test_bootstrap_idempotent_flow():
         assert verify_password("test_fac_pwd", faculty.password_hash) is True
 
         count_res = await session.execute(select(func.count(User.id)))
-        assert count_res.scalar() == 25
+        assert count_res.scalar() == 26
 
     # Second Run (Idempotency Check)
     async with session_factory() as session:
@@ -86,12 +86,12 @@ async def test_bootstrap_idempotent_flow():
 
         fac_stats_run2 = await bootstrap.seed_faculty_users(session, settings)
         assert fac_stats_run2["created"] == 0
-        assert fac_stats_run2["already_existing"] == 24
+        assert fac_stats_run2["already_existing"] == 25
 
-    # Verify Count Remains 25
+    # Verify Count Remains 26
     async with session_factory() as session:
         count_res2 = await session.execute(select(func.count(User.id)))
-        assert count_res2.scalar() == 25
+        assert count_res2.scalar() == 26
 
     await engine.dispose()
 

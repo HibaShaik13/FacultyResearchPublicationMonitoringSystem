@@ -6,7 +6,7 @@ Coordinates the complete lifecycle of all 13 agents with database tracking and p
 import time
 import uuid
 import logging
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from typing import Dict, Any, List, Optional
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
@@ -42,14 +42,86 @@ class PipelineOrchestrator:
     def __init__(self, session: AsyncSession):
         self.session = session
 
+    async def recover_stale_runs(self, stale_threshold_minutes: int = 30) -> int:
+        """
+        Detects and gracefully marks stale running syncs as failed/recovered.
+        Preserves complete historical execution trace without deleting records.
+        """
+        threshold_time = datetime.now(timezone.utc) - timedelta(minutes=stale_threshold_minutes)
+        stmt = select(SyncRun).where(
+            SyncRun.status == "running",
+            SyncRun.started_at < threshold_time,
+        )
+        res = await self.session.execute(stmt)
+        stale_runs = res.scalars().all()
+        recovered_count = 0
+
+        for run in stale_runs:
+            logger.warning(
+                f"Recovering stale sync run {run.id} (started at {run.started_at}, threshold {stale_threshold_minutes}m)."
+            )
+            run.status = "failed"
+            run.completed_at = datetime.now(timezone.utc)
+            run.errors_count = (run.errors_count or 0) + 1
+            recovered_count += 1
+
+        if recovered_count > 0:
+            await self.session.commit()
+            logger.info(f"Stale run recovery completed: {recovered_count} runs recovered.")
+
+        return recovered_count
+
+    async def has_initial_sync_completed(self) -> bool:
+        """Checks if a full research synchronization has successfully run at least once."""
+        stmt = select(func.count(SyncRun.id)).where(
+            SyncRun.run_type == "full_sync",
+            SyncRun.status.in_(["completed", "partial"]),
+        )
+        count = (await self.session.execute(stmt)).scalar() or 0
+        return count > 0
+
+    async def is_sync_running(self) -> bool:
+        """Checks if any full sync run is currently active and not stale."""
+        await self.recover_stale_runs()
+        stmt = select(func.count(SyncRun.id)).where(
+            SyncRun.run_type == "full_sync",
+            SyncRun.status == "running",
+        )
+        count = (await self.session.execute(stmt)).scalar() or 0
+        return count > 0
+
     async def run_full_pipeline(
         self,
         triggered_by: Optional[uuid.UUID] = None,
-        trigger: str = "manual"
+        trigger: str = "manual",
+        allow_concurrent: bool = False,
     ) -> Dict[str, Any]:
         """
         Executes the complete end-to-end multi-agent pipeline sequentially with real-time tracking.
+        Guarantees idempotency and protects against concurrent duplicate triggers.
         """
+        # Recover stale runs before checking active status
+        await self.recover_stale_runs()
+
+        # Idempotency / duplicate check
+        if not allow_concurrent:
+            active_stmt = select(SyncRun).where(
+                SyncRun.run_type == "full_sync",
+                SyncRun.status == "running",
+            ).order_by(SyncRun.started_at.desc())
+            active_res = await self.session.execute(active_stmt)
+            active_run = active_res.scalars().first()
+
+            if active_run:
+                logger.info(f"Pipeline sync already active (Run ID: {active_run.id}). Skipping duplicate trigger '{trigger}'.")
+                return {
+                    "sync_run_id": str(active_run.id),
+                    "status": "skipped_duplicate",
+                    "message": "A full pipeline synchronization is already in progress.",
+                    "total_errors": 0,
+                    "stages": {},
+                }
+
         sync_run = SyncRun(
             id=uuid.uuid4(),
             run_type="full_sync",

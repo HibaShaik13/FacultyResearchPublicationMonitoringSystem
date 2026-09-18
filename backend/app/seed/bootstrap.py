@@ -315,6 +315,38 @@ async def ensure_baseline_accounts(session: AsyncSession) -> dict:
     return {"status": "success", "faculty_profiles": len(profiles), "new_users": users_created}
 
 
+async def trigger_initial_research_pipeline_if_needed() -> None:
+    """
+    Checks if an initial full research synchronization is needed on startup (Phase 2C).
+    If full_sync has never completed and none is currently active, triggers PipelineOrchestrator
+    in the background without blocking application startup or health endpoints.
+    """
+    try:
+        from app.orchestrator.pipeline_orchestrator import PipelineOrchestrator
+        async with async_session_factory() as session:
+            orchestrator = PipelineOrchestrator(session)
+            has_run = await orchestrator.has_initial_sync_completed()
+            is_running = await orchestrator.is_sync_running()
+
+            if not has_run and not is_running:
+                logger.info(
+                    "Startup: No prior completed full research sync detected. "
+                    "Launching autonomous initial research pipeline in background..."
+                )
+                await asyncio.sleep(2)  # Brief pause to yield control to event loop & let server start
+                stats = await orchestrator.run_full_pipeline(trigger="startup_autonomous_initial_discovery")
+                logger.info(
+                    f"Startup: Autonomous initial research pipeline finished: status={stats.get('sync_run_status')} "
+                    f"(errors={stats.get('total_errors', 0)})"
+                )
+            elif is_running:
+                logger.info("Startup: An active research pipeline is already running. Skipping duplicate startup trigger.")
+            else:
+                logger.info("Startup: Prior research synchronization detected in database. Skipping duplicate initial discovery.")
+    except Exception as e:
+        logger.error(f"Startup: Autonomous initial research pipeline encountered an error: {e}", exc_info=True)
+
+
 async def run_bootstrap():
     """Main bootstrap entry point."""
     settings = get_settings()

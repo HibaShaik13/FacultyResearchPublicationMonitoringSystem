@@ -52,28 +52,21 @@ async def test_discovery_agent_new_publications(mock_openalex, mock_crossref, te
     
     mock_session = AsyncMock(spec=AsyncSession)
     
-    # Mock returning variants for initial query
-    mock_variants_result = MagicMock()
-    mock_variants_result.all.return_value = [("Vignan University",)]
+    def mock_execute_handler(stmt, *args, **kwargs):
+        stmt_str = str(stmt).lower()
+        res = MagicMock()
+        if "affiliationvariant" in stmt_str or "affiliation_variants" in stmt_str:
+            res.all.return_value = [("Vignan University",)]
+            return res
+        if "faculty_profile" in stmt_str or "facultyprofile" in stmt_str:
+            res.scalars.return_value.all.return_value = [test_profile]
+            res.scalars.return_value.first.return_value = test_profile
+            return res
+        res.scalars.return_value.all.return_value = []
+        res.scalars.return_value.first.return_value = None
+        return res
 
-    # Mock returning profile for select profiles
-    mock_profile_result = MagicMock()
-    mock_profile_result.scalars.return_value.all.return_value = [test_profile]
-    
-    # Mock returning nothing for existing source/doi/title checks (2 pubs * 3 checks = 6 checks)
-    mock_empty_result = MagicMock()
-    mock_empty_result.scalars.return_value.first.return_value = None
-    
-    mock_session.execute.side_effect = [
-        mock_variants_result,
-        mock_profile_result,
-        mock_empty_result,
-        mock_empty_result,
-        mock_empty_result,
-        mock_empty_result,
-        mock_empty_result,
-        mock_empty_result
-    ]
+    mock_session.execute.side_effect = mock_execute_handler
     
     agent = PublicationDiscoveryAgent(mock_session)
     stats = await agent.run()

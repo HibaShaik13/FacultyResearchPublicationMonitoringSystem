@@ -37,11 +37,16 @@ async def lifespan(app: FastAPI):
     # Automatically ensure required baseline accounts exist (idempotent, safe on every startup)
     try:
         from app.database import async_session_factory
-        from app.seed.bootstrap import ensure_baseline_accounts
+        from app.seed.bootstrap import ensure_baseline_accounts, trigger_initial_research_pipeline_if_needed
         async with async_session_factory() as session:
             await ensure_baseline_accounts(session)
+
+        # Autonomous initial research pipeline background trigger (Phase 2C - Non-blocking)
+        import asyncio
+        asyncio.create_task(trigger_initial_research_pipeline_if_needed())
+        logger.info("Autonomous initial research pipeline background monitor scheduled")
     except Exception as exc:
-        logger.warning("Could not complete startup account verification: %s", exc)
+        logger.warning("Could not complete startup verification / background pipeline scheduling: %s", exc)
 
     yield
 

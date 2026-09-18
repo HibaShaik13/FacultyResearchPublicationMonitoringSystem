@@ -38,13 +38,17 @@ class SemanticScholarClient:
         params = {"query": query, "limit": min(limit, 100), "fields": fields}
 
         results: List[Dict[str, Any]] = []
-        async with httpx.AsyncClient(timeout=20.0, headers=self.headers) as client:
-            for attempt in range(3):
+        max_attempts = 3 if self.api_key else 1
+        async with httpx.AsyncClient(timeout=15.0, headers=self.headers) as client:
+            for attempt in range(max_attempts):
                 try:
                     response = await client.get(url, params=params)
                     if response.status_code == 429:
+                        if not self.api_key:
+                            logger.info(f"S2 public rate limit reached for '{query}'. Skipping unauthenticated S2 query.")
+                            break
                         wait = int(response.headers.get("Retry-After", 2 ** attempt))
-                        await asyncio.sleep(wait)
+                        await asyncio.sleep(min(wait, 4))
                         continue
                     response.raise_for_status()
                     data = response.json()

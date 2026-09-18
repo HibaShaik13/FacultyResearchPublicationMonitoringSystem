@@ -58,14 +58,17 @@ class MetricsAgent:
         }
         
         # 1. Process Publication Metrics
-        for pub in publications:
-            stats["pub_processed"] += 1
-            try:
-                await self._process_publication_metrics(pub, stats)
-            except Exception as e:
-                logger.error(f"Error processing metrics for pub {pub.id}: {e}")
-                stats["errors"] += 1
-                
+        with self.session.no_autoflush:
+            for pub in publications:
+                stats["pub_processed"] += 1
+                try:
+                    await self._process_publication_metrics(pub, stats)
+                except Exception as e:
+                    logger.error(f"Error processing metrics for pub {pub.id}: {e}")
+                    stats["errors"] += 1
+
+        await self.session.flush()
+
         # 2. Process Faculty Metrics
         faculty_stmt = select(FacultyProfile).options(
             selectinload(FacultyProfile.publication_links).selectinload(PublicationAuthor.publication)

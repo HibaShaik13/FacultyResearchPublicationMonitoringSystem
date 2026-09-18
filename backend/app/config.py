@@ -164,7 +164,7 @@ class Settings(BaseSettings):
     bootstrap_admin_name: str = "System Administrator"
     bootstrap_faculty_password: str = "faculty123"
     bootstrap_seed_faculty: bool = True
-    bootstrap_seed_publications: bool = True
+    bootstrap_seed_publications: bool = False
     faculty_profiles_csv_path: str = ""
     faculty_publications_csv_path: str = ""
 

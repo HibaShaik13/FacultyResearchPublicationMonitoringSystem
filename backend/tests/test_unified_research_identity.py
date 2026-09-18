@@ -91,23 +91,21 @@ async def test_dr_umadevi_verified_discovery(dr_umadevi_profile):
     """
     mock_session = AsyncMock(spec=AsyncSession)
 
-    mock_variants_result = MagicMock()
-    mock_variants_result.all.return_value = [("Vignan's Foundation for Science, Technology & Research",)]
+    def mock_execute_handler(stmt, *args, **kwargs):
+        stmt_str = str(stmt).lower()
+        res = MagicMock()
+        if "affiliationvariant" in stmt_str or "affiliation_variants" in stmt_str:
+            res.all.return_value = [("Vignan's Foundation for Science, Technology & Research",)]
+            return res
+        if "faculty_profile" in stmt_str or "facultyprofile" in stmt_str:
+            res.scalars.return_value.all.return_value = [dr_umadevi_profile]
+            res.scalars.return_value.first.return_value = dr_umadevi_profile
+            return res
+        res.scalars.return_value.all.return_value = []
+        res.scalars.return_value.first.return_value = None
+        return res
 
-    mock_profile_result = MagicMock()
-    mock_profile_result.scalars.return_value.all.return_value = [dr_umadevi_profile]
-
-    mock_empty_result = MagicMock()
-    mock_empty_result.scalars.return_value.first.return_value = None
-
-    mock_session.execute.side_effect = [
-        mock_variants_result,
-        mock_profile_result,
-        mock_empty_result, mock_empty_result,  # OpenAlex checks
-        mock_empty_result, mock_empty_result,  # Crossref checks
-        mock_empty_result, mock_empty_result,  # Scopus checks
-        mock_empty_result, mock_empty_result,  # IEEE checks
-    ]
+    mock_session.execute.side_effect = mock_execute_handler
 
     agent = PublicationDiscoveryAgent(mock_session)
 
